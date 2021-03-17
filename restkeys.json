@@ -1,6 +1,7 @@
 {
     "API_URL_KEY": "/api/v1.0",
-    "CLIENT_API_URL_KEY": "/api/v1.0/client",
+    "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
+    "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
 
     "STATUS_API_KEY": "/status",
     "CANALLOCATE_API_KEY": "/canallocate",
@@ -9,11 +10,11 @@
     "RUNNING_SPECS_API_KEY": "/running",
     "TEMPLATES_API_KEY": "/templates",
 
-    "HAS_VOLUME_API_KEY": "/hasvolume",
-    "ACCESSIBLE_VOLUMES_API_KEY": "/accessiblevolumes",
-    "CAN_CREATE_VOLUME_API_KEY": "/volumecancreate",
-    "CREATE_VOLUME_API_KEY": "/volumecreate",
-    "START_EXPORT_VOLUME_API_KEY": "/volumeexport",
-    "STOP_EXPORT_VOLUME_API_KEY": "/volumeunexport",
-    "VOLUME_INFO_API_KEY": "/volumeinfo"
+    "HAS_VOLUME_API_KEY": "/has",
+    "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
+    "CAN_CREATE_VOLUME_API_KEY": "/cancreate",
+    "CREATE_VOLUME_API_KEY": "/create",
+    "START_EXPORT_VOLUME_API_KEY": "/export",
+    "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
+    "VOLUME_INFO_API_KEY": "/info"
 }
