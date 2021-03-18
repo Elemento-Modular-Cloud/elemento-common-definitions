@@ -4,6 +4,7 @@
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
 
     "STATUS_API_KEY": "/status",
+    "STATUS_JSON_API_KEY": "/statusjson",
     "CANALLOCATE_API_KEY": "/canallocate",
     "REGISTER_API_KEY": "/register",
     "UNREGISTER_API_KEY": "/unregister",
