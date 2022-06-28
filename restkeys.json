@@ -15,6 +15,7 @@
     "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
     "CAN_CREATE_VOLUME_API_KEY": "/cancreate",
     "CREATE_VOLUME_API_KEY": "/create",
+    "DESTROY_VOLUME_API_KEY": "/destroy",
     "START_EXPORT_VOLUME_API_KEY": "/export",
     "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
     "VOLUME_INFO_API_KEY": "/info"
