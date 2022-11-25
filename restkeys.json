@@ -3,6 +3,10 @@
     "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
+    "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
+    
+    "AUTH_LOGIN" : "/login",
+    "AUTH_LOGOUT" : "/logout",
 
     "STATUS_API_KEY": "/status",
     "STATUS_JSON_API_KEY": "/statusjson",
