@@ -14,7 +14,7 @@
                     "step_size": 2
                 },
                 "output_type": "int",
-                "output_target": "<key in output reqspec>"
+                "output_target": "slots"
             },
             {
                 "name": "Max overprovision",
@@ -29,7 +29,7 @@
                     "step_size": 1
                 },
                 "output_type": "int",
-                "output_target": "<key in output reqspec>"
+                "output_target": "overprovision"
             },
             {
                 "name": "Min frequency",
@@ -45,7 +45,7 @@
                     "unit": "GHz"
                 },
                 "output_type": "float",
-                "output_target": "<key in output reqspec>"
+                "output_target": "min_frequency"
             },
             {
                 "name": "Slot type",
@@ -53,12 +53,12 @@
                 "long_desc": "Through this selector one can decide how to interpret the CPU slots. For each 'core' slot all the threads belonging to a physical core will be attached to the VM, including the SMT/HT ones.",
                 "widget_type": "switch",
                 "config": {
-                    "true_value": "Cores",
-                    "false_value": "Threads",
+                    "true_value": "Threads",
+                    "false_value": "Cores",
                     "default": "true_value"
                 },
                 "output_type": "bool",
-                "output_target": "<key in output reqspec>"
+                "output_target": "allowSMT"
             },
             {
                 "name": "Microarchitecture",
@@ -75,7 +75,7 @@
                     "default": "X86_64"
                 },
                 "output_type": "str",
-                "output_target": "<key in output reqspec>" 
+                "output_target": "archs"
             },
             {
                 "name": "Optional ISA extensions",
@@ -129,7 +129,7 @@
                     ]
                 },
                 "output_type": "str",
-                "output_target": "<key in output reqspec>" 
+                "output_target": "flags" 
             }
         ],
         "RAM": [
@@ -147,7 +147,7 @@
                     "unit": "GB"
                 },
                 "output_type": "float",
-                "output_target": "<key in output reqspec>"
+                "output_target": "ramsize"
             },
             {
                 "name": "Require ECC",
@@ -160,7 +160,7 @@
                     "default": "false_value"
                 },
                 "output_type": "bool",
-                "output_target": "<key in output reqspec>"
+                "output_target": "reqECC"
             }
         ],
         "OS": [
@@ -177,7 +177,7 @@
                     ]
                 },
                 "output_type": "str",
-                "output_target": "<key in output reqspec>" 
+                "output_target": "misc->os_family"
             }
         ]
     }

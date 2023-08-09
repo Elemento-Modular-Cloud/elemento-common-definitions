@@ -129,3 +129,18 @@ Expected output type. Might require a cast.
 
 ### `output_target` (mandatory)
 `json` key in the request specification file the widget output value should be mapped to.
+If the output key is contained in another dictionary key, the `->` operator can be used.
+
+As an example the desired output for `os_family` is:
+```json
+“misc”:
+    {
+        “os_family”: “linux”,
+        “os_flavour”: “pop”
+    }
+```
+
+Therefore the `output_target` can be defined as:
+```json
+    "output_target": "misc->os_family"
+```
