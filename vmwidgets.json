@@ -1,0 +1,184 @@
+{
+    "widgets": {
+        "CPU": [
+            {
+                "name": "N slots",
+                "tooltip": "Number of CPU slots required for the VM",
+                "long_desc": "This is the number of CPU executors one wants to get assigned to the VM. Slots can either be cores or threads. When choosing cores, all the threads of each assigned physical core (in case SMT/HT is enabled) will be usable by the VM.",
+                "widget_type": "slider",
+                "config": {
+                    "min": 1,
+                    "max": 256,
+                    "default": 1,
+                    "step_func": "log",
+                    "step_size": 2
+                },
+                "output_type": "int",
+                "output_target": "<key in output reqspec>"
+            },
+            {
+                "name": "Max overprovision",
+                "tooltip": "Maximum allowed CPU overprovisioning, aka VM pileup on shared codes",
+                "long_desc": "Through this option one can specify the VM needs to run on a certain number of CPU slots which can be time-shared with up to a number of other VMs equal to the selected value.",
+                "widget_type": "slider",
+                "config": {
+                    "min": 1,
+                    "max": 10,
+                    "default": 4,
+                    "step_func": "lin",
+                    "step_size": 1
+                },
+                "output_type": "int",
+                "output_target": "<key in output reqspec>"
+            },
+            {
+                "name": "Min frequency",
+                "tooltip": "Minimum CPU frequency required by the VM",
+                "long_desc": "This selector enables requiring a specific minimum operating frequency for the CPU slots assigned to the VM.",
+                "widget_type": "slider",
+                "config": {
+                    "min": 0.5,
+                    "max": 5.0,
+                    "default": 0,
+                    "step_func": "lin",
+                    "step_size": 0.5,
+                    "unit": "GHz"
+                },
+                "output_type": "float",
+                "output_target": "<key in output reqspec>"
+            },
+            {
+                "name": "Slot type",
+                "tooltip": "Selector to require threads or cores. 'Cores' means all threads belonging to a physical core will be attached for each requested core.",
+                "long_desc": "Through this selector one can decide how to interpret the CPU slots. For each 'core' slot all the threads belonging to a physical core will be attached to the VM, including the SMT/HT ones.",
+                "widget_type": "switch",
+                "config": {
+                    "true_value": "Cores",
+                    "false_value": "Threads",
+                    "default": "true_value"
+                },
+                "output_type": "bool",
+                "output_target": "<key in output reqspec>"
+            },
+            {
+                "name": "Microarchitecture",
+                "tooltip": "Selector for one or more CPU architectures",
+                "long_desc": "This option allows one to decide what CPU architecture is required. Multiple architectures can be selected as alternative options.",
+                "widget_type": "checkboxes",
+                "config": {
+                    "values": [
+                        "X86_32",
+                        "X86_64",
+                        "ARM_7",
+                        "ARM_8"
+                    ],
+                    "default": "X86_64"
+                },
+                "output_type": "str",
+                "output_target": "<key in output reqspec>" 
+            },
+            {
+                "name": "Optional ISA extensions",
+                "tooltip": "Selector for one or more CPU instruction set extensions, such as AVX512 or SSE",
+                "long_desc": "This option forces the VM to be ran on a CPU sporting all the selected Instruction Set Extensions which might enable improved performances on specific workloads.",
+                "widget_type": "dropdown_multi",
+                "config": {
+                    "values": [
+                        "3DNow!",
+                        "ABM",
+                        "ADX",
+                        "AES",
+                        "AMX",
+                        "AVX",
+                        "AVX2",
+                        "AVX-512",
+                        "BMI1",
+                        "BMI2",
+                        "CLMUL",
+                        "E3DNow!",
+                        "EMMX",
+                        "F16C",
+                        "FMA3",
+                        "FMA4",
+                        "FPU",
+                        "MKTME",
+                        "MMX",
+                        "MPX",
+                        "PMEM",
+                        "PREFETCH",
+                        "RdRAND",
+                        "SEV",
+                        "SGX",
+                        "SHA",
+                        "SME",
+                        "SMM",
+                        "SMX",
+                        "SSE",
+                        "SSE2",
+                        "SSE3",
+                        "SSE4.1",
+                        "SSE4.2",
+                        "SSE4a",
+                        "SSE5",
+                        "SSSE3",
+                        "TBM",
+                        "TME",
+                        "TSME",
+                        "TSX",
+                        "XOP"
+                    ]
+                },
+                "output_type": "str",
+                "output_target": "<key in output reqspec>" 
+            }
+        ],
+        "RAM": [
+            {
+                "name": "RAM size",
+                "tooltip": "Amount of RAM required by the VM, expressed in gigabytes",
+                "long_desc": "",
+                "widget_type": "slider",
+                "config": {
+                    "min": 0.25,
+                    "max": 1024,
+                    "default": 0.5,
+                    "step_func": "log",
+                    "step_size": 2,
+                    "unit": "GB"
+                },
+                "output_type": "float",
+                "output_target": "<key in output reqspec>"
+            },
+            {
+                "name": "Require ECC",
+                "tooltip": "Selector to force the VM to spawn on a ECC-equipped host",
+                "long_desc": "Error Correcting memory is a RAM feature which improves hardware reliability. While ECC registers won't be visible to the VM, this flag ensures the host machine will sport such feature.",
+                "widget_type": "switch",
+                "config": {
+                    "true_value": "True",
+                    "false_value": "False",
+                    "default": "false_value"
+                },
+                "output_type": "bool",
+                "output_target": "<key in output reqspec>"
+            }
+        ],
+        "OS": [
+            {
+                "name": "OS family",
+                "tooltip": "Selector for the OS family the VM OS belongs to",
+                "long_desc": "",
+                "widget_type": "radio",
+                "config": {
+                    "values": [
+                        "Linux",
+                        "Macos",
+                        "Windows"
+                    ]
+                },
+                "output_type": "str",
+                "output_target": "<key in output reqspec>" 
+            }
+        ]
+    }
+}
