@@ -15,6 +15,7 @@
     "UNREGISTER_API_KEY": "/unregister",
     "RUNNING_SPECS_API_KEY": "/running",
     "TEMPLATES_API_KEY": "/templates",
+    "MARKET_PRICES_API_KEY": "/marketprices",
 
     "HAS_VOLUME_API_KEY": "/has",
     "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
