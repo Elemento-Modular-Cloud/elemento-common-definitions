@@ -22,6 +22,7 @@
     "CAN_CREATE_VOLUME_API_KEY": "/cancreate",
     "CREATE_VOLUME_API_KEY": "/create",
     "DESTROY_VOLUME_API_KEY": "/destroy",
+    "UPDATE_VOLUME_API_KEY": "/update",
     "START_EXPORT_VOLUME_API_KEY": "/export",
     "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
     "VOLUME_INFO_API_KEY": "/info",
