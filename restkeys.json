@@ -24,9 +24,14 @@
     "DESTROY_VOLUME_API_KEY": "/destroy",
     "UPDATE_VOLUME_API_KEY": "/update",
     "CLONE_VOLUME_API_KEY": "/clone",
+    "CONVERT_VOLUME_API_KEY": "/convert",
+    "TRANSFER_VOLUME_API_KEY": "/transfer",
     "START_EXPORT_VOLUME_API_KEY": "/export",
     "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
     "VOLUME_INFO_API_KEY": "/info",
+
+    "CLOUDINIT_CREATE_VOLUME_API_KEY": "/cloudinit/create",
+    "CLOUDINIT_UPLOAD_META_API_KEY": "/cloudinit/metadata",
 
     "CREATE_NETWORK_API_KEY": "/create",
     "DELETE_NETWORK_API_KEY": "/delete",
