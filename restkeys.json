@@ -5,8 +5,10 @@
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
     "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
     
+
     "AUTH_LOGIN" : "/login",
     "AUTH_LOGOUT" : "/logout",
+
 
     "STATUS_API_KEY": "/status",
     "STATUS_JSON_API_KEY": "/statusjson",
@@ -17,22 +19,36 @@
     "TEMPLATES_API_KEY": "/templates",
     "MARKET_PRICES_API_KEY": "/marketprices",
 
+
     "HAS_VOLUME_API_KEY": "/has",
     "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
     "CAN_CREATE_VOLUME_API_KEY": "/cancreate",
+
     "CREATE_VOLUME_API_KEY": "/create",
+    "CREATE_FROM_FILE_VOLUME_API_KEY": "/create/url",
+    "CREATE_FROM_URL_VOLUME_API_KEY": "/create/upload",
+    
     "DESTROY_VOLUME_API_KEY": "/destroy",
-    "UPDATE_VOLUME_API_KEY": "/update",
-    "RESIZE_VOLUME_API_KEY": "/update/resize",
-    "CONVERT_VOLUME_API_KEY": "/update/convert",
-    "TRANSFER_PROPERTY_VOLUME_API_KEY": "update/transfer",
     "CLONE_VOLUME_API_KEY": "/clone",
     "START_EXPORT_VOLUME_API_KEY": "/export",
     "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
     "VOLUME_INFO_API_KEY": "/info",
 
+    "UPDATE_VOLUME_API_KEY": "/update",
+    "RESIZE_VOLUME_API_KEY": "/update/resize",
+    "CONVERT_VOLUME_API_KEY": "/update/convert",
+    "TRANSFER_PROPERTY_VOLUME_API_KEY": "update/transfer",
+    
+    "ISO_CREATE_VOLUME_API_KEY": "/iso/create/",
+    "ISO_CREATE_FROM_URL_VOLUME_API_KEY": "/iso/create/url",
+    "ISO_CREATE_FROM_FILE_VOLUME_API_KEY": "/iso/create/upload",
+
     "CLOUDINIT_CREATE_VOLUME_API_KEY": "/cloudinit/create",
     "CLOUDINIT_UPLOAD_META_API_KEY": "/cloudinit/metadata",
+
+    "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
+    "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
+
 
     "CREATE_NETWORK_API_KEY": "/create",
     "DELETE_NETWORK_API_KEY": "/delete",
