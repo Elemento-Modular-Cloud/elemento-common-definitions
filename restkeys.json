@@ -4,7 +4,7 @@
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
     "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
-    
+
 
     "AUTH_LOGIN" : "/login",
     "AUTH_LOGOUT" : "/logout",
@@ -18,6 +18,14 @@
     "RUNNING_SPECS_API_KEY": "/running",
     "TEMPLATES_API_KEY": "/templates",
     "MARKET_PRICES_API_KEY": "/marketprices",
+    "HOST_STATUS_API_KEY": "/host/status",
+
+    "CREATE_BACKUP_API_KEY": "/backup",
+    "RESTORE_BACKUP_API_KEY": "/backup/restore",
+    "LIST_BACKUPS_API_KEY": "/backups",
+    "SEARCH_BACKUPS_API_KEY": "/backups/search",
+    "DELETE_BACKUPS_API_KEY": "/backups",
+    "SCHEDULE_BACKUP_API_KEY": "/backup/schedule",
 
 
     "HAS_VOLUME_API_KEY": "/has",
@@ -37,7 +45,7 @@
     "UPDATE_VOLUME_API_KEY": "/update",
     "RESIZE_VOLUME_API_KEY": "/update/resize",
     "CONVERT_VOLUME_API_KEY": "/update/convert",
-    "TRANSFER_PROPERTY_VOLUME_API_KEY": "update/transfer",
+    "TRANSFER_PROPERTY_VOLUME_API_KEY": "/update/transfer",
     
     "ISO_CREATE_VOLUME_API_KEY": "/iso/create/",
     "ISO_CREATE_FROM_URL_VOLUME_API_KEY": "/iso/create/url",
