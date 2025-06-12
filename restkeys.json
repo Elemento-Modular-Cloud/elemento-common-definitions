@@ -19,6 +19,7 @@
     "TEMPLATES_API_KEY": "/templates",
     "MARKET_PRICES_API_KEY": "/marketprices",
     "HOST_STATUS_API_KEY": "/host/status",
+    "VM_USAGE_API_KEY": "/usage",
 
     "CREATE_BACKUP_API_KEY": "/backup",
     "RESTORE_BACKUP_API_KEY": "/backup/restore",
