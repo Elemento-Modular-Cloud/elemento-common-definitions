@@ -64,6 +64,8 @@
     "LIST_NETWORKS_API_KEY": "/list",
     "INFO_NETWORK_API_KEY": "/info",
 
+    "MIGRATION_API_KEY": "/migrate"
+
     "PORTTUNNEL_STATUS": "/porttunnel/status",
     "PORTTUNNEL_SERVICES": "/porttunnel/services",
     "PORTTUNNEL_START": "/porttunnel/start",
