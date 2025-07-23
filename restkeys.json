@@ -64,9 +64,9 @@
     "LIST_NETWORKS_API_KEY": "/list",
     "INFO_NETWORK_API_KEY": "/info",
     "START_EXPORT_NETWORK_API_KEY": "/export",
-    "STOP_EXPORT_NETWORK_API_KEY": "/unexport"
+    "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
 
-    "MIGRATION_API_KEY": "/migrate"
+    "MIGRATION_API_KEY": "/migrate",
 
     "PORTTUNNEL_STATUS": "/porttunnel/status",
     "PORTTUNNEL_SERVICES": "/porttunnel/services",
