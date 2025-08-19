@@ -71,5 +71,9 @@
     "PORTTUNNEL_STATUS": "/porttunnel/status",
     "PORTTUNNEL_SERVICES": "/porttunnel/services",
     "PORTTUNNEL_START": "/porttunnel/start",
-    "PORTTUNNEL_STOP": "/porttunnel/stop"
+    "PORTTUNNEL_STOP": "/porttunnel/stop",
+
+    "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
+    "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
+    "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude"
 }
