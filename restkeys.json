@@ -75,5 +75,8 @@
 
     "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
     "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
-    "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude"
+    "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
+
+    "AGENT_KEY": "/agent/run",
+    "AGENT_ATTACH_KEY": "/agent/attach"
 }
