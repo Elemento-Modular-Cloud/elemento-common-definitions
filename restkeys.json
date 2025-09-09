@@ -5,9 +5,9 @@
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
     "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
 
-
     "AUTH_LOGIN" : "/login",
     "AUTH_LOGOUT" : "/logout",
+
 
 
     "STATUS_API_KEY": "/status",
@@ -27,6 +27,19 @@
     "SEARCH_BACKUPS_API_KEY": "/backups/search",
     "DELETE_BACKUPS_API_KEY": "/backups",
     "SCHEDULE_BACKUP_API_KEY": "/backup/schedule",
+
+    "MIGRATION_API_KEY": "/migrate",
+
+
+    "PORTTUNNEL_STATUS": "/porttunnel/status",
+    "PORTTUNNEL_SERVICES": "/porttunnel/services",
+    "PORTTUNNEL_START": "/porttunnel/start",
+    "PORTTUNNEL_STOP": "/porttunnel/stop",
+
+
+    "AGENT_KEY": "/agent/run",
+    "AGENT_ATTACH_KEY": "/agent/attach",
+
 
 
     "HAS_VOLUME_API_KEY": "/has",
@@ -60,24 +73,16 @@
 
     "OVERLAY_CREATE_VOLUME_API_KEY": "/overlay/create",
 
+    "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
+    "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
+    "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
+
+
+
     "CREATE_NETWORK_API_KEY": "/create",
     "DELETE_NETWORK_API_KEY": "/delete",
     "LIST_NETWORKS_API_KEY": "/list",
     "INFO_NETWORK_API_KEY": "/info",
     "START_EXPORT_NETWORK_API_KEY": "/export",
-    "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
-
-    "MIGRATION_API_KEY": "/migrate",
-
-    "PORTTUNNEL_STATUS": "/porttunnel/status",
-    "PORTTUNNEL_SERVICES": "/porttunnel/services",
-    "PORTTUNNEL_START": "/porttunnel/start",
-    "PORTTUNNEL_STOP": "/porttunnel/stop",
-
-    "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
-    "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
-    "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
-
-    "AGENT_KEY": "/agent/run",
-    "AGENT_ATTACH_KEY": "/agent/attach"
+    "STOP_EXPORT_NETWORK_API_KEY": "/unexport"
 }
