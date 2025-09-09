@@ -58,6 +58,7 @@
     "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
     "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
 
+    "OVERLAY_CREATE_VOLUME_API_KEY": "/overlay/create",
 
     "CREATE_NETWORK_API_KEY": "/create",
     "DELETE_NETWORK_API_KEY": "/delete",
