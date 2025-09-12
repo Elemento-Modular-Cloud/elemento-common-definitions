@@ -72,7 +72,6 @@
     "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
     "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
 
-    "OVERLAY_CREATE_VOLUME_API_KEY": "/overlay/create",
 
     "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
     "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
