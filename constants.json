@@ -1,3 +1,16 @@
 {
-    "ELEMENTO_BIN_FOLDER_NAME": "elemento-bin"
+    "ELEMENTO_BIN_FOLDER_NAME": "elemento-bin",
+    "ELEMENTO_SUPPORTED_PROVIDERS": [
+        "AWS",
+        "Azure",
+        "GCP",
+        "DigitalOcean",
+        "Linode",
+        "Vultr",
+        "UpCloud",
+        "OVH",
+        "Aruba",
+        "Hetzner",
+        "VPS.net"
+    ]
 }
