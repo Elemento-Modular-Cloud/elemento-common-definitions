@@ -40,7 +40,7 @@
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
 
-    "OVERLAY_CREATE_VOLUME_API_KEY": "/overlay/create",
+    "IMPORT_VOLUME_API_KEY": "/import",
     "OVERLAY_COMPAT_VOLUME_API_KEY": "/overlay/compat",
 
     "HAS_VOLUME_API_KEY": "/has",
