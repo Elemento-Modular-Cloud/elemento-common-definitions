@@ -77,6 +77,8 @@
     "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
     "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
 
+    "LAST_VM_KEY": "/last",
+
 
 
     "CREATE_NETWORK_API_KEY": "/create",
