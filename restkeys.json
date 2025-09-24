@@ -1,5 +1,6 @@
 {
     "API_URL_KEY": "/api/v1.0",
+    "VERSION_API_KEY": "/version",
     "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
