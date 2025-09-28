@@ -86,5 +86,9 @@
     "LIST_NETWORKS_API_KEY": "/list",
     "INFO_NETWORK_API_KEY": "/info",
     "START_EXPORT_NETWORK_API_KEY": "/export",
-    "STOP_EXPORT_NETWORK_API_KEY": "/unexport"
+    "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
+
+    "FORWARD_PORT_API_KEY": "/portforward",
+    "UNFORWARD_PORT_API_KEY": "/portforward",
+    "LIST_FORWARDED_PORTS_API_KEY": "/portforwards"
 }
