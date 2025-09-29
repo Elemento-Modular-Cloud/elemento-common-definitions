@@ -1,3 +1,564 @@
 {
     "ELEMENTO_BIN_FOLDER_NAME": "elemento-bin"
+    "ELEMENTO_SUPPORTED_PROVIDERS": {
+        "google": {
+            "display_name": "Google",
+            "icon": "google-icon",
+            "color": "#4285f4",
+            "status": "production",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "planned"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "full"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "full"
+                }
+            ]
+        },
+        "azure": {
+            "display_name": "Azure",
+            "icon": "azure-icon",
+            "color": "#0078d4",
+            "status": "soon",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "planned"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "full"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "planned"
+                }
+            ]
+        },
+        "aws": {
+            "display_name": "AWS",
+            "icon": "aws-icon",
+            "color": "#ff9900",
+            "status": "beta",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "partial"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "planned"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "partial"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "full"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "planned"
+                }
+            ]
+        },
+        "aruba": {
+            "display_name": "Aruba",
+            "icon": "aruba-icon",
+            "color": "#ff6600",
+            "status": "production",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "full"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "full"
+                }
+            ]
+        },
+        "ovh": {
+            "display_name": "OVH",
+            "icon": "ovh-icon",
+            "color": "#123f6d",
+            "status": "production",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "full"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "full"
+                }
+            ]
+        },
+        "ionos": {
+            "display_name": "IONOS",
+            "icon": "ionos-icon",
+            "color": "#003d8f",
+            "status": "production",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "full"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "full"
+                }
+            ]
+        },
+        "gigas": {
+            "display_name": "Gigas",
+            "icon": "gigas-icon",
+            "color": "#e31e24",
+            "status": "production",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "full"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "full"
+                }
+            ]
+        },
+        "upcloud": {
+            "display_name": "UpCloud",
+            "icon": "upcloud-icon",
+            "color": "#7b68ee",
+            "status": "production",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "planned"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "full"
+                }
+            ]
+        },
+        "wasabi": {
+            "display_name": "Wasabi",
+            "icon": "wasabi-icon",
+            "color": "#00c65e",
+            "status": "beta",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "na"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "partial"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "na"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "na"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "partial"
+                }
+            ]
+        },
+        "ovhcloud": {
+            "display_name": "OVHcloud",
+            "icon": "ovhcloud-icon",
+            "color": "#123f6d",
+            "status": "production",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "full"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "full"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "full"
+                }
+            ]
+        },
+        "scaleway": {
+            "display_name": "Scaleway",
+            "icon": "scaleway-icon",
+            "color": "#4f0599",
+            "status": "development",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "partial"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "planned"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "planned"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "planned"
+                }
+            ]
+        },
+        "leaseweb": {
+            "display_name": "Leaseweb",
+            "icon": "leaseweb-icon",
+            "color": "#ff6700",
+            "status": "development",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "partial"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "planned"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "planned"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "planned"
+                }
+            ]
+        },
+        "digitalocean": {
+            "display_name": "DigitalOcean",
+            "icon": "digitalocean-icon",
+            "color": "#0080ff",
+            "status": "development",
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "iaas",
+                    "sub-type": "vm",
+                    "status": "planned"
+                },
+                {
+                    "name": "storageAas",
+                    "display_name": "Storage as a Service",
+                    "type": "iaas",
+                    "sub-type": "storage",
+                    "status": "planned"
+                },
+                {
+                    "name": "networking",
+                    "display_name": "Networking",
+                    "type": "iaas",
+                    "sub-type": "network",
+                    "status": "planned"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "paas",
+                    "sub-type": "container",
+                    "status": "planned"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "saas",
+                    "sub-type": "billing",
+                    "status": "planned"
+                }
+            ]
+        }
+    }
 }
