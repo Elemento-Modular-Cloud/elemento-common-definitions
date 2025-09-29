@@ -87,5 +87,10 @@
     "LIST_NETWORKS_API_KEY": "/list",
     "INFO_NETWORK_API_KEY": "/info",
     "START_EXPORT_NETWORK_API_KEY": "/export",
-    "STOP_EXPORT_NETWORK_API_KEY": "/unexport"
+    "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
+
+    "CREATE_SERVICE_MESON_API_KEY": "/create",
+    "DELETE_SERVICE_MESON_API_KEY": "/delete",
+    "INFO_SERVICE_MESON_API_KEY": "/running",
+    "LIST_SERVICE_MESON_API_KEY": "/running"
 }
