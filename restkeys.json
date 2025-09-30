@@ -3,7 +3,7 @@
     "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
-    "MESON_CLIENT_API_URL_KEY": "/api/v1.0/client/meson",
+    "SERVICE_CLIENT_API_URL_KEY": "/api/v1.0/client/service",
     "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
 
     "AUTH_LOGIN" : "/login",
@@ -89,8 +89,8 @@
     "START_EXPORT_NETWORK_API_KEY": "/export",
     "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
 
-    "CREATE_SERVICE_MESON_API_KEY": "/create",
-    "DELETE_SERVICE_MESON_API_KEY": "/delete",
-    "INFO_SERVICE_MESON_API_KEY": "/running",
-    "LIST_SERVICE_MESON_API_KEY": "/running"
+    "CREATE_SERVICE_API_KEY": "/create",
+    "DELETE_SERVICE_API_KEY": "/delete",
+    "INFO_SERVICE_API_KEY": "/running",
+    "LIST_SERVICE_API_KEY": "/running"
 }
