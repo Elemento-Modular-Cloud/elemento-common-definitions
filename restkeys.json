@@ -1,5 +1,6 @@
 {
     "API_URL_KEY": "/api/v1.0",
+    "VERSION_API_KEY": "/version",
     "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
@@ -39,6 +40,14 @@
 
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
+
+    "ATTACH_NETWORK_KEY": "/network/attach",
+    "DETACH_NETWORK_KEY": "/network/detach",
+
+
+    "STOP_VM_KEY": "/stop",
+    "START_VM_KEY": "/start",
+    "REBOOT_VM_KEY": "/reboot",
 
 
 
@@ -86,5 +95,9 @@
     "LIST_NETWORKS_API_KEY": "/list",
     "INFO_NETWORK_API_KEY": "/info",
     "START_EXPORT_NETWORK_API_KEY": "/export",
-    "STOP_EXPORT_NETWORK_API_KEY": "/unexport"
+    "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
+
+    "FORWARD_PORT_API_KEY": "/portforward",
+    "UNFORWARD_PORT_API_KEY": "/portforward",
+    "LIST_FORWARDED_PORTS_API_KEY": "/portforwards"
 }
