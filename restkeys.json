@@ -40,6 +40,14 @@
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
 
+    "ATTACH_NETWORK_KEY": "/network/attach",
+    "DETACH_NETWORK_KEY": "/network/detach",
+
+
+    "STOP_VM_KEY": "/stop",
+    "START_VM_KEY": "/start",
+    "REBOOT_VM_KEY": "/reboot",
+
 
 
     "HAS_VOLUME_API_KEY": "/has",
