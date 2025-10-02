@@ -1,5 +1,5 @@
 {
-    "ELEMENTO_BIN_FOLDER_NAME": "elemento-bin"
+    "ELEMENTO_BIN_FOLDER_NAME": "elemento-bin",
     "ELEMENTO_SUPPORTED_PROVIDERS": {
         "google": {
             "display_name": "Google",
