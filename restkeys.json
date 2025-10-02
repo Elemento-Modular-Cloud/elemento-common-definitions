@@ -96,7 +96,7 @@
     "TARGET_INFO_API_KEY": "/info",
     "TARGET_PROCESS_API_KEY": "/process",
     "TARGET_TYPES_API_KEY": "/types",
-    "TARGET_VALIDATE_API_KEY": "/validate"
+    "TARGET_VALIDATE_API_KEY": "/validate",
 
     "FORWARD_PORT_API_KEY": "/portforward",
     "UNFORWARD_PORT_API_KEY": "/portforward",
