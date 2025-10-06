@@ -1,15 +1,15 @@
 {
     "API_URL_KEY": "/api/v1.0",
+    "VERSION_API_KEY": "/version",
     "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
     "SERVICE_CLIENT_API_URL_KEY": "/api/v1.0/client/service",
     "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
+    "TARGET_CLIENT_API_URL_KEY": "/api/v1.0/client/target",
 
     "AUTH_LOGIN" : "/login",
     "AUTH_LOGOUT" : "/logout",
-
-
 
     "STATUS_API_KEY": "/status",
     "STATUS_JSON_API_KEY": "/statusjson",
@@ -31,17 +31,21 @@
 
     "MIGRATION_API_KEY": "/migrate",
 
-
     "PORTTUNNEL_STATUS": "/porttunnel/status",
     "PORTTUNNEL_SERVICES": "/porttunnel/services",
     "PORTTUNNEL_START": "/porttunnel/start",
     "PORTTUNNEL_STOP": "/porttunnel/stop",
 
-
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
 
+    "ATTACH_NETWORK_KEY": "/network/attach",
+    "DETACH_NETWORK_KEY": "/network/detach",
 
+
+    "STOP_VM_KEY": "/stop",
+    "START_VM_KEY": "/start",
+    "REBOOT_VM_KEY": "/reboot",
 
     "HAS_VOLUME_API_KEY": "/has",
     "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
@@ -79,9 +83,6 @@
     "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
 
     "LAST_VM_KEY": "/last",
-
-
-
     "CREATE_NETWORK_API_KEY": "/create",
     "DELETE_NETWORK_API_KEY": "/delete",
     "LIST_NETWORKS_API_KEY": "/list",
@@ -92,5 +93,18 @@
     "CREATE_SERVICE_API_KEY": "/create",
     "DELETE_SERVICE_API_KEY": "/delete",
     "INFO_SERVICE_API_KEY": "/running",
-    "LIST_SERVICE_API_KEY": "/running"
+    "LIST_SERVICE_API_KEY": "/running",
+    
+    "TARGET_LIST_API_KEY": "/list",
+    "TARGET_CREATE_API_KEY": "/create",
+    "TARGET_UPDATE_API_KEY": "/update",
+    "TARGET_DELETE_API_KEY": "/delete",
+    "TARGET_INFO_API_KEY": "/info",
+    "TARGET_PROCESS_API_KEY": "/process",
+    "TARGET_TYPES_API_KEY": "/types",
+    "TARGET_VALIDATE_API_KEY": "/validate",
+
+    "FORWARD_PORT_API_KEY": "/portforward",
+    "UNFORWARD_PORT_API_KEY": "/portforward",
+    "LIST_FORWARDED_PORTS_API_KEY": "/portforwards"
 }
