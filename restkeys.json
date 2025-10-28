@@ -4,6 +4,7 @@
     "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
+    "SERVICE_CLIENT_API_URL_KEY": "/api/v1.0/client/service",
     "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
     "TARGET_CLIENT_API_URL_KEY": "/api/v1.0/client/target",
 
@@ -88,6 +89,11 @@
     "INFO_NETWORK_API_KEY": "/info",
     "START_EXPORT_NETWORK_API_KEY": "/export",
     "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
+
+    "CREATE_SERVICE_API_KEY": "/create",
+    "DELETE_SERVICE_API_KEY": "/delete",
+    "INFO_SERVICE_API_KEY": "/running",
+    "LIST_SERVICE_API_KEY": "/running",
     
     "TARGET_LIST_API_KEY": "/list",
     "TARGET_CREATE_API_KEY": "/create",
