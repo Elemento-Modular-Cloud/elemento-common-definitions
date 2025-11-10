@@ -1429,9 +1429,9 @@
                         "main_form_data": {
                             "ip_address": {"type": "target", "user_label": "Target", "target_type": "manual"},
                             "name": {"type": "name", "user_label": "Cluster Name", "default": "my-cluster"},
-                            "s3_endpoint": {"type": "text", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3"},
-                            "s3_state_bucket": {"type": "text", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://"},
-                            "s3_access_key_id": {"type": "text", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$"},
+                            "s3_endpoint": {"type": "string", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3"},
+                            "s3_state_bucket": {"type": "string", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://"},
+                            "s3_access_key_id": {"type": "string", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$"},
                             "s3_secret_access_key": {"type": "password", "user_label": "S3 Secret Access Key", "regex": "^[A-Za-z0-9/+=]{40}$"},
                             "node_count": {"type": "number", "user_label": "Node Count", "default": 3, "min": 3, "max": 10},
                             "node_volume_size": {"type": "number", "user_label": "Node Volume Size (GB)", "default": 64},
