@@ -11,6 +11,10 @@
     "AUTH_LOGIN" : "/login",
     "AUTH_LOGOUT" : "/logout",
 
+    "OAUTH_PROVIDERS": "/oauth/providers",
+    "OAUTH_LOGIN": "/oauth/login",
+    "OAUTH_CALLBACK": "/oauth/callback",
+
     "STATUS_API_KEY": "/status",
     "STATUS_JSON_API_KEY": "/statusjson",
     "CANALLOCATE_API_KEY": "/canallocate",
