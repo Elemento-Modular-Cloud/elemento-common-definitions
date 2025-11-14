@@ -1609,7 +1609,7 @@
             "source": "fontawesome",
             "hex_color": "#ffa600",
             "svg_filename": "elemento_icon.svg",
-            "status": "development",
+            "status": "production",
             "server_ips": [],
             "services": [
                 {
