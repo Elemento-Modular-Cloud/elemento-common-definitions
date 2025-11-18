@@ -5,7 +5,7 @@
     "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
     "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
     "SERVICE_CLIENT_API_URL_KEY": "/api/v1.0/client/service",
-    "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
+    "AUTH_CLIENT_API_URL_KEY" : "/api/v1.0/client/authenticate",
     "TARGET_CLIENT_API_URL_KEY": "/api/v1.0/client/target",
 
     "AUTH_LOGIN" : "/login",
