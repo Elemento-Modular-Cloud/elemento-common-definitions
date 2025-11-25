@@ -41,7 +41,7 @@
     "AGENT_ATTACH_KEY": "/agent/attach",
 
     "IMPORT_VOLUME_API_KEY": "/import",
-    "OVERLAY_COMPAT_VOLUME_API_KEY": "/overlay/compat",
+    "OVERLAY_COMPACT_VOLUME_API_KEY": "/overlay/compact",
 
     "HAS_VOLUME_API_KEY": "/has",
     "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
