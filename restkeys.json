@@ -18,6 +18,7 @@
     "STATUS_API_KEY": "/status",
     "STATUS_JSON_API_KEY": "/statusjson",
     "CANALLOCATE_API_KEY": "/canallocate",
+    "CANALLOCATE_MULTIPLE_API_KEY": "/canallocate/multiple",
     "REGISTER_API_KEY": "/register",
     "UNREGISTER_API_KEY": "/unregister",
     "RUNNING_SPECS_API_KEY": "/running",
@@ -43,6 +44,8 @@
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
 
+    "IMPORT_VOLUME_API_KEY": "/import",
+    "OVERLAY_COMPACT_VOLUME_API_KEY": "/overlay/compact",
     "ATTACH_NETWORK_KEY": "/network/attach",
     "DETACH_NETWORK_KEY": "/network/detach",
 
@@ -54,6 +57,7 @@
     "HAS_VOLUME_API_KEY": "/has",
     "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
     "CAN_CREATE_VOLUME_API_KEY": "/cancreate",
+    "CAN_CREATE_VOLUME_MULTIPLE_API_KEY": "/cancreate/multiple",
 
     "CREATE_VOLUME_API_KEY": "/create",
     "CREATE_FROM_FILE_VOLUME_API_KEY": "/create/url",
@@ -80,7 +84,6 @@
     "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
     "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
 
-    "OVERLAY_CREATE_VOLUME_API_KEY": "/overlay/create",
 
     "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
     "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
