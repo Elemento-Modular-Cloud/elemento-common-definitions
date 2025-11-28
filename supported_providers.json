@@ -1355,14 +1355,6 @@
                     "support_level": "partial"
                 },
                 {
-                    "name": "blockStorage",
-                    "display_name": "Block Storage",
-                    "type": "storage",
-                    "sub_type": "blockstorage",
-                    "regions": {},
-                    "support_level": "full"
-                },
-                {
                     "name": "costApi",
                     "display_name": "Cost API",
                     "type": "matcher",
@@ -1622,7 +1614,12 @@
                         "metadata": {},
                         "main_form_data": {
                             "ip_address": { "type": "target", "user_label": "Target", "target_type": "manual" },
-                            "name": { "type": "name", "user_label": "Cluster Name", "default": "my-cluster", "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*" },
+                            "name": {
+                                "type": "name",
+                                "user_label": "Cluster Name",
+                                "default": "my-cluster",
+                                "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*"
+                            },
                             "s3_endpoint": { "type": "string", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3" },
                             "s3_state_bucket": { "type": "string", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://" },
                             "s3_access_key_id": { "type": "string", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$" },
@@ -1706,14 +1703,6 @@
                         "table_layout": {},
                         "resources": {}
                     },
-                    "support_level": "partial"
-                },
-                {
-                    "name": "blockStorage",
-                    "display_name": "Block Storage",
-                    "type": "storage",
-                    "sub_type": "blockstorage",
-                    "regions": {},
                     "support_level": "full"
                 },
                 {
