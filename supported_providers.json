@@ -1639,6 +1639,92 @@
                     "support_level": "full"
                 }
             ]
+        },
+        "impossiblecloud": {
+            "display_name": "Impossible Cloud",
+            "icon_classes": "impossiblecloud_icon",
+            "source": "fontawesome",
+            "hex_color": "#00c65e",
+            "svg_filename": "impossiblecloud_icon.svg",
+            "status": "beta",
+            "server_ips": [],
+            "services": [
+                {
+                    "name": "objectStorage",
+                    "display_name": "Object Storage",
+                    "type": "storage",
+                    "sub_type": "objectstorage",
+                    "regions": {
+                        "us-east-1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-central-2": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-west-1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-west-2": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-east-1": {
+                            "country": "Poland",
+                            "location": "Poznań",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-north-1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "electros_meta": {
+                        "metadata": {},
+                        "main_form_data": {
+                            "name": {
+                                "type": "name",
+                                "user_label": "Bucket name",
+                                "default": "my-bucket",
+                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
+                            },
+                            "region": { "type": "region", "user_label": "Region" }
+                        },
+                        "table_layout": {},
+                        "resources": {}
+                    },
+                    "support_level": "partial"
+                },
+                {
+                    "name": "blockStorage",
+                    "display_name": "Block Storage",
+                    "type": "storage",
+                    "sub_type": "blockstorage",
+                    "regions": {},
+                    "support_level": "full"
+                },
+                {
+                    "name": "costApi",
+                    "display_name": "Cost API",
+                    "type": "matcher",
+                    "sub_type": "billing",
+                    "regions": {},
+                    "support_level": "partial"
+                }
+            ]
         }
     }
 }
