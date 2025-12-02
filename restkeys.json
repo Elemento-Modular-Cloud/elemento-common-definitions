@@ -20,6 +20,7 @@
     "CANALLOCATE_API_KEY": "/canallocate",
     "CANALLOCATE_MULTIPLE_API_KEY": "/canallocate/multiple",
     "REGISTER_API_KEY": "/register",
+    "REGISTER_MULTIPLE_API_KEY": "/register/multiple",
     "UNREGISTER_API_KEY": "/unregister",
     "RUNNING_SPECS_API_KEY": "/running",
     "TEMPLATES_API_KEY": "/templates",
@@ -62,6 +63,7 @@
     "CAN_CREATE_VOLUME_MULTIPLE_API_KEY": "/cancreate/multiple",
 
     "CREATE_VOLUME_API_KEY": "/create",
+    "CREATE_VOLUME_MULTIPLE_API_KEY": "/create/multiple",
     "CREATE_FROM_FILE_VOLUME_API_KEY": "/create/url",
     "CREATE_FROM_URL_VOLUME_API_KEY": "/create/upload",
     
