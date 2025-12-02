@@ -7,6 +7,7 @@
             "hex_color": "#4285f4",
             "svg_filename": "google_icon.svg",
             "status": "production",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -294,6 +295,7 @@
             "hex_color": "#0078d4",
             "svg_filename": "azure_icon.svg",
             "status": "soon",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -485,6 +487,7 @@
             "hex_color": "#ff9900",
             "svg_filename": "aws_icon.svg",
             "status": "beta",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -730,6 +733,7 @@
             "hex_color": "#ff6600",
             "svg_filename": "aruba_icon.svg",
             "status": "production",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -788,6 +792,7 @@
             "hex_color": "#123f6d",
             "svg_filename": "ovh_icon.svg",
             "status": "production",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -979,6 +984,7 @@
             "hex_color": "#003d8f",
             "svg_filename": "ionos_icon.svg",
             "status": "production",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -1037,6 +1043,7 @@
             "hex_color": "#e31e24",
             "svg_filename": "gigas_icon.svg",
             "status": "production",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -1095,6 +1102,7 @@
             "hex_color": "#7b68ee",
             "svg_filename": "upcloud_icon.svg",
             "status": "production",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -1225,6 +1233,7 @@
             "hex_color": "#00c65e",
             "svg_filename": "wasabi_icon.svg",
             "status": "beta",
+            "server_ips": [],
             "services": [
                 {
                     "name": "objectStorage",
@@ -1363,64 +1372,6 @@
                 }
             ]
         },
-        "ovhcloud": {
-            "display_name": "OVHcloud",
-            "icon_classes": "ovhcloud_icon",
-            "source": "fontawesome",
-            "hex_color": "#123f6d",
-            "svg_filename": "ovhcloud_icon.svg",
-            "status": "production",
-            "services": [
-                {
-                    "name": "vmManagement",
-                    "display_name": "VM Management",
-                    "type": "matcher",
-                    "sub_type": "vm",
-                    "regions": {},
-                    "support_level": "full"
-                },
-                {
-                    "name": "objectStorage",
-                    "display_name": "Object Storage",
-                    "type": "storage",
-                    "sub_type": "objectstorage",
-                    "regions": {},
-                    "support_level": "full"
-                },
-                {
-                    "name": "blockStorage",
-                    "display_name": "Block Storage",
-                    "type": "storage",
-                    "sub_type": "blockstorage",
-                    "regions": {},
-                    "support_level": "full"
-                },
-                {
-                    "name": "networking",
-                    "display_name": "Networking",
-                    "type": "network",
-                    "sub_type": "network",
-                    "regions": {},
-                    "support_level": "full"
-                },
-                {
-                    "name": "k8s",
-                    "display_name": "Kubernetes",
-                    "type": "service",
-                    "sub_type": "container",
-                    "regions": {},
-                    "support_level": "planned"
-                },
-                {
-                    "name": "costApi",
-                    "display_name": "Cost API",
-                    "type": "matcher",
-                    "sub_type": "billing",
-                    "regions": {},
-                    "support_level": "full"
-                }
-            ]
-        },
         "scaleway": {
             "display_name": "Scaleway",
             "icon_classes": "scaleway_icon",
@@ -1428,6 +1379,7 @@
             "hex_color": "#4f0599",
             "svg_filename": "scaleway_icon.svg",
             "status": "development",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -1486,6 +1438,7 @@
             "hex_color": "#ff6700",
             "svg_filename": "leaseweb_icon.svg",
             "status": "development",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -1544,6 +1497,7 @@
             "hex_color": "#0080ff",
             "svg_filename": "digitalocean_icon.svg",
             "status": "development",
+            "server_ips": [],
             "services": [
                 {
                     "name": "vmManagement",
@@ -1602,6 +1556,7 @@
             "hex_color": "#ff0000",
             "svg_filename": "oracle_icon.svg",
             "status": "development",
+            "server_ips": [],
             "services": [
                 {
                     "name": "objectStorage",
@@ -1628,6 +1583,7 @@
             "hex_color": "#0f172a",
             "svg_filename": "clastix_icon.svg",
             "status": "development",
+            "server_ips": [],
             "services": [
                 {
                     "name": "k8s",
@@ -1653,7 +1609,8 @@
             "source": "fontawesome",
             "hex_color": "#ffa600",
             "svg_filename": "elemento_icon.svg",
-            "status": "development",
+            "status": "production",
+            "server_ips": [],
             "services": [
                 {
                     "name": "k8s",
@@ -1665,7 +1622,7 @@
                         "metadata": {},
                         "main_form_data": {
                             "ip_address": { "type": "target", "user_label": "Target", "target_type": "manual" },
-                            "name": { "type": "name", "user_label": "Cluster Name", "default": "my-cluster" },
+                            "name": { "type": "name", "user_label": "Cluster Name", "default": "my-cluster", "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*" },
                             "s3_endpoint": { "type": "string", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3" },
                             "s3_state_bucket": { "type": "string", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://" },
                             "s3_access_key_id": { "type": "string", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$" },

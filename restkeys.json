@@ -43,6 +43,8 @@
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
 
+    "IMPORT_VOLUME_API_KEY": "/import",
+    "OVERLAY_COMPACT_VOLUME_API_KEY": "/overlay/compact",
     "ATTACH_NETWORK_KEY": "/network/attach",
     "DETACH_NETWORK_KEY": "/network/detach",
 
@@ -80,7 +82,6 @@
     "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
     "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
 
-    "OVERLAY_CREATE_VOLUME_API_KEY": "/overlay/create",
 
     "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
     "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
