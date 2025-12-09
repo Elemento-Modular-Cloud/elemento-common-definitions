@@ -443,8 +443,154 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
-                    "regions": {},
-                    "support_level": "planned"
+                    "regions": {
+                        "bhs1": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "bhs2": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "bhs3": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "bhs5": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg1": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg3": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg5": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg7": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra1": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra3": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra5": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra7": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra9": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra11": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "rbx": {
+                            "country": "France",
+                            "location": "Roubaix",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk1": {
+                            "country": "England",
+                            "location": "Erith",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sgp1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "vin1": {
+                            "country": "USA",
+                            "location": "Washington DC",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "hil1": {
+                            "country": "USA",
+                            "location": "Seattle",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "electros_meta": {
+                        "metadata": {},
+                        "main_form_data": {
+                            "name": {
+                                "type": "name",
+                                "user_label": "Bucket name",
+                                "default": "my-bucket"
+                            },
+                            "region": { "type": "region", "user_label": "Region" }
+                        },
+                        "table_layout": {},
+                        "resources": {}
+                    },
+                    "support_level": "partial"
                 },
                 {
                     "name": "blockStorage",
