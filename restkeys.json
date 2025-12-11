@@ -40,6 +40,7 @@
     "PORTTUNNEL_START": "/porttunnel/start",
     "PORTTUNNEL_STOP": "/porttunnel/stop",
     "PORTTUNNEL_VNC_WITH_WS": "/porttunnel/vncWebSocket",
+    "PORTTUNNEL_STOP_VNC_WITH_WS": "/porttunnel/vncWebSocket/stop",
 
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
