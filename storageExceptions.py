@@ -45,6 +45,7 @@ class VolumeDataDoesNotExist(Exception):
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
 
+
 ### EXPORT ###
 class VolumeAlreadyExported(Exception):
     def __init__(self, message):
@@ -53,7 +54,7 @@ class VolumeAlreadyExported(Exception):
 
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
-    
+
 
 class VolumeNotExportable(Exception):
     def __init__(self, message):
@@ -62,6 +63,7 @@ class VolumeNotExportable(Exception):
 
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
+
 
 ### METADATA NOT VALID ###
 class VolumeBusNotAllowed(Exception):
@@ -117,7 +119,7 @@ class VolumeImpossibleCreatorIDMetaUpdate(Exception):
 
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
-    
+
 
 class VolumeImpossibleCloudinitMetaUpdate(Exception):
     def __init__(self, message):
@@ -136,7 +138,7 @@ class VolumeDimensionNotUpdatable(Exception):
 
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
-    
+
 
 class VolumeDimensionNotShrinkable(Exception):
     def __init__(self, message):
@@ -145,7 +147,7 @@ class VolumeDimensionNotShrinkable(Exception):
 
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
-    
+
 
 ### CREATE ###
 class VolumeNotAllocable(Exception):
@@ -165,7 +167,7 @@ class VolumeAvailablePathNotFound(Exception):
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
 
-    
+
 class VolumeDimensionNotFound(Exception):
     def __init__(self, message):
         super().__init__(message)
@@ -182,7 +184,7 @@ class VolumeFormatNotFound(Exception):
 
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
-    
+
 
 ### LOCK ACTIONS ###
 class VolumeAlredyLocked(Exception):
@@ -284,6 +286,17 @@ class CloudInitExpectedFilesTrackerNotFound(Exception):
 
     def __str__(self):
         return f"[{type(self).__name__}] {self.message}"
-    
 
-# class 
+
+# overlay
+class UnsupportedFormat(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+        self.message = message
+
+    def __str__(self):
+        return f"[{type(self).__name__}] {self.message}"
+
+
+# class
+
