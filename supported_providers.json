@@ -15,230 +15,230 @@
                     "type": "matcher",
                     "sub_type": "vm",
                     "regions": {
-                        "africa_south1": {
+                        "africa-south1": {
                             "country": "South Africa",
                             "location": "Johannesburg",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_east1": {
+                        "asia-east1": {
                             "country": "Taiwan",
                             "location": "Changhua County",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_east2": {
-                            "country": "China",
+                        "asia-east2": {
+                            "country": "Hong Kong",
                             "location": "Hong Kong",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_northeast1": {
+                        "asia-northeast1": {
                             "country": "Japan",
                             "location": "Tokyo",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_northeast2": {
+                        "asia-northeast2": {
                             "country": "Japan",
                             "location": "Osaka",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_northeast3": {
+                        "asia-northeast3": {
                             "country": "South Korea",
                             "location": "Seoul",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_south1": {
+                        "asia-south1": {
                             "country": "India",
                             "location": "Mumbai",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_south2": {
+                        "asia-south2": {
                             "country": "India",
                             "location": "Delhi",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_southeast1": {
+                        "asia-southeast1": {
                             "country": "Singapore",
                             "location": "Jurong West",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia_southeast2": {
+                        "asia-southeast2": {
                             "country": "Indonesia",
                             "location": "Jakarta",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "australia_southeast1": {
+                        "australia-southeast1": {
                             "country": "Australia",
                             "location": "Sydney",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "australia_southeast2": {
+                        "australia-southeast2": {
                             "country": "Australia",
                             "location": "Melbourne",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_north1": {
-                            "country": "Finlad",
+                        "europe-north1": {
+                            "country": "Finland",
                             "location": "Hamina",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_southwest1": {
-                            "country": "Madrid",
-                            "location": "Spain",
+                        "europe-southwest1": {
+                            "country": "Spain",
+                            "location": "Madrid",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west1": {
+                        "europe-west1": {
                             "country": "Belgium",
                             "location": "St. Ghislain",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west10": {
+                        "europe-west10": {
                             "country": "Germany",
                             "location": "Berlin",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west12": {
+                        "europe-west12": {
                             "country": "Italy",
                             "location": "Turin",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west2": {
-                            "country": "England",
+                        "europe-west2": {
+                            "country": "United Kingdom",
                             "location": "London",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west3": {
+                        "europe-west3": {
                             "country": "Germany",
                             "location": "Frankfurt",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west4": {
+                        "europe-west4": {
                             "country": "Netherlands",
                             "location": "Eemshaven",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west6": {
+                        "europe-west6": {
                             "country": "Switzerland",
                             "location": "Zurich",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west8": {
+                        "europe-west8": {
                             "country": "Italy",
                             "location": "Milan",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe_west9": {
-                            "country": "Paris",
-                            "location": "France",
+                        "europe-west9": {
+                            "country": "France",
+                            "location": "Paris",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "me_central1": {
+                        "me-central1": {
                             "country": "Qatar",
                             "location": "Doha",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "me_west1": {
+                        "me-west1": {
                             "country": "Israel",
                             "location": "Tel Aviv",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "northamerica_northeast1": {
-                            "country": "Quebec",
+                        "northamerica-northeast1": {
+                            "country": "Canada",
                             "location": "Montreal",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "northamerica_northeast2": {
-                            "country": "Ontario",
+                        "northamerica-northeast2": {
+                            "country": "Canada",
                             "location": "Toronto",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "southamerica_east1": {
+                        "southamerica-east1": {
                             "country": "Brazil",
-                            "location": "Sao Paolo",
+                            "location": "São Paulo",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "southamerica_west1": {
+                        "southamerica-west1": {
                             "country": "Chile",
                             "location": "Santiago",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_central1": {
-                            "country": "Iowa",
-                            "location": "Council Bluff",
+                        "us-central1": {
+                            "country": "United States",
+                            "location": "Council Bluffs",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_east1": {
-                            "country": "South Carolina",
+                        "us-east1": {
+                            "country": "United States",
                             "location": "Moncks Corner",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_east4": {
-                            "country": "Virginia",
+                        "us-east4": {
+                            "country": "United States",
                             "location": "Ashburn",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_east5": {
-                            "country": "Ohio",
+                        "us-east5": {
+                            "country": "United States",
                             "location": "Columbus",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_south1": {
-                            "country": "Texas",
+                        "us-south1": {
+                            "country": "United States",
                             "location": "Dallas",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_west1": {
-                            "country": "Oregon",
+                        "us-west1": {
+                            "country": "United States",
                             "location": "The Dalles",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_west2": {
-                            "country": "California",
+                        "us-west2": {
+                            "country": "United States",
                             "location": "Los Angeles",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_west3": {
-                            "country": "Utah",
+                        "us-west3": {
+                            "country": "United States",
                             "location": "Salt Lake City",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_west4": {
-                            "country": "Nevada",
+                        "us-west4": {
+                            "country": "United States",
                             "location": "Las Vegas",
                             "plus_code": "",
                             "certifications": []
@@ -259,8 +259,237 @@
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
-                    "regions": {},
-                    "support_level": "full"
+                    "regions": {
+                        "africa-south1": {
+                            "country": "South Africa",
+                            "location": "Johannesburg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east2": {
+                            "country": "Hong Kong",
+                            "location": "Hong Kong",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-northeast1": {
+                            "country": "Japan",
+                            "location": "Tokyo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-northeast2": {
+                            "country": "Japan",
+                            "location": "Osaka",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-northeast3": {
+                            "country": "South Korea",
+                            "location": "Seoul",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-south1": {
+                            "country": "India",
+                            "location": "Mumbai",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-south2": {
+                            "country": "India",
+                            "location": "Delhi",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-southeast1": {
+                            "country": "Singapore",
+                            "location": "Jurong West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-southeast2": {
+                            "country": "Indonesia",
+                            "location": "Jakarta",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia-southeast1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia-southeast2": {
+                            "country": "Australia",
+                            "location": "Melbourne",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-north1": {
+                            "country": "Finland",
+                            "location": "Hamina",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-southwest1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1": {
+                            "country": "Belgium",
+                            "location": "St. Ghislain",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west10": {
+                            "country": "Germany",
+                            "location": "Berlin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west12": {
+                            "country": "Italy",
+                            "location": "Turin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west2": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west3": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west4": {
+                            "country": "Netherlands",
+                            "location": "Eemshaven",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west6": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west8": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west9": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me-central1": {
+                            "country": "Qatar",
+                            "location": "Doha",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me-west1": {
+                            "country": "Israel",
+                            "location": "Tel Aviv",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica-northeast1": {
+                            "country": "Canada",
+                            "location": "Montreal",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica-northeast2": {
+                            "country": "Canada",
+                            "location": "Toronto",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica-east1": {
+                            "country": "Brazil",
+                            "location": "São Paulo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica-west1": {
+                            "country": "Chile",
+                            "location": "Santiago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1": {
+                            "country": "United States",
+                            "location": "Council Bluffs",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-east1": {
+                            "country": "United States",
+                            "location": "Moncks Corner",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-east4": {
+                            "country": "United States",
+                            "location": "Ashburn",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-east5": {
+                            "country": "United States",
+                            "location": "Columbus",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-south1": {
+                            "country": "United States",
+                            "location": "Dallas",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west1": {
+                            "country": "United States",
+                            "location": "The Dalles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west2": {
+                            "country": "United States",
+                            "location": "Los Angeles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west3": {
+                            "country": "United States",
+                            "location": "Salt Lake City",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west4": {
+                            "country": "United States",
+                            "location": "Las Vegas",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "support_level": "planned"
                 },
                 {
                     "name": "networking",
@@ -268,14 +497,359 @@
                     "type": "network",
                     "sub_type": "network",
                     "regions": {},
-                    "support_level": "full"
+                    "support_level": "planned"
                 },
                 {
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
-                    "regions": {},
+                    "sub_type": "kaas",
+                    "regions": {
+                        "africa-south1": {
+                            "country": "South Africa",
+                            "location": "Johannesburg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east2": {
+                            "country": "Hong Kong",
+                            "location": "Hong Kong",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-northeast1": {
+                            "country": "Japan",
+                            "location": "Tokyo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-northeast2": {
+                            "country": "Japan",
+                            "location": "Osaka",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-northeast3": {
+                            "country": "South Korea",
+                            "location": "Seoul",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-south1": {
+                            "country": "India",
+                            "location": "Mumbai",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-south2": {
+                            "country": "India",
+                            "location": "Delhi",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-southeast1": {
+                            "country": "Singapore",
+                            "location": "Jurong West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-southeast2": {
+                            "country": "Indonesia",
+                            "location": "Jakarta",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia-southeast1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia-southeast2": {
+                            "country": "Australia",
+                            "location": "Melbourne",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-north1": {
+                            "country": "Finland",
+                            "location": "Hamina",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-southwest1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1": {
+                            "country": "Belgium",
+                            "location": "St. Ghislain",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west10": {
+                            "country": "Germany",
+                            "location": "Berlin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west12": {
+                            "country": "Italy",
+                            "location": "Turin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west2": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west3": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west4": {
+                            "country": "Netherlands",
+                            "location": "Eemshaven",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west6": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west8": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west9": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me-central1": {
+                            "country": "Qatar",
+                            "location": "Doha",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me-west1": {
+                            "country": "Israel",
+                            "location": "Tel Aviv",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica-northeast1": {
+                            "country": "Canada",
+                            "location": "Montreal",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica-northeast2": {
+                            "country": "Canada",
+                            "location": "Toronto",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica-east1": {
+                            "country": "Brazil",
+                            "location": "São Paulo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica-west1": {
+                            "country": "Chile",
+                            "location": "Santiago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1": {
+                            "country": "United States",
+                            "location": "Council Bluffs",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-east1": {
+                            "country": "United States",
+                            "location": "Moncks Corner",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-east4": {
+                            "country": "United States",
+                            "location": "Ashburn",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-east5": {
+                            "country": "United States",
+                            "location": "Columbus",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-south1": {
+                            "country": "United States",
+                            "location": "Dallas",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west1": {
+                            "country": "United States",
+                            "location": "The Dalles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west2": {
+                            "country": "United States",
+                            "location": "Los Angeles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west3": {
+                            "country": "United States",
+                            "location": "Salt Lake City",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west4": {
+                            "country": "United States",
+                            "location": "Las Vegas",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "electros_meta": {
+                        "metadata": {},
+                        "main_form_data": {
+                            "name": {
+                                "type": "name",
+                                "user_label": "K8s name",
+                                "default": "my-k8s",
+                                "regex": "^(?=.{1,40}$)[a-z]([-a-z0-9]*[a-z0-9])?$"
+                            },
+                            "region": { "type": "region", "user_label": "Region" },
+                            "nodepool/autoscale": {
+                                "type": "select",
+                                "user_label": "k8s autoscale",
+                                "user_loc": null,
+                                "default": "true",
+                                "options": [
+                                    {
+                                        "user_label": "True",
+                                        "loc": null,
+                                        "value": "true"
+                                    },
+                                    {
+                                        "user_label": "False",
+                                        "loc": null,
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            "nodepool/desidered_nodes": { "type": "number", "user_label": "Node Count", "default": 3, "min": 3, "max": 10 },
+                            "nodepool/max_nodes": { "type": "number", "user_label": "Max Nodes", "default": 3, "min": 3 },
+                            "nodepool/min_nodes": { "type": "number", "user_label": "Min Nodes", "default": 3, "min": 3 },
+                            "nodepool/specs/cpu": { "type": "number", "user_label": "Node Cpu Cores", "default": 1 },
+                            "nodepool/specs/ram": { "type": "number", "user_label": "Node RAM", "default": 2048 },
+                            "nodepool/specs/storage": { "type": "number", "user_label": "Node Storage", "default": 15 },
+                            "nodepool/specs/gpu": { "type": "string", "user_label": "GPU" },
+                            "nodepool/pool_name": {
+                                "type": "name",
+                                "user_label": "Nodepool Name",
+                                "default": "my-nodepool",
+                                "regex": "^[a-z][-a-z0-9]{0,38}[a-z0-9]$"
+                            },
+                            "nodes_subnet/dhcp": {
+                                "type": "select",
+                                "user_label": "Nodes Subnet DHCP",
+                                "user_loc": null,
+                                "default": "true",
+                                "options": [
+                                    {
+                                        "label": "True",
+                                        "value": "true"
+                                    },
+                                    {
+                                        "label": "False",
+                                        "value": "false"
+                                    }
+                                ]
+                            },
+                            "nodes_subnet/network": { "type": "ip-cidr", "user_label": "Network CIDR", "default": "192.168.1.0/24" },
+                            "nodes_subnet/start_address": { "type": "ip", "user_label": "Start Address", "default": "192.168.1.0" },
+                            "nodes_subnet/last_address": { "type": "ip", "user_label": "Last Address", "default": "192.168.1.24" },
+                            "nodes_subnet/subnet_mask": { "type": "ip", "user_label": "Subnet Mask", "default": "255.255.255.0" },
+                            "update_policy": {
+                                "type": "select",
+                                "user_label": "Update Policy",
+                                "user_loc": null,
+                                "default": "STABLE",
+                                "options": [
+                                    {
+                                        "user_label": "Always Update",
+                                        "user_loc": null,
+                                        "value": "ALWAYS_UPDATE"
+                                    },
+                                    {
+                                        "user_label": "Stable Channel",
+                                        "user_loc": null,
+                                        "value": "STABLE"
+                                    },
+                                    {
+                                        "user_label": "Security Only",
+                                        "user_loc": null,
+                                        "value": "SECURITY_ONLY"
+                                    }
+                                ]
+                            }
+                        },
+                        "kubernetes_version": {
+                            "type": "select",
+                            "user_label": "Kubernetes Version",
+                            "user_loc": null,
+                            "default": "1.33",
+                            "options": [
+                                {
+                                    "user_label": "1.35",
+                                    "user_loc": null,
+                                    "value": "1.35"
+                                },
+                                {
+                                    "user_label": "1.34",
+                                    "user_loc": null,
+                                    "value": "1.34"
+                                },
+                                {
+                                    "user_label": "1.33",
+                                    "user_loc": null,
+                                    "value": "1.33"
+                                },
+                                {
+                                    "user_label": "1.31",
+                                    "user_loc": null,
+                                    "value": "1.31"
+                                }
+                            ]
+                        },
+                        "table_layout": {},
+                        "resources": {}
+                    },
                     "support_level": "full"
                 },
                 {
@@ -284,7 +858,7 @@
                     "type": "matcher",
                     "sub_type": "billing",
                     "regions": {},
-                    "support_level": "full"
+                    "support_level": "planned"
                 }
             ]
         },
