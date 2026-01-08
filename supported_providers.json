@@ -1684,72 +1684,72 @@
                     "type": "matcher",
                     "sub_type": "vm",
                     "regions": {
-                        "au_syd1": {
+                        "au-syd1": {
                             "country": "Australia",
                             "location": "Sydney",
                             "plus_code": ""
                         },
-                        "de_fra1": {
+                        "de-fra1": {
                             "country": "Germany",
                             "location": "Frankfurt",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "fi_hel1": {
-                            "country": "Finland",
-                            "location": "Helsinki",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "fi_hel2": {
-                            "country": "Finland",
-                            "location": "Helsinki",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "es_mad1": {
+                        "es-mad1": {
                             "country": "Spain",
                             "location": "Madrid",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "nl_ams1": {
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
                             "country": "Netherlands",
                             "location": "Amsterdam",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "pl_waw1": {
+                        "pl-waw1": {
                             "country": "Poland",
                             "location": "Warsaw",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "sg_sin1": {
+                        "sg-sin1": {
                             "country": "Singapore",
                             "location": "Singapore",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "uk_lon1": {
+                        "uk-lon1": {
                             "country": "United Kingdom",
                             "location": "London",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_chi1": {
+                        "us-chi1": {
                             "country": "USA",
                             "location": "Chicago",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_nyc1": {
+                        "us-nyc1": {
                             "country": "USA",
                             "location": "New York",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_sjo1": {
+                        "us-sjo1": {
                             "country": "USA",
                             "location": "San Jose",
                             "plus_code": "",
@@ -1763,15 +1763,174 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
-                    "regions": {},
-                    "support_level": "planned"
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": ""
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "electros_meta": {
+                        "metadata": {},
+                        "main_form_data": {
+                            "name": {
+                                "type": "name",
+                                "user_label": "Bucket name",
+                                "default": "my-bucket",
+                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
+                            },
+                            "region": { "type": "region", "user_label": "Region" },
+                            "purchasedTB": { "type": "number", "user_label": "Storage TB" }
+                        },
+                        "table_layout": {},
+                        "resources": {}
+                    },
+                    "support_level": "full"
                 },
                 {
                     "name": "blockStorage",
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
-                    "regions": {},
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": ""
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
                     "support_level": "full"
                 },
                 {
@@ -1921,7 +2080,8 @@
                                 "default": "my-bucket",
                                 "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
                             },
-                            "region": { "type": "region", "user_label": "Region" }
+                            "region": { "type": "region", "user_label": "Region" },
+                            "purchasedTB": { "type": "number", "user_label": "Storage TB" }
                         },
                         "table_layout": {},
                         "resources": {}
@@ -2272,7 +2432,8 @@
                                 "default": "my-bucket",
                                 "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
                             },
-                            "region": { "type": "region", "user_label": "Region" }
+                            "region": { "type": "region", "user_label": "Region" },
+                            "purchasedTB": { "type": "number", "user_label": "Storage TB" }
                         },
                         "table_layout": {},
                         "resources": {}
