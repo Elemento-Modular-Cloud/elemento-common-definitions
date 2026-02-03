@@ -2,7 +2,7 @@
     "ELEMENTO_SUPPORTED_PROVIDERS": {
         "google": {
             "display_name": "Google",
-            "icon_classes": "google_icon",
+            "icon_classes": "fa-brands fa-google",
             "source": "fontawesome",
             "hex_color": "#4285f4",
             "svg_filename": "google_icon.svg",
@@ -290,7 +290,7 @@
         },
         "azure": {
             "display_name": "Azure",
-            "icon_classes": "azure_icon",
+            "icon_classes": "fa-brands fa-microsoft",
             "source": "fontawesome",
             "hex_color": "#0078d4",
             "svg_filename": "azure_icon.svg",
@@ -482,7 +482,7 @@
         },
         "aws": {
             "display_name": "AWS",
-            "icon_classes": "aws_icon",
+            "icon_classes": "fa-brands fa-aws",
             "source": "fontawesome",
             "hex_color": "#ff9900",
             "svg_filename": "aws_icon.svg",
@@ -728,7 +728,7 @@
         },
         "aruba": {
             "display_name": "Aruba",
-            "icon_classes": "aruba_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ff6600",
             "svg_filename": "aruba_icon.svg",
@@ -787,7 +787,7 @@
         },
         "ovh": {
             "display_name": "OVH",
-            "icon_classes": "ovh_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#123f6d",
             "svg_filename": "ovh_icon.svg",
@@ -979,7 +979,7 @@
         },
         "ionos": {
             "display_name": "IONOS",
-            "icon_classes": "ionos_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#003d8f",
             "svg_filename": "ionos_icon.svg",
@@ -1038,7 +1038,7 @@
         },
         "gigas": {
             "display_name": "Gigas",
-            "icon_classes": "gigas_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#e31e24",
             "svg_filename": "gigas_icon.svg",
@@ -1097,7 +1097,7 @@
         },
         "upcloud": {
             "display_name": "UpCloud",
-            "icon_classes": "upcloud_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#7b68ee",
             "svg_filename": "upcloud_icon.svg",
@@ -1228,7 +1228,7 @@
         },
         "wasabi": {
             "display_name": "Wasabi",
-            "icon_classes": "wasabi_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#00c65e",
             "svg_filename": "wasabi_icon.svg",
@@ -1374,7 +1374,7 @@
         },
         "scaleway": {
             "display_name": "Scaleway",
-            "icon_classes": "scaleway_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#4f0599",
             "svg_filename": "scaleway_icon.svg",
@@ -1433,7 +1433,7 @@
         },
         "leaseweb": {
             "display_name": "Leaseweb",
-            "icon_classes": "leaseweb_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ff6700",
             "svg_filename": "leaseweb_icon.svg",
@@ -1492,7 +1492,7 @@
         },
         "digitalocean": {
             "display_name": "DigitalOcean",
-            "icon_classes": "digitalocean_icon",
+            "icon_classes": "fa-brands fa-digital-ocean",
             "source": "fontawesome",
             "hex_color": "#0080ff",
             "svg_filename": "digitalocean_icon.svg",
@@ -1551,7 +1551,7 @@
         },
         "oracle": {
             "display_name": "Oracle Cloud",
-            "icon_classes": "oracle_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ff0000",
             "svg_filename": "oracle_icon.svg",
@@ -1578,7 +1578,7 @@
         },
         "clastix": {
             "display_name": "Clastix",
-            "icon_classes": "clastix_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#0f172a",
             "svg_filename": "clastix_icon.svg",
@@ -1605,7 +1605,7 @@
         },
         "elemento": {
             "display_name": "Elemento",
-            "icon_classes": "elemento_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ffa600",
             "svg_filename": "elemento_icon.svg",
