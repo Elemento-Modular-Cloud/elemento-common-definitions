@@ -1,117 +1,135 @@
 {
-    "API_URL_KEY": "/api/v1.0",
-    "VERSION_API_KEY": "/version",
-    "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
-    "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
-    "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
-    "SERVICE_CLIENT_API_URL_KEY": "/api/v1.0/client/service",
-    "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
-    "TARGET_CLIENT_API_URL_KEY": "/api/v1.0/client/target",
+  "API_URL_KEY": "/api/v1.0",
+  "VERSION_API_KEY": "/version",
+  
+  "CLIENT_API_URL_KEY": "/api/v1.0/client/vm",
+  "STORAGE_CLIENT_API_URL_KEY": "/api/v1.0/client/volume",
+  "NETWORK_CLIENT_API_URL_KEY": "/api/v1.0/client/network",
+  "SERVICE_CLIENT_API_URL_KEY": "/api/v1.0/client/service",
+  "AUTH_CLIENT_API_URL_KEY": "/api/v1/authenticate",
+  "TARGET_CLIENT_API_URL_KEY": "/api/v1.0/client/target",
+  
+  
+  "AUTH_LOGIN": "/login",
+  "AUTH_LOGOUT": "/logout",
+  "OAUTH_PROVIDERS": "/oauth/providers",
+  "OAUTH_LOGIN": "/oauth/login",
+  "OAUTH_CALLBACK": "/oauth/callback",
+  
+  
+  "TEMPLATES_API_KEY": "/templates",
+  "MARKET_PRICES_API_KEY": "/marketprices",
+  
+  "STATUS_API_KEY": "/status",
+  "STATUS_JSON_API_KEY": "/statusjson",
+  "HOST_STATUS_API_KEY": "/host/status",
+  "VM_USAGE_API_KEY": "/usage",
+  "RUNNING_SPECS_API_KEY": "/running",
+  
+  "CANALLOCATE_API_KEY": "/canallocate",
+  "REGISTER_API_KEY": "/register",
+  "UNREGISTER_API_KEY": "/unregister",
+  
+  "CREATE_BACKUP_API_KEY": "/backup",
+  "RESTORE_BACKUP_API_KEY": "/backup/restore",
+  "LIST_BACKUPS_API_KEY": "/backups",
+  "SEARCH_BACKUPS_API_KEY": "/backups/search",
+  "DELETE_BACKUPS_API_KEY": "/backups",
+  "SCHEDULE_BACKUP_API_KEY": "/backup/schedule",
 
-    "AUTH_LOGIN" : "/login",
-    "AUTH_LOGOUT" : "/logout",
+  "MIGRATION_API_KEY": "/migrate",
 
-    "OAUTH_PROVIDERS": "/oauth/providers",
-    "OAUTH_LOGIN": "/oauth/login",
-    "OAUTH_CALLBACK": "/oauth/callback",
+  "PORTTUNNEL_STATUS": "/porttunnel/status",
+  "PORTTUNNEL_SERVICES": "/porttunnel/services",
+  "PORTTUNNEL_START": "/porttunnel/start",
+  "PORTTUNNEL_STOP": "/porttunnel/stop",
+  "PORTTUNNEL_VNC_WITH_WS": "/porttunnel/vncWebSocket",
+  "PORTTUNNEL_STOP_VNC_WITH_WS": "/porttunnel/vncWebSocket/stop",
 
-    "STATUS_API_KEY": "/status",
-    "STATUS_JSON_API_KEY": "/statusjson",
-    "CANALLOCATE_API_KEY": "/canallocate",
-    "REGISTER_API_KEY": "/register",
-    "UNREGISTER_API_KEY": "/unregister",
-    "RUNNING_SPECS_API_KEY": "/running",
-    "TEMPLATES_API_KEY": "/templates",
-    "MARKET_PRICES_API_KEY": "/marketprices",
-    "HOST_STATUS_API_KEY": "/host/status",
-    "VM_USAGE_API_KEY": "/usage",
+  "AGENT_KEY": "/agent/run",
+  "AGENT_ATTACH_KEY": "/agent/attach",
+  
+  "ATTACH_NETWORK_KEY": "/network/attach",
+  "DETACH_NETWORK_KEY": "/network/detach",
+  
+  "STOP_VM_KEY": "/stop",
+  "START_VM_KEY": "/start",
+  "REBOOT_VM_KEY": "/reboot",
+  
+  
+  "HAS_VOLUME_API_KEY": "/has",
+  "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
+  "VOLUME_INFO_API_KEY": "/info",
+  
+  "CAN_CREATE_VOLUME_API_KEY": "/cancreate",
+  "CREATE_VOLUME_API_KEY": "/create",
+  "CREATE_FROM_FILE_VOLUME_API_KEY": "/create/url",
+  "CREATE_FROM_URL_VOLUME_API_KEY": "/create/upload",
+  
+  "DESTROY_VOLUME_API_KEY": "/destroy",
+  "CLONE_VOLUME_API_KEY": "/clone",
+  
+  "START_EXPORT_VOLUME_API_KEY": "/export",
+  "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
+  
+  "UPDATE_VOLUME_API_KEY": "/update",
+  "RESIZE_VOLUME_API_KEY": "/update/resize",
+  "CONVERT_VOLUME_API_KEY": "/update/convert",
+  "TRANSFER_PROPERTY_VOLUME_API_KEY": "/update/transfer",
+  
+  "ISO_CREATE_VOLUME_API_KEY": "/iso/create/",
+  "ISO_CREATE_FROM_URL_VOLUME_API_KEY": "/iso/create/url",
+  "ISO_CREATE_FROM_FILE_VOLUME_API_KEY": "/iso/create/upload",
+  
+  "CLOUDINIT_CREATE_VOLUME_API_KEY": "/cloudinit/create",
+  "CLOUDINIT_UPLOAD_META_API_KEY": "/cloudinit/metadata",
+  
+  "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
+  "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
+  
+  "IMPORT_VOLUME_API_KEY": "/import",
+  "OVERLAY_COMPACT_VOLUME_API_KEY": "/overlay/compact",
 
-    "CREATE_BACKUP_API_KEY": "/backup",
-    "RESTORE_BACKUP_API_KEY": "/backup/restore",
-    "LIST_BACKUPS_API_KEY": "/backups",
-    "SEARCH_BACKUPS_API_KEY": "/backups/search",
-    "DELETE_BACKUPS_API_KEY": "/backups",
-    "SCHEDULE_BACKUP_API_KEY": "/backup/schedule",
+  "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
+  "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
+  "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
 
-    "MIGRATION_API_KEY": "/migrate",
+  "RESET_VOLUME_API_KEY": "/reset",
 
-    "PORTTUNNEL_STATUS": "/porttunnel/status",
-    "PORTTUNNEL_SERVICES": "/porttunnel/services",
-    "PORTTUNNEL_START": "/porttunnel/start",
-    "PORTTUNNEL_STOP": "/porttunnel/stop",
-    "PORTTUNNEL_VNC_WITH_WS": "/porttunnel/vncWebSocket",
-    "PORTTUNNEL_STOP_VNC_WITH_WS": "/porttunnel/vncWebSocket/stop",
-
-    "AGENT_KEY": "/agent/run",
-    "AGENT_ATTACH_KEY": "/agent/attach",
-
-    "IMPORT_VOLUME_API_KEY": "/import",
-    "OVERLAY_COMPACT_VOLUME_API_KEY": "/overlay/compact",
-    "ATTACH_NETWORK_KEY": "/network/attach",
-    "DETACH_NETWORK_KEY": "/network/detach",
-
-
-    "STOP_VM_KEY": "/stop",
-    "START_VM_KEY": "/start",
-    "REBOOT_VM_KEY": "/reboot",
-
-    "HAS_VOLUME_API_KEY": "/has",
-    "ACCESSIBLE_VOLUMES_API_KEY": "/accessible",
-    "CAN_CREATE_VOLUME_API_KEY": "/cancreate",
-
-    "CREATE_VOLUME_API_KEY": "/create",
-    "CREATE_FROM_FILE_VOLUME_API_KEY": "/create/url",
-    "CREATE_FROM_URL_VOLUME_API_KEY": "/create/upload",
-    
-    "DESTROY_VOLUME_API_KEY": "/destroy",
-    "CLONE_VOLUME_API_KEY": "/clone",
-    "START_EXPORT_VOLUME_API_KEY": "/export",
-    "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
-    "VOLUME_INFO_API_KEY": "/info",
-
-    "UPDATE_VOLUME_API_KEY": "/update",
-    "RESIZE_VOLUME_API_KEY": "/update/resize",
-    "CONVERT_VOLUME_API_KEY": "/update/convert",
-    "TRANSFER_PROPERTY_VOLUME_API_KEY": "/update/transfer",
-    
-    "ISO_CREATE_VOLUME_API_KEY": "/iso/create/",
-    "ISO_CREATE_FROM_URL_VOLUME_API_KEY": "/iso/create/url",
-    "ISO_CREATE_FROM_FILE_VOLUME_API_KEY": "/iso/create/upload",
-
-    "CLOUDINIT_CREATE_VOLUME_API_KEY": "/cloudinit/create",
-    "CLOUDINIT_UPLOAD_META_API_KEY": "/cloudinit/metadata",
-
-    "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
-    "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
+  "LAST_VM_KEY": "/last",
 
 
-    "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
-    "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
-    "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
+  "CREATE_NETWORK_API_KEY": "/create",
+  "DELETE_NETWORK_API_KEY": "/delete",
+  "LIST_NETWORKS_API_KEY": "/list",
+  "INFO_NETWORK_API_KEY": "/info",
+  "START_EXPORT_NETWORK_API_KEY": "/export",
+  "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
 
-    "LAST_VM_KEY": "/last",
-    "CREATE_NETWORK_API_KEY": "/create",
-    "DELETE_NETWORK_API_KEY": "/delete",
-    "LIST_NETWORKS_API_KEY": "/list",
-    "INFO_NETWORK_API_KEY": "/info",
-    "START_EXPORT_NETWORK_API_KEY": "/export",
-    "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
+  "CREATE_SERVICE_API_KEY": "/create",
+  "DELETE_SERVICE_API_KEY": "/delete",
+  "INFO_SERVICE_API_KEY": "/running",
+  "LIST_SERVICE_API_KEY": "/running",
 
-    "CREATE_SERVICE_API_KEY": "/create",
-    "DELETE_SERVICE_API_KEY": "/delete",
-    "INFO_SERVICE_API_KEY": "/running",
-    "LIST_SERVICE_API_KEY": "/running",
-    
-    "TARGET_LIST_API_KEY": "/list",
-    "TARGET_CREATE_API_KEY": "/create",
-    "TARGET_UPDATE_API_KEY": "/update",
-    "TARGET_DELETE_API_KEY": "/delete",
-    "TARGET_INFO_API_KEY": "/info",
-    "TARGET_PROCESS_API_KEY": "/process",
-    "TARGET_TYPES_API_KEY": "/types",
-    "TARGET_VALIDATE_API_KEY": "/validate",
+  "TARGET_LIST_API_KEY": "/list",
+  "TARGET_CREATE_API_KEY": "/create",
+  "TARGET_UPDATE_API_KEY": "/update",
+  "TARGET_DELETE_API_KEY": "/delete",
+  "TARGET_INFO_API_KEY": "/info",
+  "TARGET_PROCESS_API_KEY": "/process",
+  "TARGET_TYPES_API_KEY": "/types",
+  "TARGET_VALIDATE_API_KEY": "/validate",
 
-    "FORWARD_PORT_API_KEY": "/portforward",
-    "UNFORWARD_PORT_API_KEY": "/portforward",
-    "LIST_FORWARDED_PORTS_API_KEY": "/portforwards"
+  "FORWARD_PORT_API_KEY": "/portforward",
+  "UNFORWARD_PORT_API_KEY": "/portforward",
+  "LIST_FORWARDED_PORTS_API_KEY": "/portforwards",
+
+
+  "PROXIMA_INDEX": "/index",
+  "PROXIMA_INSTANCES": "/instances",
+  "PROXIMA_INSTANCE_CREATE": "/instances/create",
+  "PROXIMA_INSTANCE_CLOSE": "/instances/close",
+  "PROXIMA_VERIFY_USER": "/verify_user",
+  "PROXIMA_CLEANUP": "/instances/cleanup",
+  "PROXIMA_LOCAL_LOGIN": "/local_login"
 }
