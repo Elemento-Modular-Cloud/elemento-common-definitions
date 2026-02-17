@@ -94,6 +94,8 @@
   "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
   "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
 
+  "RESET_VOLUME_API_KEY": "/reset",
+
   "LAST_VM_KEY": "/last",
 
 
