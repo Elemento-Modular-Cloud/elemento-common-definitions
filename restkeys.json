@@ -125,8 +125,10 @@
 
   "PROXIMA_INDEX": "/index",
   "PROXIMA_INSTANCES": "/instances",
+  "PROXIMA_INSTANCE_VIEW": "/instances/view",
   "PROXIMA_INSTANCE_CREATE": "/instances/create",
   "PROXIMA_INSTANCE_CLOSE": "/instances/close",
+  "PROXIMA_INSTANCE_PROXY": "/instances/proxy",
   "PROXIMA_VERIFY_USER": "/verify_user",
   "PROXIMA_CLEANUP": "/instances/cleanup",
   "PROXIMA_LOCAL_LOGIN": "/local_login"
