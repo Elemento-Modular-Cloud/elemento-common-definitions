@@ -12,6 +12,8 @@
   
   "AUTH_LOGIN": "/login",
   "AUTH_LOGOUT": "/logout",
+  "AUTH_CERT_RETRIEVE": "/cert",
+  "AUTH_CERT_TRUST": "/cert/trust",
   "OAUTH_PROVIDERS": "/oauth/providers",
   "OAUTH_LOGIN": "/oauth/login",
   "OAUTH_CALLBACK": "/oauth/callback",
@@ -117,6 +119,7 @@
   "TARGET_PROCESS_API_KEY": "/process",
   "TARGET_TYPES_API_KEY": "/types",
   "TARGET_VALIDATE_API_KEY": "/validate",
+  "TARGET_UPDATE_SETTINGS_KEY": "/settings",
 
   "FORWARD_PORT_API_KEY": "/portforward",
   "UNFORWARD_PORT_API_KEY": "/portforward",
