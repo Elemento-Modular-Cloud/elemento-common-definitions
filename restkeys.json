@@ -134,5 +134,7 @@
   "PROXIMA_INSTANCE_CLOSE": "/instances/close",
   "PROXIMA_VERIFY_USER": "/verify_user",
   "PROXIMA_CLEANUP": "/instances/cleanup",
-  "PROXIMA_LOCAL_LOGIN": "/local_login"
+  "PROXIMA_LOCAL_LOGIN": "/local_login",
+
+  "GENERATE_SERVICE_CREDENTIALS_API_KEY": "/get_credentials"
 }
