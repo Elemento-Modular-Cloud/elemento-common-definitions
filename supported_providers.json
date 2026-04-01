@@ -293,7 +293,38 @@
                             "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
                             "region": { "type": "region", "user_label": "Region" }
                         },
-                        "table_layout": {},
+                        "table_layout": [
+                            {
+                            "name": "Name",
+                            "localization_key": "cluster_name",
+                            "display_type": "text",
+                            "json_key": "name"
+                            },
+                            {
+                            "name": "UUID",
+                            "localization_key": "service_id",
+                            "display_type": "uuid",
+                            "json_key": "service_uuid"
+                            },
+                            {
+                            "name": "Status",
+                            "localization_key": "status",
+                            "display_type": "text",
+                            "json_key": "status"
+                            },
+                            {
+                            "name": "Endpoint",
+                            "localization_key": "endpoint",
+                            "display_type": "text",
+                            "json_key": "endpoint"
+                            },
+                            {
+                            "name": "Region",
+                            "localization_key": "location",
+                            "display_type": "region",
+                            "json_key": "region"
+                            }
+                        ],
                         "resources": {}
                     },
                     "support_level": "dev"
@@ -1225,7 +1256,58 @@
                     "type": "service",
                     "sub_type": "container",
                     "regions": {},
-                    "support_level": "planned"
+                    "electros_meta": {
+                        "metadata": {
+                            "category": "paas"
+                        },
+                        "main_form_data": {
+                            "name": {
+                                "type": "name",
+                                "user_label": "Cluster name",
+                                "default": "my-cluster"
+                            },
+                            "nodepools": "TODO",
+                            "nodes_subnet": "TODO",
+                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
+                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
+                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
+                            "region": { "type": "region", "user_label": "Region" }
+                        },
+                        "table_layout": [
+                            {
+                            "name": "Name",
+                            "localization_key": "cluster_name",
+                            "display_type": "text",
+                            "json_key": "name"
+                            },
+                            {
+                            "name": "UUID",
+                            "localization_key": "service_id",
+                            "display_type": "uuid",
+                            "json_key": "service_uuid"
+                            },
+                            {
+                            "name": "Status",
+                            "localization_key": "status",
+                            "display_type": "text",
+                            "json_key": "status"
+                            },
+                            {
+                            "name": "Endpoint",
+                            "localization_key": "endpoint",
+                            "display_type": "text",
+                            "json_key": "endpoint"
+                            },
+                            {
+                            "name": "Region",
+                            "localization_key": "location",
+                            "display_type": "region",
+                            "json_key": "region"
+                            }
+                        ],
+                        "resources": {}
+                    },
+                    "support_level": "dev"
                 },
                 {
                     "name": "costApi",
@@ -1553,7 +1635,58 @@
                     "type": "service",
                     "sub_type": "container",
                     "regions": {},
-                    "support_level": "planned"
+                    "electros_meta": {
+                        "metadata": {
+                            "category": "paas"
+                        },
+                        "main_form_data": {
+                            "name": {
+                                "type": "name",
+                                "user_label": "Cluster name",
+                                "default": "my-cluster"
+                            },
+                            "nodepools": "TODO",
+                            "nodes_subnet": "TODO",
+                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
+                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
+                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
+                            "region": { "type": "region", "user_label": "Region" }
+                        },
+                        "table_layout": [
+                            {
+                            "name": "Name",
+                            "localization_key": "cluster_name",
+                            "display_type": "text",
+                            "json_key": "name"
+                            },
+                            {
+                            "name": "UUID",
+                            "localization_key": "service_id",
+                            "display_type": "uuid",
+                            "json_key": "service_uuid"
+                            },
+                            {
+                            "name": "Status",
+                            "localization_key": "status",
+                            "display_type": "text",
+                            "json_key": "status"
+                            },
+                            {
+                            "name": "Endpoint",
+                            "localization_key": "endpoint",
+                            "display_type": "text",
+                            "json_key": "endpoint"
+                            },
+                            {
+                            "name": "Region",
+                            "localization_key": "location",
+                            "display_type": "region",
+                            "json_key": "region"
+                            }
+                        ],
+                        "resources": {}
+                    },
+                    "support_level": "dev"
                 },
                 {
                     "name": "costApi",
