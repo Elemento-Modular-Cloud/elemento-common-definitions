@@ -121,7 +121,7 @@
 
     "FORWARD_PORT_API_KEY": "/portforward",
     "UNFORWARD_PORT_API_KEY": "/portforward",
-    "LIST_FORWARDED_PORTS_API_KEY": "/portforwards"
+    "LIST_FORWARDED_PORTS_API_KEY": "/portforwards",
 
     "ATOMOSGUI_INDEX": "/index",
     "ATOMOSGUI_INSTANCES": "/instances",
