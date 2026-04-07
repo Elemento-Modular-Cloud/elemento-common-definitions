@@ -11,6 +11,10 @@
     "AUTH_LOGIN" : "/login",
     "AUTH_LOGOUT" : "/logout",
 
+    "AUTH_LOGIN": "/login",
+    "AUTH_LOGOUT": "/logout",
+    "AUTH_CERT_RETRIEVE": "/cert",
+    "AUTH_CERT_TRUST": "/cert/trust",
     "OAUTH_PROVIDERS": "/oauth/providers",
     "OAUTH_LOGIN": "/oauth/login",
     "OAUTH_CALLBACK": "/oauth/callback",
@@ -41,15 +45,17 @@
     "PORTTUNNEL_SERVICES": "/porttunnel/services",
     "PORTTUNNEL_START": "/porttunnel/start",
     "PORTTUNNEL_STOP": "/porttunnel/stop",
+    "PORTTUNNEL_VNC_WITH_WS": "/porttunnel/vncWebSocket",
+    "PORTTUNNEL_STOP_VNC_WITH_WS": "/porttunnel/vncWebSocket/stop",
 
     "AGENT_KEY": "/agent/run",
     "AGENT_ATTACH_KEY": "/agent/attach",
 
     "IMPORT_VOLUME_API_KEY": "/import",
     "OVERLAY_COMPACT_VOLUME_API_KEY": "/overlay/compact",
+  
     "ATTACH_NETWORK_KEY": "/network/attach",
     "DETACH_NETWORK_KEY": "/network/detach",
-
 
     "STOP_VM_KEY": "/stop",
     "START_VM_KEY": "/start",
@@ -70,7 +76,6 @@
     "START_EXPORT_VOLUME_API_KEY": "/export",
     "STOP_EXPORT_VOLUME_API_KEY": "/unexport",
     "VOLUME_INFO_API_KEY": "/info",
-
     "UPDATE_VOLUME_API_KEY": "/update",
     "RESIZE_VOLUME_API_KEY": "/update/resize",
     "CONVERT_VOLUME_API_KEY": "/update/convert",
@@ -86,12 +91,12 @@
     "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
     "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
 
-
     "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
     "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
     "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
 
     "LAST_VM_KEY": "/last",
+    "RESET_VOLUME_API_KEY": "/reset",
     "CREATE_NETWORK_API_KEY": "/create",
     "DELETE_NETWORK_API_KEY": "/delete",
     "LIST_NETWORKS_API_KEY": "/list",
@@ -112,8 +117,19 @@
     "TARGET_PROCESS_API_KEY": "/process",
     "TARGET_TYPES_API_KEY": "/types",
     "TARGET_VALIDATE_API_KEY": "/validate",
+    "TARGET_UPDATE_SETTINGS_KEY": "/settings",
 
     "FORWARD_PORT_API_KEY": "/portforward",
     "UNFORWARD_PORT_API_KEY": "/portforward",
     "LIST_FORWARDED_PORTS_API_KEY": "/portforwards"
+
+    "ATOMOSGUI_INDEX": "/index",
+    "ATOMOSGUI_INSTANCES": "/instances",
+    "ATOMOSGUI_INSTANCE_CREATE": "/instances/create",
+    "ATOMOSGUI_INSTANCE_CLOSE": "/instances/close",
+    "ATOMOSGUI_VERIFY_USER": "/verify_user",
+    "ATOMOSGUI_CLEANUP": "/instances/cleanup",
+    "ATOMOSGUI_LOCAL_LOGIN": "/local_login",
+
+    "GENERATE_SERVICE_CREDENTIALS_API_KEY": "/get_credentials"
 }
