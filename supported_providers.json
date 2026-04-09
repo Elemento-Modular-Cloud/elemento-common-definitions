@@ -274,59 +274,8 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Cluster name",
-                                "default": "my-cluster"
-                            },
-                            "nodepools": "TODO",
-                            "nodes_subnet": "TODO",
-                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
-                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
-                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "cluster_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "service_id",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Status",
-                            "localization_key": "status",
-                            "display_type": "text",
-                            "json_key": "status"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "endpoint",
-                            "display_type": "text",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "location",
-                            "display_type": "region",
-                            "json_key": "region"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "dev"
                 },
                 {
@@ -688,53 +637,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket"
-                            },
-                            "region": { "type": "region", "user_label": "Region" },
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -757,7 +659,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
@@ -1003,7 +905,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
@@ -1062,7 +964,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -1254,59 +1156,8 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Cluster name",
-                                "default": "my-cluster"
-                            },
-                            "nodepools": "TODO",
-                            "nodes_subnet": "TODO",
-                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
-                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
-                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "cluster_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "service_id",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Status",
-                            "localization_key": "status",
-                            "display_type": "text",
-                            "json_key": "status"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "endpoint",
-                            "display_type": "text",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "location",
-                            "display_type": "region",
-                            "json_key": "region"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "dev"
                 },
                 {
@@ -1364,7 +1215,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -1423,7 +1274,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -1563,54 +1414,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region"},
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -1633,7 +1436,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {
                         "au-syd1": {
                             "country": "Australia",
@@ -1724,57 +1527,6 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Cluster name",
-                                "default": "my-cluster"
-                            },
-                            "nodepools": "TODO",
-                            "nodes_subnet": "TODO",
-                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
-                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
-                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "cluster_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "service_id",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Status",
-                            "localization_key": "status",
-                            "display_type": "text",
-                            "json_key": "status"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "endpoint",
-                            "display_type": "text",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "location",
-                            "display_type": "region",
-                            "json_key": "region"
-                            }
-                        ],
-                        "resources": {}
                     },
                     "support_level": "dev"
                 },
@@ -1900,54 +1652,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region" },
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -2005,7 +1709,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -2064,7 +1768,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -2123,7 +1827,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -2434,7 +2138,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "kaas_on_multicloud_vms",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
@@ -2463,24 +2167,6 @@
                     "type": "service",
                     "sub_type": "kops",
                     "regions": {},
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "ip_address": { "type": "target", "user_label": "Target", "target_type": "manual" },
-                            "name": { "type": "name", "user_label": "Cluster Name", "default": "my-cluster", "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*" },
-                            "s3_endpoint": { "type": "string", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3" },
-                            "s3_state_bucket": { "type": "string", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://" },
-                            "s3_access_key_id": { "type": "string", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$" },
-                            "s3_secret_access_key": { "type": "password", "user_label": "S3 Secret Access Key", "regex": "^[A-Za-z0-9/+=]{40}$" },
-                            "node_count": { "type": "number", "user_label": "Node Count", "default": 3, "min": 3, "max": 10 },
-                            "node_volume_size": { "type": "number", "user_label": "Node Volume Size (GB)", "default": 64 },
-                            "control_plane_volume_size": { "type": "number", "user_label": "Control Plane Volume Size (GB)", "default": 64, "min": 32 },
-                            "network_cidr": { "type": "ip-cidr", "user_label": "Network CIDR", "default": "192.168.100.0/24" },
-                            "ssh_public_key": { "type": "textarea", "user_label": "SSH Public Key", "default": "ssh-rsa AAAAB3NzaC1yc2EA..." }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
                     "support_level": "full"
                 }
             ]
@@ -2536,54 +2222,6 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region"},
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
                     },
                     "support_level": "full"
                 },
