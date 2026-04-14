@@ -2,7 +2,7 @@
     "ELEMENTO_SUPPORTED_PROVIDERS": {
         "google": {
             "display_name": "Google",
-            "icon_classes": "google_icon",
+            "icon_classes": "fa-brands fa-google",
             "source": "fontawesome",
             "hex_color": "#4285f4",
             "svg_filename": "google_icon.svg",
@@ -274,143 +274,8 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Cluster name",
-                                "default": "my-cluster"
-                            },
-                            "nodepools": {
-                                "type": "datalist",
-                                "user_label": "Nodepools",
-                                "item_definition": {
-                                    "pool_name": {
-                                        "user_label": "Nodepool Name",
-                                        "type": "name"
-                                    },
-                                    "autoscale": {
-                                        "user_label": "Autoscale",
-                                        "type": "boolean",
-                                        "default": false
-                                    },
-                                    "max_nodes": {
-                                        "user_label": "Max nodes",
-                                        "type": "slider",
-                                        "min": 1,
-                                        "max": 100,
-                                        "step": 1
-                                    },
-                                    "min_nodes": {
-                                        "user_label": "Min nodes",
-                                        "type": "slider",
-                                        "min": 1,
-                                        "max": 100,
-                                        "step": 1
-                                    },
-                                    "shared_storage_gb": {
-                                        "user_label": "Shared storage (GB)",
-                                        "type": "slider",
-                                        "min": 0,
-                                        "max": 2048,
-                                        "step": 16
-                                    },
-                                    "specs": {
-                                        "user_label": "Node specs",
-                                        "type": "subtable",
-                                        "item_definition": {
-                                            "cpu": {
-                                                "user_label": "CPU (vCPU)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 96,
-                                                "step": 1
-                                            },
-                                            "ram_gb": {
-                                                "user_label": "Memory (GB)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 128,
-                                                "step": 1
-                                            },
-                                            "storage_gb": {
-                                                "user_label": "Storage (GB)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 2048,
-                                                "step": 16
-                                            },
-                                            "gpu": {
-                                                "user_label": "GPU (count)",
-                                                "type": "slider",
-                                                "min": 0,
-                                                "max": 8,
-                                                "step": 1
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            "nodes_subnet": {
-                                "user_label": "Nodes subnet",
-                                "type": "subtable",
-                                "item_definition": {
-                                    "dhcp": {
-                                        "user_label": "DHCP",
-                                        "type": "boolean",
-                                        "default": true
-                                    },
-                                    "ip_range": {
-                                        "user_label": "IP range",
-                                        "type": "ip-cidr",
-                                        "default": "192.170.5.0/24"
-                                    }
-                                }
-                            },
-                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
-                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
-                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "cluster_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "service_id",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Status",
-                            "localization_key": "status",
-                            "display_type": "text",
-                            "json_key": "status"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "endpoint",
-                            "display_type": "text",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "location",
-                            "display_type": "region",
-                            "json_key": "region"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "dev"
                 },
                 {
@@ -425,7 +290,7 @@
         },
         "azure": {
             "display_name": "Azure",
-            "icon_classes": "azure_icon",
+            "icon_classes": "fa-brands fa-microsoft",
             "source": "fontawesome",
             "hex_color": "#0078d4",
             "svg_filename": "azure_icon.svg",
@@ -772,53 +637,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket"
-                            },
-                            "region": { "type": "region", "user_label": "Region" },
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -841,7 +659,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
@@ -857,7 +675,7 @@
         },
         "aws": {
             "display_name": "AWS",
-            "icon_classes": "aws_icon",
+            "icon_classes": "fa-brands fa-aws",
             "source": "fontawesome",
             "hex_color": "#ff9900",
             "svg_filename": "aws_icon.svg",
@@ -1087,7 +905,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
@@ -1103,7 +921,7 @@
         },
         "aruba": {
             "display_name": "Aruba",
-            "icon_classes": "aruba_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ff6600",
             "svg_filename": "aruba_icon.svg",
@@ -1146,7 +964,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -1162,7 +980,7 @@
         },
         "ovh": {
             "display_name": "OVH",
-            "icon_classes": "ovh_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#123f6d",
             "svg_filename": "ovh_icon.svg",
@@ -1338,7 +1156,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {
                         "de-fra1": {
                             "country": "Germany",
@@ -1383,141 +1201,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Cluster name",
-                                "default": "my-cluster"
-                            },
-                            "nodepools": {
-                                "type": "datalist",
-                                "user_label": "Nodepools",
-                                "item_definition": {
-                                    "pool_name": {
-                                        "user_label": "Nodepool Name",
-                                        "type": "name"
-                                    },
-                                    "autoscale": {
-                                        "user_label": "Autoscale",
-                                        "type": "boolean",
-                                        "default": false
-                                    },
-                                    "max_nodes": {
-                                        "user_label": "Max nodes",
-                                        "type": "slider",
-                                        "min": 1,
-                                        "max": 100,
-                                        "step": 1
-                                    },
-                                    "min_nodes": {
-                                        "user_label": "Min nodes",
-                                        "type": "slider",
-                                        "min": 1,
-                                        "max": 100,
-                                        "step": 1
-                                    },
-                                    "shared_storage_gb": {
-                                        "user_label": "Shared storage (GB)",
-                                        "type": "slider",
-                                        "min": 0,
-                                        "max": 2048,
-                                        "step": 16
-                                    },
-                                    "specs": {
-                                        "user_label": "Node specs",
-                                        "type": "subtable",
-                                        "item_definition": {
-                                            "cpu": {
-                                                "user_label": "CPU (vCPU)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 96,
-                                                "step": 1
-                                            },
-                                            "ram_gb": {
-                                                "user_label": "Memory (GB)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 128,
-                                                "step": 1
-                                            },
-                                            "storage_gb": {
-                                                "user_label": "Storage (GB)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 2048,
-                                                "step": 16
-                                            },
-                                            "gpu": {
-                                                "user_label": "GPU (count)",
-                                                "type": "slider",
-                                                "min": 0,
-                                                "max": 8,
-                                                "step": 1
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            "nodes_subnet": {
-                                "user_label": "Nodes subnet",
-                                "type": "subtable",
-                                "item_definition": {
-                                    "dhcp": {
-                                        "user_label": "DHCP",
-                                        "type": "boolean",
-                                        "default": true
-                                    },
-                                    "ip_range": {
-                                        "user_label": "IP range",
-                                        "type": "ip-cidr",
-                                        "default": "192.170.5.0/24"
-                                    }
-                                }
-                            },
-                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
-                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
-                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "cluster_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "service_id",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Status",
-                            "localization_key": "status",
-                            "display_type": "text",
-                            "json_key": "status"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "endpoint",
-                            "display_type": "text",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "location",
-                            "display_type": "region",
-                            "json_key": "region"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "dev"
                 },
                 {
@@ -1532,7 +1215,7 @@
         },
         "ionos": {
             "display_name": "IONOS",
-            "icon_classes": "ionos_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#003d8f",
             "svg_filename": "ionos_icon.svg",
@@ -1575,7 +1258,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -1591,7 +1274,7 @@
         },
         "gigas": {
             "display_name": "Gigas",
-            "icon_classes": "gigas_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#e31e24",
             "svg_filename": "gigas_icon.svg",
@@ -1634,7 +1317,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -1650,7 +1333,7 @@
         },
         "upcloud": {
             "display_name": "UpCloud",
-            "icon_classes": "upcloud_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#7b68ee",
             "svg_filename": "upcloud_icon.svg",
@@ -1774,54 +1457,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region"},
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -1844,7 +1479,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {
                         "au-syd1": {
                             "country": "Australia",
@@ -1936,141 +1571,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Cluster name",
-                                "default": "my-cluster"
-                            },
-                            "nodepools": {
-                                "type": "datalist",
-                                "user_label": "Nodepools",
-                                "item_definition": {
-                                    "pool_name": {
-                                        "user_label": "Nodepool Name",
-                                        "type": "name"
-                                    },
-                                    "autoscale": {
-                                        "user_label": "Autoscale",
-                                        "type": "boolean",
-                                        "default": false
-                                    },
-                                    "max_nodes": {
-                                        "user_label": "Max nodes",
-                                        "type": "slider",
-                                        "min": 1,
-                                        "max": 100,
-                                        "step": 1
-                                    },
-                                    "min_nodes": {
-                                        "user_label": "Min nodes",
-                                        "type": "slider",
-                                        "min": 1,
-                                        "max": 100,
-                                        "step": 1
-                                    },
-                                    "shared_storage_gb": {
-                                        "user_label": "Shared storage (GB)",
-                                        "type": "slider",
-                                        "min": 0,
-                                        "max": 2048,
-                                        "step": 16
-                                    },
-                                    "specs": {
-                                        "user_label": "Node specs",
-                                        "type": "subtable",
-                                        "item_definition": {
-                                            "cpu": {
-                                                "user_label": "CPU (vCPU)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 96,
-                                                "step": 1
-                                            },
-                                            "ram_gb": {
-                                                "user_label": "Memory (GB)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 128,
-                                                "step": 1
-                                            },
-                                            "storage_gb": {
-                                                "user_label": "Storage (GB)",
-                                                "type": "slider",
-                                                "min": 1,
-                                                "max": 2048,
-                                                "step": 16
-                                            },
-                                            "gpu": {
-                                                "user_label": "GPU (count)",
-                                                "type": "slider",
-                                                "min": 0,
-                                                "max": 8,
-                                                "step": 1
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            "nodes_subnet": {
-                                "user_label": "Nodes subnet",
-                                "type": "subtable",
-                                "item_definition": {
-                                    "dhcp": {
-                                        "user_label": "DHCP",
-                                        "type": "boolean",
-                                        "default": true
-                                    },
-                                    "ip_range": {
-                                        "user_label": "IP range",
-                                        "type": "ip-cidr",
-                                        "default": "192.170.5.0/24"
-                                    }
-                                }
-                            },
-                            "update_policy": { "type": "select", "user_label": "Update policy", "options": [{ "user_label": "Always update", "value": "ALWAYS_UPDATE" }, { "user_label": "Manual", "value": "MANUAL" }] },
-                            "kubernetes_version": { "type": "string", "user_label": "Kubernetes Version", "default": "1.34", "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$" },
-                            "controlplane_ha": { "type": "boolean", "user_label": "Control plane HA", "default": false },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "cluster_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "service_id",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Status",
-                            "localization_key": "status",
-                            "display_type": "text",
-                            "json_key": "status"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "endpoint",
-                            "display_type": "text",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "location",
-                            "display_type": "region",
-                            "json_key": "region"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "dev"
                 },
                 {
@@ -2085,7 +1585,7 @@
         },
         "wasabi": {
             "display_name": "Wasabi",
-            "icon_classes": "wasabi_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#00c65e",
             "svg_filename": "wasabi_icon.svg",
@@ -2195,54 +1695,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region" },
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -2257,7 +1709,7 @@
         },
         "scaleway": {
             "display_name": "Scaleway",
-            "icon_classes": "scaleway_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#4f0599",
             "svg_filename": "scaleway_icon.svg",
@@ -2300,7 +1752,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -2316,7 +1768,7 @@
         },
         "leaseweb": {
             "display_name": "Leaseweb",
-            "icon_classes": "leaseweb_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ff6700",
             "svg_filename": "leaseweb_icon.svg",
@@ -2359,7 +1811,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -2375,7 +1827,7 @@
         },
         "digitalocean": {
             "display_name": "DigitalOcean",
-            "icon_classes": "digitalocean_icon",
+            "icon_classes": "fa-brands fa-digital-ocean",
             "source": "fontawesome",
             "hex_color": "#0080ff",
             "svg_filename": "digitalocean_icon.svg",
@@ -2418,7 +1870,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
@@ -2434,7 +1886,7 @@
         },
         "oracle": {
             "display_name": "Oracle Cloud",
-            "icon_classes": "oracle_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ff0000",
             "svg_filename": "oracle_icon.svg",
@@ -2718,7 +2170,7 @@
         },
         "clastix": {
             "display_name": "Clastix",
-            "icon_classes": "clastix_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#0f172a",
             "svg_filename": "clastix_icon.svg",
@@ -2729,7 +2181,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "kaas_on_multicloud_vms",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
@@ -2745,7 +2197,7 @@
         },
         "elemento": {
             "display_name": "Elemento",
-            "icon_classes": "elemento_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#ffa600",
             "svg_filename": "elemento_icon.svg",
@@ -2758,29 +2210,6 @@
                     "type": "service",
                     "sub_type": "kops",
                     "regions": {},
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "ip_address": { "type": "target", "user_label": "Target", "target_type": "manual" },
-                            "name": {
-                                "type": "name",
-                                "user_label": "Cluster Name",
-                                "default": "my-cluster",
-                                "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*"
-                            },
-                            "s3_endpoint": { "type": "string", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3" },
-                            "s3_state_bucket": { "type": "string", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://" },
-                            "s3_access_key_id": { "type": "string", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$" },
-                            "s3_secret_access_key": { "type": "password", "user_label": "S3 Secret Access Key", "regex": "^[A-Za-z0-9/+=]{40}$" },
-                            "node_count": { "type": "number", "user_label": "Node Count", "default": 3, "min": 3, "max": 10 },
-                            "node_volume_size": { "type": "number", "user_label": "Node Volume Size (GB)", "default": 64 },
-                            "control_plane_volume_size": { "type": "number", "user_label": "Control Plane Volume Size (GB)", "default": 64, "min": 32 },
-                            "network_cidr": { "type": "ip-cidr", "user_label": "Network CIDR", "default": "192.168.100.0/24" },
-                            "ssh_public_key": { "type": "textarea", "user_label": "SSH Public Key", "default": "ssh-rsa AAAAB3NzaC1yc2EA..." }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
                     "support_level": "full"
                 }
             ]
@@ -2836,54 +2265,6 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "electros_meta": {
-                        "metadata": {
-                            "category": "paas"
-                        },
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region"},
-                            "purchasedTB": {"type": "number", "user_label": "PurchasedTB"}
-                        },
-                        "table_layout": [
-                            {
-                            "name": "Name",
-                            "localization_key": "s3/bucket_name",
-                            "display_type": "text",
-                            "json_key": "name"
-                            },
-                            {
-                            "name": "UUID",
-                            "localization_key": "s3/uuid",
-                            "display_type": "uuid",
-                            "json_key": "service_uuid"
-                            },
-                            {
-                            "name": "Endpoint",
-                            "localization_key": "s3/endpoint",
-                            "display_type": "string",
-                            "json_key": "endpoint"
-                            },
-                            {
-                            "name": "Region",
-                            "localization_key": "s3/region",
-                            "display_type": "region",
-                            "json_key": "region"
-                            },
-                            {
-                            "name": "Size",
-                            "localization_key": "s3/size",
-                            "display_type": "byte_sized",
-                            "json_key": "active_storage"
-                            }
-                        ],
-                        "resources": {}
                     },
                     "support_level": "full"
                 },
