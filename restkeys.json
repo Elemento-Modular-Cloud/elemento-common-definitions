@@ -108,6 +108,7 @@
     "DELETE_SERVICE_API_KEY": "/delete",
     "INFO_SERVICE_API_KEY": "/running",
     "LIST_SERVICE_API_KEY": "/running",
+    "CAN_CREATE_SERVICE_API_KEY": "/cancreate",
     
     "TARGET_LIST_API_KEY": "/list",
     "TARGET_CREATE_API_KEY": "/create",
@@ -131,5 +132,7 @@
     "ATOMOSGUI_CLEANUP": "/instances/cleanup",
     "ATOMOSGUI_LOCAL_LOGIN": "/local_login",
 
-    "GENERATE_SERVICE_CREDENTIALS_API_KEY": "/get_credentials"
+    "GENERATE_SERVICE_CREDENTIALS_API_KEY": "/get_credentials",
+
+    "BILLING_STATUS_API_KEY": "/billing/status"
 }
