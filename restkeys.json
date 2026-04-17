@@ -91,6 +91,11 @@
     "CEPH_CREATE_VOLUME_API_KEY": "/ceph/create",
     "CEPH_VOLUME_CREDENTIALS_API_KEY": "/ceph/credentials",
 
+    "CINDER_CREATE_VOLUME_API_KEY": "/cinder/create",
+    "CINDER_IMPORT_VOLUME_API_KEY": "/cinder/import",
+    "CINDER_LIST_API_KEY": "/cinder/list",
+    "CINDER_CONNECTION_INFO_API_KEY": "/cinder/connection",
+
     "PREPARE_MIGRATION_VOLUME_API_KEY": "/migration/prepare",
     "REVERT_MIGRATION_VOLUME_API_KEY": "/migration/revert",
     "CONCLUDE_MIGRATION_VOLUME_API_KEY": "/migration/conclude",
