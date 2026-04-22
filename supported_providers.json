@@ -249,7 +249,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -441,7 +441,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
                         "westeurope": {
@@ -880,7 +880,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -939,7 +939,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -1131,7 +1131,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -1233,7 +1233,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -1292,7 +1292,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -1423,7 +1423,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
                         "APAC-1": {
@@ -1595,7 +1595,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
                         "us-east-1": {
@@ -1727,7 +1727,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -1786,7 +1786,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -1845,7 +1845,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -2153,7 +2153,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -2226,7 +2226,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
                         "us-east-1": {
