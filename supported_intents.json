@@ -1,64 +1,11 @@
 {
-    "storage": {
-        "objectstorage": {
-            "metadata": {
-                "category": "paas"
-            },
-            "main_form_data": {
-                "name": {
-                    "type": "name",
-                    "user_label": "Bucket name",
-                    "default": "my-bucket",
-                    "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                },
-                "region": {
-                    "type": "region",
-                    "user_label": "Region"
-                },
-                "purchasedTB": {
-                    "type": "number",
-                    "user_label": "PurchasedTB"
-                }
-            },
-            "table_layout": [
-                {
-                    "name": "Name",
-                    "localization_key": "s3/bucket_name",
-                    "display_type": "text",
-                    "json_key": "name"
-                },
-                {
-                    "name": "UUID",
-                    "localization_key": "s3/uuid",
-                    "display_type": "uuid",
-                    "json_key": "service_uuid"
-                },
-                {
-                    "name": "Endpoint",
-                    "localization_key": "s3/endpoint",
-                    "display_type": "string",
-                    "json_key": "endpoint"
-                },
-                {
-                    "name": "Region",
-                    "localization_key": "s3/region",
-                    "display_type": "region",
-                    "json_key": "region"
-                },
-                {
-                    "name": "Size",
-                    "localization_key": "s3/size",
-                    "display_type": "byte_sized",
-                    "json_key": "active_storage"
-                }
-            ],
-            "resources": {}
-        }
-    },
     "service": {
         "kaas": {
             "metadata": {
-                "category": "paas"
+                "category": "paas",
+                "page_name_localization": "literal:Managed Kubernetes",
+                "page_name": "managedkubernetes",
+                "page_icon": "fa-kubernetes"
             },
             "main_form_data": {
                 "name": {
@@ -180,6 +127,29 @@
                 "region": {
                     "type": "region",
                     "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
                 }
             },
             "table_layout": [
@@ -217,7 +187,12 @@
             "resources": {}
         },
         "kops": {
-            "metadata": {},
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Kubernetes",
+                "page_name": "kubernetes",
+                "page_icon": "fa-brands fa-kubernetes"
+            },
             "main_form_data": {
                 "ip_address": {
                     "type": "target",
@@ -282,6 +257,99 @@
                 }
             },
             "table_layout": [],
+            "resources": {}
+        },
+        "objectstorage": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Object Storage",
+                "page_name": "objectstorage",
+                "page_icon": "fa-solid fa-bucket"
+            },
+            "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "Bucket name",
+                    "default": "my-bucket",
+                    "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "purchasedTB": {
+                    "type": "number",
+                    "user_label": "PurchasedTB"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "s3/bucket_name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "s3/uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Endpoint",
+                    "localization_key": "s3/endpoint",
+                    "display_type": "string",
+                    "json_key": "endpoint"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "s3/region",
+                    "display_type": "region",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Size",
+                    "localization_key": "s3/size",
+                    "display_type": "byte_sized",
+                    "json_key": "active_storage"
+                }
+            ],
+            "resources": {}
+        },
+        "dbaas": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Database",
+                "page_name": "dbaas",
+                "page_icon": "fa-solid fa-database"
+            },
+            "main_form_data": {
+            },
+            "table_layout": [
+            ],
             "resources": {}
         }
     }
