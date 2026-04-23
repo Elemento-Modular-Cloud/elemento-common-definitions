@@ -347,8 +347,109 @@
                 "page_icon": "fa-solid fa-database"
             },
             "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "Database name",
+                    "default": "my-database"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "engine": {
+                    "type": "select",
+                    "user_label": "Database engine",
+                    "default": "postgres",
+                    "options": [
+                        {
+                            "user_label": "Redis",
+                            "value": "redis"
+                        },
+                        {
+                            "user_label": "Mysql",
+                            "value": "mysql"
+                        },
+                        {
+                            "user_label": "Sql Server",
+                            "value": "sqlserver"
+                        },
+                        {
+                            "user_label": "Postgres",
+                            "value": "postgres"
+                        }
+                    ]
+                },
+                "backup_time": {
+                    "type": "time",
+                    "user_label": "Backup time",
+                    "format": "HH:mm:ss"
+                },
+                "disk_size": {
+                    "type": "number",
+                    "user_label": "Database disk size (GB)",
+                    "default": 50,
+                    "min": 1
+                },
+                "password": {
+                    "type": "password",
+                    "user_label": "password"
+                },
+                "nodes_number": {
+                    "type": "number",
+                    "user_label": "nodes number",
+                    "default": 1,
+                    "min": 1
+                }
             },
             "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "region",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Engine",
+                    "localization_key": "engine",
+                    "display_type": "text",
+                    "json_key": "engine"
+                },
+                {
+                    "name": "Backup time",
+                    "localization_key": "backup_time",
+                    "display_type": "timestamp",
+                    "json_key": "backup_time"
+                },
+                {
+                    "name": "Disk size",
+                    "localization_key": "disk_size",
+                    "display_type": "byte_sized",
+                    "json_key": "disk_size"
+                },
+                {
+                    "name": "Password",
+                    "localization_key": "password",
+                    "display_type": "text",
+                    "json_key": "password"
+                },
+                {
+                    "name": "Nodes number",
+                    "localization_key": "nodes_number",
+                    "display_type": "text",
+                    "json_key": "nodes_number"
+                }
             ],
             "resources": {}
         }
