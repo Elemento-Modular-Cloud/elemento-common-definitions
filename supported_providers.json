@@ -279,6 +279,14 @@
                     "support_level": "dev"
                 },
                 {
+                    "name": "dbaas",
+                    "display_name": "Database as a service",
+                    "type": "service",
+                    "sub_type": "dbaas",
+                    "regions": {},
+                    "support_level": "full"
+                },
+                {
                     "name": "costApi",
                     "display_name": "Cost API",
                     "type": "compute",
@@ -1572,6 +1580,14 @@
                         }
                     },
                     "support_level": "dev"
+                },
+                {
+                    "name": "dbaas",
+                    "display_name": "Database as a service",
+                    "type": "service",
+                    "sub_type": "dbaas",
+                    "regions": {},
+                    "support_level": "full"
                 },
                 {
                     "name": "costApi",
