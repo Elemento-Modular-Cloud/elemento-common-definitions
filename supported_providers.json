@@ -12,7 +12,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
                         "africa_south1": {
@@ -249,7 +249,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -274,14 +274,22 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
+                    "regions": {},
+                    "support_level": "dev"
+                },
+                {
+                    "name": "dbaas",
+                    "display_name": "Database as a service",
+                    "type": "service",
+                    "sub_type": "dbaas",
                     "regions": {},
                     "support_level": "full"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "full"
@@ -300,7 +308,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
                         "bhs1": {
@@ -441,156 +449,203 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
-                        "bhs1": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
+                        "westeurope": {
+                            "country": "Netherlands",
+                            "location": "Netherlands",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "bhs2": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "Ireland",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "bhs3": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs5": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "de1": {
+                        "germanywestcentral": {
                             "country": "Germany",
                             "location": "Frankfurt",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "sbg1": {
+                        "francecentral": {
                             "country": "France",
-                            "location": "Strasbourg",
+                            "location": "Paris",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "sbg3": {
-                            "country": "France",
-                            "location": "Strasbourg",
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "Milan",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "sbg5": {
-                            "country": "France",
-                            "location": "Strasbourg",
+                        "switzerlandnorth": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "sbg7": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra1": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra3": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra5": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra7": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra9": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra11": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "rbx": {
-                            "country": "France",
-                            "location": "Roubaix",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "uk1": {
-                            "country": "England",
-                            "location": "Erith",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "waw1": {
+                        "polandcentral": {
                             "country": "Poland",
                             "location": "Warsaw",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "sgp1": {
-                            "country": "Singapore",
+                        "uksouth": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ukwest": {
+                            "country": "United Kingdom",
+                            "location": "Cardiff",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus": {
+                            "country": "United States",
+                            "location": "Virginia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus2": {
+                            "country": "United States",
+                            "location": "Virginia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus": {
+                            "country": "United States",
+                            "location": "California",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus2": {
+                            "country": "United States",
+                            "location": "Washington",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus3": {
+                            "country": "United States",
+                            "location": "Phoenix",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southcentralus": {
+                            "country": "United States",
+                            "location": "Texas",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "canadacentral": {
+                            "country": "Canada",
+                            "location": "Toronto",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "canadaeast": {
+                            "country": "Canada",
+                            "location": "Quebec",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "brazilsouth": {
+                            "country": "Brazil",
+                            "location": "Sao Paulo State",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Asia Pacific",
+                            "location": "Hong Kong SAR",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southeastasia": {
+                            "country": "Asia Pacific",
                             "location": "Singapore",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "syd1": {
+                        "japaneast": {
+                            "country": "Japan",
+                            "location": "Tokyo, Saitama",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "japanwest": {
+                            "country": "Japan",
+                            "location": "Osaka",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australiaeast": {
                             "country": "Australia",
-                            "location": "Sydney",
+                            "location": "New South Wales",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "vin1": {
-                            "country": "USA",
-                            "location": "Washington DC",
+                        "australiasoutheast": {
+                            "country": "Australia",
+                            "location": "Victoria",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "hil1": {
-                            "country": "USA",
-                            "location": "Seattle",
+                        "centralindia": {
+                            "country": "India",
+                            "location": "Pune",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southindia": {
+                            "country": "India",
+                            "location": "Chennai",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "koreacentral": {
+                            "country": "Korea",
+                            "location": "Seoul",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uaenorth": {
+                            "country": "UAE",
+                            "location": "Dubai",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "qatarcentral": {
+                            "country": "Qatar",
+                            "location": "Doha",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southafricanorth": {
+                            "country": "South Africa",
+                            "location": "Johannesburg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "israelcentral": {
+                            "country": "Israel",
+                            "location": "Israel",
                             "plus_code": "",
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket"
-                            },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "blockStorage",
@@ -612,14 +667,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "planned"
@@ -638,7 +693,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
                         "us_east_1": {
@@ -833,7 +888,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -858,14 +913,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "planned"
@@ -884,7 +939,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {},
                     "support_level": "full"
@@ -892,7 +947,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -917,14 +972,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "full"
@@ -943,7 +998,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
                         "bhs1": {
@@ -1084,7 +1139,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -1109,14 +1164,57 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
-                    "regions": {},
-                    "support_level": "planned"
+                    "sub_type": "kaas",
+                    "regions": {
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fr-gra11": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fr-gra9": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fr-gra7": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fr-rbx": {
+                            "country": "France",
+                            "location": "Roubaix",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fr-sbg": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "support_level": "dev"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "full"
@@ -1135,7 +1233,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {},
                     "support_level": "full"
@@ -1143,7 +1241,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -1168,14 +1266,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "full"
@@ -1194,7 +1292,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {},
                     "support_level": "full"
@@ -1202,7 +1300,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "full"
@@ -1227,14 +1325,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "full"
@@ -1253,7 +1351,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
                         "au_syd1": {
@@ -1333,10 +1431,41 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
-                    "regions": {},
-                    "support_level": "planned"
+                    "regions": {
+                        "APAC-1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "EUROPE-1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "EUROPE-2": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "EUROPE-3": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "US-1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "support_level": "full"
                 },
                 {
                     "name": "blockStorage",
@@ -1358,14 +1487,112 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": ""
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "support_level": "dev"
+                },
+                {
+                    "name": "dbaas",
+                    "display_name": "Database as a service",
+                    "type": "service",
+                    "sub_type": "dbaas",
                     "regions": {},
-                    "support_level": "planned"
+                    "support_level": "full"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "full"
@@ -1384,7 +1611,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
                         "us-east-1": {
@@ -1484,26 +1711,12 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
-                    "support_level": "partial"
+                    "support_level": "full"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "partial"
@@ -1522,7 +1735,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {},
                     "support_level": "partial"
@@ -1530,7 +1743,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -1555,14 +1768,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "planned"
@@ -1581,7 +1794,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {},
                     "support_level": "partial"
@@ -1589,7 +1802,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -1614,14 +1827,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "planned"
@@ -1640,7 +1853,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {},
                     "support_level": "planned"
@@ -1648,7 +1861,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -1673,14 +1886,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "planned"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "planned"
@@ -1699,7 +1912,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
                         "ap-sydney-1": {
@@ -1956,7 +2169,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {},
                     "support_level": "planned"
@@ -1964,7 +2177,7 @@
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "planned"
@@ -1984,14 +2197,14 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "kaas_on_multicloud_vms",
+                    "sub_type": "kaas",
                     "regions": {},
                     "support_level": "full"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "planned"
@@ -2013,24 +2226,6 @@
                     "type": "service",
                     "sub_type": "kops",
                     "regions": {},
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "ip_address": { "type": "target", "user_label": "Target", "target_type": "manual" },
-                            "name": { "type": "name", "user_label": "Cluster Name", "default": "my-cluster", "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*" },
-                            "s3_endpoint": { "type": "string", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3" },
-                            "s3_state_bucket": { "type": "string", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://" },
-                            "s3_access_key_id": { "type": "string", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$" },
-                            "s3_secret_access_key": { "type": "password", "user_label": "S3 Secret Access Key", "regex": "^[A-Za-z0-9/+=]{40}$" },
-                            "node_count": { "type": "number", "user_label": "Node Count", "default": 3, "min": 3, "max": 10 },
-                            "node_volume_size": { "type": "number", "user_label": "Node Volume Size (GB)", "default": 64 },
-                            "control_plane_volume_size": { "type": "number", "user_label": "Control Plane Volume Size (GB)", "default": 64, "min": 32 },
-                            "network_cidr": { "type": "ip-cidr", "user_label": "Network CIDR", "default": "192.168.100.0/24" },
-                            "ssh_public_key": { "type": "textarea", "user_label": "SSH Public Key", "default": "ssh-rsa AAAAB3NzaC1yc2EA..." }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
                     "support_level": "full"
                 }
             ]
@@ -2047,7 +2242,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
                         "us-east-1": {
@@ -2087,26 +2282,12 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
                     "name": "costApi",
                     "display_name": "Cost API",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "billing",
                     "regions": {},
                     "support_level": "partial"
