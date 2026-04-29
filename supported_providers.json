@@ -1745,7 +1745,32 @@
                     "display_name": "Object Storage",
                     "type": "service",
                     "sub_type": "objectstorage",
-                    "regions": {},
+                    "regions": {
+                        "it-mil": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certification": []
+                        },
+                        "fr-par": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certification": []
+                        },
+                        "nl-ams": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certification": []
+                        },
+                        "pl-waw": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certification": []
+                        },
+                    },
                     "support_level": "planned"
                 },
                 {
