@@ -28,24 +28,21 @@
                         },
                         "max_nodes": {
                             "user_label": "Max nodes",
-                            "type": "slider",
+                            "type": "number",
                             "min": 1,
-                            "max": 100,
-                            "step": 1
+                            "max": 100
                         },
                         "min_nodes": {
                             "user_label": "Min nodes",
-                            "type": "slider",
+                            "type": "number",
                             "min": 1,
-                            "max": 100,
-                            "step": 1
+                            "max": 100
                         },
                         "shared_storage_gb": {
                             "user_label": "Shared storage (GB)",
-                            "type": "slider",
+                            "type": "number",
                             "min": 0,
-                            "max": 2048,
-                            "step": 16
+                            "max": 2048
                         },
                         "specs": {
                             "user_label": "Node specs",
@@ -53,24 +50,21 @@
                             "item_definition": {
                                 "cpu_cores": {
                                     "user_label": "CPU (vCPU)",
-                                    "type": "slider",
+                                    "type": "number",
                                     "min": 1,
-                                    "max": 96,
-                                    "step": 1
+                                    "max": 96
                                 },
                                 "ram_gb": {
                                     "user_label": "Memory (GB)",
-                                    "type": "slider",
+                                    "type": "number",
                                     "min": 1,
-                                    "max": 128,
-                                    "step": 1
+                                    "max": 128
                                 },
                                 "storage_gb": {
                                     "user_label": "Storage (GB)",
-                                    "type": "slider",
+                                    "type": "number",
                                     "min": 1,
-                                    "max": 2048,
-                                    "step": 16
+                                    "max": 2048
                                 },
                                 "gpu": {
                                     "user_label": "GPU (count)",
@@ -449,6 +443,154 @@
                     "localization_key": "nodes_number",
                     "display_type": "text",
                     "json_key": "nodes_number"
+                }
+            ],
+            "resources": {}
+        },
+        "n8n": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:n8n workflow Automation",
+                "page_name": "n8n",
+                "page_icon": "fa-solid fa-robot"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "min": 2,
+                    "max": 128
+                },
+                "authentication": {
+                    "type": "subtable",
+                    "user_label": "Authentication",
+                    "item_definition": {
+                        "username": {
+                            "user_label": "Username",
+                            "type": "string",
+                            "default": "admin"
+                        },
+                        "password": {
+                            "user_label": "Password",
+                            "type": "password",
+                            "default": "password"
+                        },
+                        "ssh-key": {
+                            "user_label": "SSH Key",
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "region",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "openclaw": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:OpenCLAW",
+                "page_name": "openclaw",
+                "page_icon": "fa-solid fa-crab"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "min": 2,
+                    "max": 128
+                },
+                "authentication": {
+                    "type": "subtable",
+                    "user_label": "Authentication",
+                    "item_definition": {
+                        "username": {
+                            "user_label": "Username",
+                            "type": "string",
+                            "default": "admin"
+                        },
+                        "password": {
+                            "user_label": "Password",
+                            "type": "password",
+                            "default": "password"
+                        },
+                        "ssh-key": {
+                            "user_label": "SSH Key",
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "region",
+                    "json_key": "region"
                 }
             ],
             "resources": {}
