@@ -49,7 +49,7 @@
                         },
                         "specs": {
                             "user_label": "Node specs",
-                            "type": "subtable",
+                            "type": "datalist",
                             "item_definition": {
                                 "cpu_cores": {
                                     "user_label": "CPU (vCPU)",
@@ -85,7 +85,7 @@
                 },
                 "nodes_subnet": {
                     "user_label": "Nodes subnet",
-                    "type": "subtable",
+                    "type": "datalist",
                     "item_definition": {
                         "dhcp": {
                             "user_label": "DHCP",
