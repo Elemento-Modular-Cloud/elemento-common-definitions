@@ -473,7 +473,7 @@
                     "max": 128
                 },
                 "authentication": {
-                    "type": "subtable",
+                    "type": "datalist",
                     "user_label": "Authentication",
                     "item_definition": {
                         "username": {
@@ -547,7 +547,7 @@
                     "max": 128
                 },
                 "authentication": {
-                    "type": "subtable",
+                    "type": "datalist",
                     "user_label": "Authentication",
                     "item_definition": {
                         "username": {
