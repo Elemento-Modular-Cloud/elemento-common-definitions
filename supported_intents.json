@@ -5,7 +5,7 @@
                 "category": "paas",
                 "page_name_localization": "literal:Managed Kubernetes",
                 "page_name": "managedkubernetes",
-                "page_icon": "fa-kubernetes"
+                "page_icon": "fa-brands fa-kubernetes"
             },
             "main_form_data": {
                 "name": {
