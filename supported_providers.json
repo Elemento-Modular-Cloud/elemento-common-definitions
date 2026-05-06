@@ -1434,31 +1434,31 @@
                     "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
-                        "APAC-1": {
+                        "apac-1": {
                             "country": "Singapore",
                             "location": "Singapore",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "EUROPE-1": {
+                        "europe-1": {
                             "country": "Finland",
                             "location": "Helsinki",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "EUROPE-2": {
+                        "europe-2": {
                             "country": "Germany",
                             "location": "Frankfurt",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "EUROPE-3": {
+                        "europe-3": {
                             "country": "Sweden",
                             "location": "Stockholm",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "US-1": {
+                        "us-1": {
                             "country": "USA",
                             "location": "Chicago",
                             "plus_code": "",
