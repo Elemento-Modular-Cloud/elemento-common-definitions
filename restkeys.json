@@ -8,6 +8,9 @@
     "AUTH_CLIENT_API_URL_KEY" : "/api/v1/authenticate",
     "TARGET_CLIENT_API_URL_KEY": "/api/v1.0/client/target",
 
+    "RESOURCE_REVISIONS_API_KEY": "/revisions",
+    "RESOURCE_REVISIONS_SSE_API_KEY": "/revisions/stream",
+
     "AUTH_LOGIN" : "/login",
     "AUTH_LOGOUT" : "/logout",
 
