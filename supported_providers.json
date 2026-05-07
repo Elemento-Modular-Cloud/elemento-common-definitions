@@ -1354,72 +1354,90 @@
                     "type": "compute",
                     "sub_type": "vm",
                     "regions": {
-                        "au_syd1": {
+                        "au-syd1": {
                             "country": "Australia",
                             "location": "Sydney",
                             "plus_code": ""
                         },
-                        "de_fra1": {
+                        "de-fra1": {
                             "country": "Germany",
                             "location": "Frankfurt",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "fi_hel1": {
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
                             "country": "Finland",
                             "location": "Helsinki",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "fi_hel2": {
+                        "fi-hel2": {
                             "country": "Finland",
                             "location": "Helsinki",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "es_mad1": {
+                        "es-mad1": {
                             "country": "Spain",
                             "location": "Madrid",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "nl_ams1": {
+                        "nl-ams1": {
                             "country": "Netherlands",
                             "location": "Amsterdam",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "pl_waw1": {
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
                             "country": "Poland",
                             "location": "Warsaw",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "sg_sin1": {
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
                             "country": "Singapore",
                             "location": "Singapore",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "uk_lon1": {
+                        "uk-lon1": {
                             "country": "United Kingdom",
                             "location": "London",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_chi1": {
+                        "us-chi1": {
                             "country": "USA",
                             "location": "Chicago",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_nyc1": {
+                        "us-nyc1": {
                             "country": "USA",
                             "location": "New York",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us_sjo1": {
+                        "us-sjo1": {
                             "country": "USA",
                             "location": "San Jose",
                             "plus_code": "",
@@ -1434,33 +1452,92 @@
                     "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
-                        "apac-1": {
-                            "country": "Singapore",
-                            "location": "Singapore",
-                            "plus_code": "",
-                            "certifications": []
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": ""
                         },
-                        "europe-1": {
-                            "country": "Finland",
-                            "location": "Helsinki",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "europe-2": {
+                        "de-fra1": {
                             "country": "Germany",
                             "location": "Frankfurt",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe-3": {
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
                             "country": "Sweden",
                             "location": "Stockholm",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us-1": {
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
                             "country": "USA",
                             "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
                             "plus_code": "",
                             "certifications": []
                         }
@@ -1472,15 +1549,195 @@
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
-                    "regions": {},
-                    "support_level": "full"
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": ""
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
+                    "support_level": "dev"
                 },
                 {
                     "name": "networking",
                     "display_name": "Networking",
                     "type": "network",
                     "sub_type": "network",
-                    "regions": {},
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": ""
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
                     "support_level": "full"
                 },
                 {
