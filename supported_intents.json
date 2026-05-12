@@ -44,54 +44,42 @@
                             "min": 0,
                             "max": 2048
                         },
-                        "specs": {
-                            "user_label": "Node specs",
-                            "type": "datalist",
-                            "item_definition": {
-                                "cpu_cores": {
-                                    "user_label": "CPU (vCPU)",
-                                    "type": "number",
-                                    "min": 1,
-                                    "max": 96
-                                },
-                                "ram_gb": {
-                                    "user_label": "Memory (GB)",
-                                    "type": "number",
-                                    "min": 1,
-                                    "max": 128
-                                },
-                                "storage_gb": {
-                                    "user_label": "Storage (GB)",
-                                    "type": "number",
-                                    "min": 1,
-                                    "max": 2048
-                                },
-                                "gpu": {
-                                    "user_label": "GPU (count)",
-                                    "type": "slider",
-                                    "min": 0,
-                                    "max": 8,
-                                    "step": 1
-                                }
-                            }
+                        "specs/cpu_cores": {
+                            "user_label": "CPU (vCPU)",
+                            "type": "number",
+                            "min": 1,
+                            "max": 96
+                        },
+                        "specs/ram_gb": {
+                            "user_label": "Memory (GB)",
+                            "type": "number",
+                            "min": 1,
+                            "max": 128
+                        },
+                        "specs/storage_gb": {
+                            "user_label": "Storage (GB)",
+                            "type": "number",
+                            "min": 1,
+                            "max": 2048
+                        },
+                        "specs/gpu": {
+                            "user_label": "GPU (count)",
+                            "type": "slider",
+                            "min": 0,
+                            "max": 8,
+                            "step": 1
                         }
                     }
                 },
-                "nodes_subnet": {
-                    "user_label": "Nodes subnet",
-                    "type": "datalist",
-                    "item_definition": {
-                        "dhcp": {
-                            "user_label": "DHCP",
-                            "type": "boolean",
-                            "default": true
-                        },
-                        "ip_range": {
-                            "user_label": "IP range",
-                            "type": "ip-cidr",
-                            "default": "192.170.5.0/24"
-                        }
-                    }
+                "nodes_subnet/dhcp": {
+                    "user_label": "DHCP",
+                    "type": "boolean",
+                    "default": true
+                },
+                "nodes_subnet/ip_range": {
+                    "user_label": "IP range",
+                    "type": "ip-cidr",
+                    "default": "192.170.5.0/24"
                 },
                 "update_policy": {
                     "type": "select",
