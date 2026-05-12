@@ -261,6 +261,14 @@
                     "sub_type": "container",
                     "regions": {},
                     "support_level": "full"
+                },
+                {
+                    "name": "dbaas",
+                    "display_name": "Database as a Service",
+                    "type": "service",
+                    "sub_type": "dbaas",
+                    "regions": {},
+                    "support_level": "full"
                 }
             ]
         },
@@ -876,6 +884,14 @@
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "container",
+                    "regions": {},
+                    "support_level": "full"
+                },
+                {
+                    "name": "dbaas",
+                    "display_name": "Database as a Service",
+                    "type": "service",
+                    "sub_type": "dbaas",
                     "regions": {},
                     "support_level": "full"
                 }
