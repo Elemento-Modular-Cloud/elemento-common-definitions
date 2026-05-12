@@ -88,14 +88,14 @@
                             "certifications": []
                         },
                         "europe_north1": {
-                            "country": "Finlad",
+                            "country": "Finland",
                             "location": "Hamina",
                             "plus_code": "",
                             "certifications": []
                         },
                         "europe_southwest1": {
-                            "country": "Madrid",
-                            "location": "Spain",
+                            "country": "Spain",
+                            "location": "Madrid",
                             "plus_code": "",
                             "certifications": []
                         },
@@ -148,8 +148,8 @@
                             "certifications": []
                         },
                         "europe_west9": {
-                            "country": "Paris",
-                            "location": "France",
+                            "country": "France",
+                            "location": "Paris",
                             "plus_code": "",
                             "certifications": []
                         },
@@ -245,14 +245,6 @@
                         }
                     },
                     "support_level": "full"
-                },
-                {
-                    "name": "objectStorage",
-                    "display_name": "Object Storage",
-                    "type": "storage",
-                    "sub_type": "objectstorage",
-                    "regions": {},
-                    "support_level": "planned"
                 },
                 {
                     "name": "blockStorage",
@@ -585,7 +577,10 @@
                                 "user_label": "Bucket name",
                                 "default": "my-bucket"
                             },
-                            "region": { "type": "region", "user_label": "Region" }
+                            "region": {
+                                "type": "region",
+                                "user_label": "Region"
+                            }
                         },
                         "table_layout": {},
                         "resources": {}
@@ -1259,7 +1254,8 @@
                         "au_syd1": {
                             "country": "Australia",
                             "location": "Sydney",
-                            "plus_code": ""
+                            "plus_code": "",
+                            "certifications": []
                         },
                         "de_fra1": {
                             "country": "Germany",
@@ -1493,7 +1489,10 @@
                                 "default": "my-bucket",
                                 "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
                             },
-                            "region": { "type": "region", "user_label": "Region" }
+                            "region": {
+                                "type": "region",
+                                "user_label": "Region"
+                            }
                         },
                         "table_layout": {},
                         "resources": {}
@@ -1542,22 +1541,6 @@
                     "sub_type": "blockstorage",
                     "regions": {},
                     "support_level": "full"
-                },
-                {
-                    "name": "networking",
-                    "display_name": "Networking",
-                    "type": "network",
-                    "sub_type": "network",
-                    "regions": {},
-                    "support_level": "planned"
-                },
-                {
-                    "name": "k8s",
-                    "display_name": "Kubernetes",
-                    "type": "service",
-                    "sub_type": "container",
-                    "regions": {},
-                    "support_level": "planned"
                 },
                 {
                     "name": "costApi",
@@ -1787,7 +1770,7 @@
                             "certifications": []
                         },
                         "il-jerusalem-1": {
-                            "country": "Israeò",
+                            "country": "Israe\u00f2",
                             "location": "Jerusalem",
                             "plus_code": "",
                             "certifications": []
@@ -2016,17 +1999,67 @@
                     "electros_meta": {
                         "metadata": {},
                         "main_form_data": {
-                            "ip_address": { "type": "target", "user_label": "Target", "target_type": "manual" },
-                            "name": { "type": "name", "user_label": "Cluster Name", "default": "my-cluster", "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*" },
-                            "s3_endpoint": { "type": "string", "user_label": "S3 Endpoint", "default": "https://s3.example.com", "regex": "^https://s3" },
-                            "s3_state_bucket": { "type": "string", "user_label": "S3 Bucket", "default": "s3://my-cluster-state-bucket", "regex": "^s3://" },
-                            "s3_access_key_id": { "type": "string", "user_label": "S3 Access Key Id", "regex": "^[A-Z0-9]{20}$" },
-                            "s3_secret_access_key": { "type": "password", "user_label": "S3 Secret Access Key", "regex": "^[A-Za-z0-9/+=]{40}$" },
-                            "node_count": { "type": "number", "user_label": "Node Count", "default": 3, "min": 3, "max": 10 },
-                            "node_volume_size": { "type": "number", "user_label": "Node Volume Size (GB)", "default": 64 },
-                            "control_plane_volume_size": { "type": "number", "user_label": "Control Plane Volume Size (GB)", "default": 64, "min": 32 },
-                            "network_cidr": { "type": "ip-cidr", "user_label": "Network CIDR", "default": "192.168.100.0/24" },
-                            "ssh_public_key": { "type": "textarea", "user_label": "SSH Public Key", "default": "ssh-rsa AAAAB3NzaC1yc2EA..." }
+                            "ip_address": {
+                                "type": "target",
+                                "user_label": "Target",
+                                "target_type": "manual"
+                            },
+                            "name": {
+                                "type": "name",
+                                "user_label": "Cluster Name",
+                                "default": "my-cluster",
+                                "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*"
+                            },
+                            "s3_endpoint": {
+                                "type": "string",
+                                "user_label": "S3 Endpoint",
+                                "default": "https://s3.example.com",
+                                "regex": "^https://s3"
+                            },
+                            "s3_state_bucket": {
+                                "type": "string",
+                                "user_label": "S3 Bucket",
+                                "default": "s3://my-cluster-state-bucket",
+                                "regex": "^s3://"
+                            },
+                            "s3_access_key_id": {
+                                "type": "string",
+                                "user_label": "S3 Access Key Id",
+                                "regex": "^[A-Z0-9]{20}$"
+                            },
+                            "s3_secret_access_key": {
+                                "type": "password",
+                                "user_label": "S3 Secret Access Key",
+                                "regex": "^[A-Za-z0-9/+=]{40}$"
+                            },
+                            "node_count": {
+                                "type": "number",
+                                "user_label": "Node Count",
+                                "default": 3,
+                                "min": 3,
+                                "max": 10
+                            },
+                            "node_volume_size": {
+                                "type": "number",
+                                "user_label": "Node Volume Size (GB)",
+                                "default": 64
+                            },
+                            "control_plane_volume_size": {
+                                "type": "number",
+                                "user_label": "Control Plane Volume Size (GB)",
+                                "default": 64,
+                                "min": 32
+                            },
+                            "network_cidr": {
+                                "type": "ip-cidr",
+                                "user_label": "Network CIDR",
+                                "default": "192.168.100.0/24"
+                            },
+                            "ssh_public_key": {
+                                "type": "textarea",
+                                "user_label": "SSH Public Key",
+                                "default": "ssh-rsa AAAAB3NzaC1yc2EA..."
+                            }
                         },
                         "table_layout": {},
                         "resources": {}
@@ -2076,7 +2109,7 @@
                         },
                         "eu-east-1": {
                             "country": "Poland",
-                            "location": "Poznań",
+                            "location": "Pozna\u0144",
                             "plus_code": "",
                             "certifications": []
                         },
@@ -2096,7 +2129,10 @@
                                 "default": "my-bucket",
                                 "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
                             },
-                            "region": { "type": "region", "user_label": "Region" }
+                            "region": {
+                                "type": "region",
+                                "user_label": "Region"
+                            }
                         },
                         "table_layout": {},
                         "resources": {}
