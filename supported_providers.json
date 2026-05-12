@@ -12,7 +12,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
                         "africa_south1": {
@@ -258,7 +258,15 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
+                    "regions": {},
+                    "support_level": "dev"
+                },
+                {
+                    "name": "dbaas",
+                    "display_name": "Database as a service",
+                    "type": "service",
+                    "sub_type": "dbaas",
                     "regions": {},
                     "support_level": "full"
                 },
@@ -284,279 +292,270 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "regions": {
-                        "bhs1": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
+                        "eastus": {
+                            "country": "United States",
+                            "location": "East",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "bhs2": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
+                        "westus2": {
+                            "country": "United States",
+                            "location": "West 2",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "bhs3": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs5": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "de1": {
-                            "country": "Germany",
-                            "location": "Frankfurt",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg1": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg3": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg5": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg7": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra1": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra3": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra5": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra7": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra9": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra11": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "rbx": {
-                            "country": "France",
-                            "location": "Roubaix",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "uk1": {
-                            "country": "England",
-                            "location": "Erith",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "waw1": {
-                            "country": "Poland",
-                            "location": "Warsaw",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sgp1": {
-                            "country": "Singapore",
-                            "location": "Singapore",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "syd1": {
+                        "australiaeast": {
                             "country": "Australia",
-                            "location": "Sydney",
+                            "location": "East",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "vin1": {
-                            "country": "USA",
-                            "location": "Washington DC",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "hil1": {
-                            "country": "USA",
-                            "location": "Seattle",
-                            "plus_code": "",
-                            "certifications": []
-                        }
-                    },
-                    "support_level": "full"
-                },
-                {
-                    "name": "objectStorage",
-                    "display_name": "Object Storage",
-                    "type": "storage",
-                    "sub_type": "objectstorage",
-                    "regions": {
-                        "bhs1": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs2": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs3": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs5": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "de1": {
-                            "country": "Germany",
-                            "location": "Frankfurt",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg1": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg3": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg5": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg7": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra1": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra3": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra5": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra7": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra9": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra11": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "rbx": {
-                            "country": "France",
-                            "location": "Roubaix",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "uk1": {
-                            "country": "England",
-                            "location": "Erith",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "waw1": {
-                            "country": "Poland",
-                            "location": "Warsaw",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sgp1": {
+                        "southeastasia": {
                             "country": "Singapore",
-                            "location": "Singapore",
+                            "location": "Southeast Asia",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "syd1": {
-                            "country": "Australia",
-                            "location": "Sydney",
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "vin1": {
-                            "country": "USA",
-                            "location": "Washington DC",
+                        "swedencentral": {
+                            "country": "Sweden",
+                            "location": "Central",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "hil1": {
-                            "country": "USA",
-                            "location": "Seattle",
+                        "westeurope": {
+                            "country": "Netherlands",
+                            "location": "West Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uksouth": {
+                            "country": "United Kingdom",
+                            "location": "South",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southafricanorth": {
+                            "country": "South Africa",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centralindia": {
+                            "country": "India",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "indonesiacentral": {
+                            "country": "Indonesia",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "japaneast": {
+                            "country": "Japan",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "japanwest": {
+                            "country": "Japan",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "koreacentral": {
+                            "country": "Korea",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "malaysiawest": {
+                            "country": "Malaysia",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "newzealandnorth": {
+                            "country": "New Zealand",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "canadacentral": {
+                            "country": "Canada",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "austriaeast": {
+                            "country": "Austria",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "belgiumcentral": {
+                            "country": "Belgium",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "denmarkeast": {
+                            "country": "Denmark",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "francecentral": {
+                            "country": "France",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "germanywestcentral": {
+                            "country": "Germany",
+                            "location": "West Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "norwayeast": {
+                            "country": "Norway",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "polandcentral": {
+                            "country": "Poland",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "spaincentral": {
+                            "country": "Spain",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "switzerlandnorth": {
+                            "country": "Switzerland",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "mexicocentral": {
+                            "country": "Mexico",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uaenorth": {
+                            "country": "United Arab Emirates",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "brazilsouth": {
+                            "country": "Brazil",
+                            "location": "South",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "chilecentral": {
+                            "country": "Chile",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus2euap": {
+                            "country": "United States",
+                            "location": "East US 2 (EUAP)",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "israelcentral": {
+                            "country": "Israel",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "qatarcentral": {
+                            "country": "Qatar",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus2": {
+                            "country": "United States",
+                            "location": "East 2",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastusstg": {
+                            "country": "United States",
+                            "location": "East STG",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southcentralus": {
+                            "country": "United States",
+                            "location": "South Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus3": {
+                            "country": "United States",
+                            "location": "West 3",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northcentralus": {
+                            "country": "United States",
+                            "location": "North Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus": {
+                            "country": "United States",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "jioindiawest": {
+                            "country": "India",
+                            "location": "Jio West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centraluseuap": {
+                            "country": "United States",
+                            "location": "Central (EUAP)",
                             "plus_code": "",
                             "certifications": []
                         }
@@ -1045,13 +1044,13 @@
                     "type": "storage",
                     "sub_type": "objectstorage",
                     "regions": {},
-                    "support_level": "planned"
+                    "support_level": "full"
                 }
             ]
         },
         "impossiblecloud": {
             "display_name": "Impossible Cloud",
-            "icon_classes": "impossiblecloud_icon",
+            "icon_classes": "fa-solid fa-cloud",
             "source": "fontawesome",
             "hex_color": "#00c65e",
             "svg_filename": "impossiblecloud_icon.svg",
@@ -1061,7 +1060,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "storage",
+                    "type": "service",
                     "sub_type": "objectstorage",
                     "regions": {
                         "us-east-1": {
