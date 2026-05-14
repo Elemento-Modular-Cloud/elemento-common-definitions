@@ -261,7 +261,10 @@
                 },
                 "purchasedTB": {
                     "type": "number",
-                    "user_label": "PurchasedTB"
+                    "user_label": "PurchasedTB",
+                    "default": 1,
+                    "min": 1,
+                    "max": 20
                 },
                 "billing_frequency": {
                     "type": "select",

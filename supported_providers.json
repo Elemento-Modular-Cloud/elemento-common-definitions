@@ -789,22 +789,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket"
-                            },
-                            "region": {
-                                "type": "region",
-                                "user_label": "Region"
-                            }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -1479,19 +1463,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket"
-                            },
-                            "region": { "type": "region", "user_label": "Region" }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
                     "support_level": "full"
                 },
                 {
@@ -1889,23 +1860,6 @@
                             "certifications": []
                         }
                     },
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": {
-                                "type": "region",
-                                "user_label": "Region"
-                            }
-                        },
-                        "table_layout": {},
-                        "resources": {}
-                    },
                     "support_level": "full"
                 }
             ]
@@ -2005,23 +1959,6 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "electros_meta": {
-                        "metadata": {},
-                        "main_form_data": {
-                            "name": {
-                                "type": "name",
-                                "user_label": "Bucket name",
-                                "default": "my-bucket",
-                                "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
-                            },
-                            "region": {
-                                "type": "region",
-                                "user_label": "Region"
-                            }
-                        },
-                        "table_layout": {},
-                        "resources": {}
                     },
                     "support_level": "full"
                 }
