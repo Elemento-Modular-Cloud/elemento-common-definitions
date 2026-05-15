@@ -375,25 +375,19 @@
                     "min": 2,
                     "max": 128
                 },
-                "authentication": {
-                    "type": "datalist",
-                    "user_label": "Authentication",
-                    "item_definition": {
-                        "username": {
-                            "user_label": "Username",
-                            "type": "string",
-                            "default": "admin"
-                        },
-                        "password": {
-                            "user_label": "Password",
-                            "type": "password",
-                            "default": "password"
-                        },
-                        "ssh-key": {
-                            "user_label": "SSH Key",
-                            "type": "textarea"
-                        }
-                    }
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
                 },
                 "region": {
                     "type": "region",
@@ -454,25 +448,19 @@
                     "min": 2,
                     "max": 128
                 },
-                "authentication": {
-                    "type": "datalist",
-                    "user_label": "Authentication",
-                    "item_definition": {
-                        "username": {
-                            "user_label": "Username",
-                            "type": "string",
-                            "default": "admin"
-                        },
-                        "password": {
-                            "user_label": "Password",
-                            "type": "password",
-                            "default": "password"
-                        },
-                        "ssh-key": {
-                            "user_label": "SSH Key",
-                            "type": "textarea"
-                        }
-                    }
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
                 },
                 "region": {
                     "type": "region",
