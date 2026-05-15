@@ -294,7 +294,8 @@
                 },
                 "password": {
                     "type": "password",
-                    "user_label": "password"
+                    "user_label": "password",
+                    "default": "password123!"
                 },
                 "nodes_number": {
                     "type": "number",
@@ -364,15 +365,15 @@
                 "slots": {
                     "user_label": "CPU cores",
                     "type": "number",
-                    "default": 1,
-                    "min": 1,
+                    "default": 2,
+                    "min": 2,
                     "max": 96
                 },
                 "capacity": {
                     "user_label": "RAM capacity (GB)",
                     "type": "number",
-                    "default": 2,
-                    "min": 2,
+                    "default": 4,
+                    "min": 4,
                     "max": 128
                 },
                 "authentication/username": {
@@ -383,7 +384,7 @@
                 "authentication/password": {
                     "user_label": "Password",
                     "type": "password",
-                    "default": "password"
+                    "default": "password123!"
                 },
                 "authentication/ssh-key": {
                     "user_label": "SSH Key",
@@ -437,15 +438,15 @@
                 "slots": {
                     "user_label": "CPU cores",
                     "type": "number",
-                    "default": 1,
-                    "min": 1,
+                    "default": 4,
+                    "min": 4,
                     "max": 96
                 },
                 "capacity": {
                     "user_label": "RAM capacity (GB)",
                     "type": "number",
-                    "default": 2,
-                    "min": 2,
+                    "default": 4,
+                    "min": 4,
                     "max": 128
                 },
                 "authentication/username": {
@@ -456,7 +457,7 @@
                 "authentication/password": {
                     "user_label": "Password",
                     "type": "password",
-                    "default": "password"
+                    "default": "password123!"
                 },
                 "authentication/ssh-key": {
                     "user_label": "SSH Key",
