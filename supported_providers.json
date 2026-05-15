@@ -10,10 +10,11 @@
             "server_ips": ["google.dev.meson.elemento.cloud"],
             "services": [
                 {
-                    "name": "vmManagement",
-                    "display_name": "VM Management",
-                    "type": "compute",
-                    "sub_type": "vm",
+                    "name": "n8n",
+                    "display_name": "n8n",
+                    "type": "service",
+                    "sub_type": "n8n",
+                    "support_level": "dev",
                     "regions": {
                         "africa_south1": {
                             "country": "South Africa",
@@ -243,30 +244,504 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
+                },
+                {
+                    "name": "openclaw",
+                    "display_name": "OpenClaw",
+                    "type": "service",
+                    "sub_type": "openclaw",
+                    "support_level": "dev",
+                    "regions": {
+                        "africa_south1": {
+                            "country": "South Africa",
+                            "location": "Johannesburg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_east1": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_east2": {
+                            "country": "China",
+                            "location": "Hong Kong",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_northeast1": {
+                            "country": "Japan",
+                            "location": "Tokyo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_northeast2": {
+                            "country": "Japan",
+                            "location": "Osaka",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_northeast3": {
+                            "country": "South Korea",
+                            "location": "Seoul",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_south1": {
+                            "country": "India",
+                            "location": "Mumbai",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_south2": {
+                            "country": "India",
+                            "location": "Delhi",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_southeast1": {
+                            "country": "Singapore",
+                            "location": "Jurong West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_southeast2": {
+                            "country": "Indonesia",
+                            "location": "Jakarta",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia_southeast1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia_southeast2": {
+                            "country": "Australia",
+                            "location": "Melbourne",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_north1": {
+                            "country": "Finland",
+                            "location": "Hamina",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_southwest1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west1": {
+                            "country": "Belgium",
+                            "location": "St. Ghislain",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west10": {
+                            "country": "Germany",
+                            "location": "Berlin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west12": {
+                            "country": "Italy",
+                            "location": "Turin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west2": {
+                            "country": "England",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west3": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west4": {
+                            "country": "Netherlands",
+                            "location": "Eemshaven",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west6": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west8": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west9": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me_central1": {
+                            "country": "Qatar",
+                            "location": "Doha",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me_west1": {
+                            "country": "Israel",
+                            "location": "Tel Aviv",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica_northeast1": {
+                            "country": "Quebec",
+                            "location": "Montreal",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica_northeast2": {
+                            "country": "Ontario",
+                            "location": "Toronto",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica_east1": {
+                            "country": "Brazil",
+                            "location": "Sao Paolo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica_west1": {
+                            "country": "Chile",
+                            "location": "Santiago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_central1": {
+                            "country": "Iowa",
+                            "location": "Council Bluff",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_east1": {
+                            "country": "South Carolina",
+                            "location": "Moncks Corner",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_east4": {
+                            "country": "Virginia",
+                            "location": "Ashburn",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_east5": {
+                            "country": "Ohio",
+                            "location": "Columbus",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_south1": {
+                            "country": "Texas",
+                            "location": "Dallas",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west1": {
+                            "country": "Oregon",
+                            "location": "The Dalles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west2": {
+                            "country": "California",
+                            "location": "Los Angeles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west3": {
+                            "country": "Utah",
+                            "location": "Salt Lake City",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west4": {
+                            "country": "Nevada",
+                            "location": "Las Vegas",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "compute",
+                    "sub_type": "vm",
+                    "support_level": "dev",
+                    "regions": {
+                        "africa_south1": {
+                            "country": "South Africa",
+                            "location": "Johannesburg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_east1": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_east2": {
+                            "country": "China",
+                            "location": "Hong Kong",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_northeast1": {
+                            "country": "Japan",
+                            "location": "Tokyo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_northeast2": {
+                            "country": "Japan",
+                            "location": "Osaka",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_northeast3": {
+                            "country": "South Korea",
+                            "location": "Seoul",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_south1": {
+                            "country": "India",
+                            "location": "Mumbai",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_south2": {
+                            "country": "India",
+                            "location": "Delhi",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_southeast1": {
+                            "country": "Singapore",
+                            "location": "Jurong West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia_southeast2": {
+                            "country": "Indonesia",
+                            "location": "Jakarta",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia_southeast1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australia_southeast2": {
+                            "country": "Australia",
+                            "location": "Melbourne",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_north1": {
+                            "country": "Finland",
+                            "location": "Hamina",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_southwest1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west1": {
+                            "country": "Belgium",
+                            "location": "St. Ghislain",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west10": {
+                            "country": "Germany",
+                            "location": "Berlin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west12": {
+                            "country": "Italy",
+                            "location": "Turin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west2": {
+                            "country": "England",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west3": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west4": {
+                            "country": "Netherlands",
+                            "location": "Eemshaven",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west6": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west8": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe_west9": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me_central1": {
+                            "country": "Qatar",
+                            "location": "Doha",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "me_west1": {
+                            "country": "Israel",
+                            "location": "Tel Aviv",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica_northeast1": {
+                            "country": "Quebec",
+                            "location": "Montreal",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northamerica_northeast2": {
+                            "country": "Ontario",
+                            "location": "Toronto",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica_east1": {
+                            "country": "Brazil",
+                            "location": "Sao Paolo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southamerica_west1": {
+                            "country": "Chile",
+                            "location": "Santiago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_central1": {
+                            "country": "Iowa",
+                            "location": "Council Bluff",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_east1": {
+                            "country": "South Carolina",
+                            "location": "Moncks Corner",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_east4": {
+                            "country": "Virginia",
+                            "location": "Ashburn",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_east5": {
+                            "country": "Ohio",
+                            "location": "Columbus",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_south1": {
+                            "country": "Texas",
+                            "location": "Dallas",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west1": {
+                            "country": "Oregon",
+                            "location": "The Dalles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west2": {
+                            "country": "California",
+                            "location": "Los Angeles",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west3": {
+                            "country": "Utah",
+                            "location": "Salt Lake City",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us_west4": {
+                            "country": "Nevada",
+                            "location": "Las Vegas",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
                 },
                 {
                     "name": "blockStorage",
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
-                    "regions": {},
-                    "support_level": "full"
+                    "support_level": "full",
+                    "regions": {}
                 },
                 {
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
-                    "regions": {},
-                    "support_level": "dev"
+                    "support_level": "full",
+                    "regions": {}
                 },
                 {
                     "name": "dbaas",
                     "display_name": "Database",
                     "type": "service",
                     "sub_type": "dbaas",
+                    "support_level": "full",
                     "regions": {
                         "africa_south1": {
                             "country": "South Africa",
@@ -496,8 +971,7 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 }
             ]
         },
@@ -511,10 +985,11 @@
             "server_ips": ["azure.dev.meson.elemento.cloud"],
             "services": [
                 {
-                    "name": "vmManagement",
-                    "display_name": "VM Management",
-                    "type": "compute",
-                    "sub_type": "vm",
+                    "name": "n8n",
+                    "display_name": "n8n",
+                    "type": "service",
+                    "sub_type": "n8n",
+                    "support_level": "dev",
                     "regions": {
                         "eastus": {
                             "country": "United States",
@@ -780,14 +1255,560 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
+                },
+                {
+                    "name": "openclaw",
+                    "display_name": "OpenClaw",
+                    "type": "service",
+                    "sub_type": "openclaw",
+                    "support_level": "dev",
+                    "regions": {
+                        "eastus": {
+                            "country": "United States",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus2": {
+                            "country": "United States",
+                            "location": "West 2",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australiaeast": {
+                            "country": "Australia",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southeastasia": {
+                            "country": "Singapore",
+                            "location": "Southeast Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "swedencentral": {
+                            "country": "Sweden",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westeurope": {
+                            "country": "Netherlands",
+                            "location": "West Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uksouth": {
+                            "country": "United Kingdom",
+                            "location": "South",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southafricanorth": {
+                            "country": "South Africa",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centralindia": {
+                            "country": "India",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "indonesiacentral": {
+                            "country": "Indonesia",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "japaneast": {
+                            "country": "Japan",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "japanwest": {
+                            "country": "Japan",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "koreacentral": {
+                            "country": "Korea",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "malaysiawest": {
+                            "country": "Malaysia",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "newzealandnorth": {
+                            "country": "New Zealand",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "canadacentral": {
+                            "country": "Canada",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "austriaeast": {
+                            "country": "Austria",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "belgiumcentral": {
+                            "country": "Belgium",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "denmarkeast": {
+                            "country": "Denmark",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "francecentral": {
+                            "country": "France",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "germanywestcentral": {
+                            "country": "Germany",
+                            "location": "West Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "norwayeast": {
+                            "country": "Norway",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "polandcentral": {
+                            "country": "Poland",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "spaincentral": {
+                            "country": "Spain",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "switzerlandnorth": {
+                            "country": "Switzerland",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "mexicocentral": {
+                            "country": "Mexico",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uaenorth": {
+                            "country": "United Arab Emirates",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "brazilsouth": {
+                            "country": "Brazil",
+                            "location": "South",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "chilecentral": {
+                            "country": "Chile",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus2euap": {
+                            "country": "United States",
+                            "location": "East US 2 (EUAP)",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "israelcentral": {
+                            "country": "Israel",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "qatarcentral": {
+                            "country": "Qatar",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus2": {
+                            "country": "United States",
+                            "location": "East 2",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastusstg": {
+                            "country": "United States",
+                            "location": "East STG",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southcentralus": {
+                            "country": "United States",
+                            "location": "South Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus3": {
+                            "country": "United States",
+                            "location": "West 3",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northcentralus": {
+                            "country": "United States",
+                            "location": "North Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus": {
+                            "country": "United States",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "jioindiawest": {
+                            "country": "India",
+                            "location": "Jio West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centraluseuap": {
+                            "country": "United States",
+                            "location": "Central (EUAP)",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "compute",
+                    "sub_type": "vm",
+                    "support_level": "dev",
+                    "regions": {
+                        "eastus": {
+                            "country": "United States",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus2": {
+                            "country": "United States",
+                            "location": "West 2",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "australiaeast": {
+                            "country": "Australia",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southeastasia": {
+                            "country": "Singapore",
+                            "location": "Southeast Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "swedencentral": {
+                            "country": "Sweden",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westeurope": {
+                            "country": "Netherlands",
+                            "location": "West Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uksouth": {
+                            "country": "United Kingdom",
+                            "location": "South",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southafricanorth": {
+                            "country": "South Africa",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centralindia": {
+                            "country": "India",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "indonesiacentral": {
+                            "country": "Indonesia",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "japaneast": {
+                            "country": "Japan",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "japanwest": {
+                            "country": "Japan",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "koreacentral": {
+                            "country": "Korea",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "malaysiawest": {
+                            "country": "Malaysia",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "newzealandnorth": {
+                            "country": "New Zealand",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "canadacentral": {
+                            "country": "Canada",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "austriaeast": {
+                            "country": "Austria",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "belgiumcentral": {
+                            "country": "Belgium",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "denmarkeast": {
+                            "country": "Denmark",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "francecentral": {
+                            "country": "France",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "germanywestcentral": {
+                            "country": "Germany",
+                            "location": "West Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "norwayeast": {
+                            "country": "Norway",
+                            "location": "East",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "polandcentral": {
+                            "country": "Poland",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "spaincentral": {
+                            "country": "Spain",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "switzerlandnorth": {
+                            "country": "Switzerland",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "mexicocentral": {
+                            "country": "Mexico",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uaenorth": {
+                            "country": "United Arab Emirates",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "brazilsouth": {
+                            "country": "Brazil",
+                            "location": "South",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "chilecentral": {
+                            "country": "Chile",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus2euap": {
+                            "country": "United States",
+                            "location": "East US 2 (EUAP)",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "israelcentral": {
+                            "country": "Israel",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "qatarcentral": {
+                            "country": "Qatar",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastus2": {
+                            "country": "United States",
+                            "location": "East 2",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastusstg": {
+                            "country": "United States",
+                            "location": "East STG",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "southcentralus": {
+                            "country": "United States",
+                            "location": "South Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus3": {
+                            "country": "United States",
+                            "location": "West 3",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northcentralus": {
+                            "country": "United States",
+                            "location": "North Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "westus": {
+                            "country": "United States",
+                            "location": "West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "jioindiawest": {
+                            "country": "India",
+                            "location": "Jio West",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "centraluseuap": {
+                            "country": "United States",
+                            "location": "Central (EUAP)",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
                 },
                 {
                     "name": "blockStorage",
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
+                    "support_level": "full",
                     "regions": {
                         "eastus": {
                             "country": "United States",
@@ -1029,14 +2050,14 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 },
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "support_level": "full",
                     "regions": {
                         "eastus": {
                             "country": "United States",
@@ -1302,8 +2323,7 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 }
             ]
         },
@@ -1321,6 +2341,7 @@
                     "display_name": "VM Management",
                     "type": "matcher",
                     "sub_type": "vm",
+                    "support_level": "dev",
                     "regions": {
                         "bhs1": {
                             "country": "Canada",
@@ -1454,14 +2475,14 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 },
                 {
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "support_level": "full",
                     "regions": {
                         "bhs1": {
                             "country": "Canada",
@@ -1595,8 +2616,7 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 }
             ]
         },
@@ -1610,10 +2630,27 @@
             "server_ips": ["upcloud.dev.meson.elemento.cloud"],
             "services": [
                 {
+                    "name": "n8n",
+                    "display_name": "n8n",
+                    "type": "service",
+                    "sub_type": "n8n",
+                    "support_level": "dev",
+                    "regions": {}
+                },
+                {
+                    "name": "openclaw",
+                    "display_name": "OpenClaw",
+                    "type": "service",
+                    "sub_type": "openclaw",
+                    "support_level": "dev",
+                    "regions": {}
+                },
+                {
                     "name": "vmManagement",
                     "display_name": "VM Management",
                     "type": "matcher",
                     "sub_type": "vm",
+                    "support_level": "dev",
                     "regions": {
                         "au-syd1": {
                             "country": "Australia",
@@ -1705,14 +2742,14 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 },
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "support_level": "full",
                     "regions": {
                         "europe-1": {
                             "country": "Finland",
@@ -1744,14 +2781,14 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 },
                 {
                     "name": "blockStorage",
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
+                    "support_level": "full",
                     "regions": {
                         "au-syd1": {
                             "country": "Australia",
@@ -1843,14 +2880,14 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 },
                 {
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "support_level": "full",
                     "regions": {
                         "au-syd1": {
                             "country": "Australia",
@@ -1942,14 +2979,14 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 },
                 {
                     "name": "dbaas",
                     "display_name": "Database as a Service",
                     "type": "service",
                     "sub_type": "dbaas",
+                    "support_level": "full",
                     "regions": {
                         "au-syd1": {
                             "country": "Australia",
@@ -2041,8 +3078,7 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 }
             ]
         },
@@ -2060,6 +3096,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -2157,8 +3194,7 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 }
             ]
         },
@@ -2176,6 +3212,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "support_level": "full",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
@@ -2201,14 +3238,14 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
                 },
                 {
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "support_level": "full",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
@@ -2252,6 +3289,7 @@
                     "display_name": "Object Storage",
                     "type": "service",
                     "sub_type": "objectstorage",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -2289,8 +3327,34 @@
                             "plus_code": "",
                             "certifications": []
                         }
-                    },
-                    "support_level": "full"
+                    }
+                }
+            ]
+        },
+        "oracle": {
+            "display_name": "Oracle Cloud",
+            "icon_classes": "fa-solid fa-cloud",
+            "source": "fontawesome",
+            "hex_color": "#f80000",
+            "svg_filename": "oracle_icon.svg",
+            "status": "production",
+            "server_ips": ["oracle.dev.meson.elemento.cloud"],
+            "services": [
+                {
+                    "name": "vmManagement",
+                    "display_name": "VM Management",
+                    "type": "matcher",
+                    "sub_type": "vm",
+                    "support_level": "dev",
+                    "regions": {}
+                },
+                {
+                    "name": "objectStorage",
+                    "display_name": "Object Storage",
+                    "type": "storage",
+                    "sub_type": "objectstorage",
+                    "support_level": "dev",
+                    "regions": {}
                 }
             ]
         }
