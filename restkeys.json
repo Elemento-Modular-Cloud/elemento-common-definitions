@@ -121,6 +121,7 @@
     "TARGET_PROCESS_API_KEY": "/process",
     "TARGET_TYPES_API_KEY": "/types",
     "TARGET_VALIDATE_API_KEY": "/validate",
+    "TARGET_PING_API_KEY": "/ping",
     "TARGET_UPDATE_SETTINGS_KEY": "/settings",
 
     "FORWARD_PORT_API_KEY": "/portforward",
