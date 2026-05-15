@@ -371,6 +371,7 @@
                 "capacity": {
                     "user_label": "RAM capacity (GB)",
                     "type": "number",
+                    "default": 2,
                     "min": 2,
                     "max": 128
                 },
@@ -390,9 +391,13 @@
                         },
                         "ssh-key": {
                             "user_label": "SSH Key",
-                            "type": "string"
+                            "type": "textarea"
                         }
                     }
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
                 }
             },
             "table_layout": [
@@ -445,6 +450,7 @@
                 "capacity": {
                     "user_label": "RAM capacity (GB)",
                     "type": "number",
+                    "default": 2,
                     "min": 2,
                     "max": 128
                 },
@@ -464,9 +470,13 @@
                         },
                         "ssh-key": {
                             "user_label": "SSH Key",
-                            "type": "string"
+                            "type": "textarea"
                         }
                     }
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
                 }
             },
             "table_layout": [
