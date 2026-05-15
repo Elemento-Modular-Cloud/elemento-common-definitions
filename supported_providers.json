@@ -264,14 +264,6 @@
                 },
                 {
                     "name": "dbaas",
-                    "display_name": "Database as a service",
-                    "type": "service",
-                    "sub_type": "dbaas",
-                    "regions": {},
-                    "support_level": "full"
-                },
-                {
-                    "name": "dbaas",
                     "display_name": "Database",
                     "type": "service",
                     "sub_type": "dbaas",
@@ -1742,8 +1734,141 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
-                    "regions": {},
+                    "sub_type": "kaas",
+                    "regions": {
+                        "bhs1": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "bhs2": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "bhs3": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "bhs5": {
+                            "country": "Canada",
+                            "location": "Beauharnois",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg1": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg3": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg5": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sbg7": {
+                            "country": "France",
+                            "location": "Strasbourg",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra1": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra3": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra5": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra7": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra9": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "gra11": {
+                            "country": "France",
+                            "location": "Gravelines",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "rbx": {
+                            "country": "France",
+                            "location": "Roubaix",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk1": {
+                            "country": "England",
+                            "location": "Erith",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sgp1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "vin1": {
+                            "country": "USA",
+                            "location": "Washington DC",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "hil1": {
+                            "country": "USA",
+                            "location": "Seattle",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    },
                     "support_level": "full"
                 }
             ]
@@ -1998,7 +2123,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {
                         "au-syd1": {
                             "country": "Australia",
@@ -2356,7 +2481,7 @@
                     "name": "k8s",
                     "display_name": "Kubernetes",
                     "type": "service",
-                    "sub_type": "container",
+                    "sub_type": "kaas",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
