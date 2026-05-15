@@ -156,7 +156,7 @@
                 {
                     "name": "Endpoint",
                     "localization_key": "endpoint",
-                    "display_type": "text",
+                    "display_type": "monospace",
                     "json_key": "endpoint"
                 },
                 {
@@ -339,12 +339,6 @@
                     "localization_key": "disk_size",
                     "display_type": "byte_sized",
                     "json_key": "disk_size"
-                },
-                {
-                    "name": "Password",
-                    "localization_key": "password",
-                    "display_type": "text",
-                    "json_key": "password"
                 },
                 {
                     "name": "Nodes number",
@@ -558,7 +552,7 @@
                 {
                     "name": "Name",
                     "localization_key": "s3/bucket_name",
-                    "display_type": "text",
+                    "display_type": "monospace",
                     "json_key": "name"
                 },
                 {
@@ -570,7 +564,7 @@
                 {
                     "name": "Endpoint",
                     "localization_key": "s3/endpoint",
-                    "display_type": "string",
+                    "display_type": "monospace",
                     "json_key": "endpoint"
                 },
                 {
