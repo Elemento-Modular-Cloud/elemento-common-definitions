@@ -1317,7 +1317,7 @@
                     "name": "objectStorage",
                     "display_name": "Object Storage",
                     "type": "storage",
-                    "sub_type": "blockstorage",
+                    "sub_type": "objectstorage",
                     "regions": {
                         "eastus": {
                             "country": "United States",
@@ -1736,155 +1736,6 @@
                             "certifications": []
                         }
                     },
-                    "support_level": "full"
-                },
-                {
-                    "name": "objectStorage",
-                    "display_name": "Object Storage",
-                    "type": "storage",
-                    "sub_type": "blockstorage",
-                    "regions": {
-                        "bhs1": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs2": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs3": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs5": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "de1": {
-                            "country": "Germany",
-                            "location": "Frankfurt",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg1": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg3": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg5": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg7": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra1": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra3": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra5": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra7": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra9": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra11": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "rbx": {
-                            "country": "France",
-                            "location": "Roubaix",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "uk1": {
-                            "country": "England",
-                            "location": "Erith",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "waw1": {
-                            "country": "Poland",
-                            "location": "Warsaw",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sgp1": {
-                            "country": "Singapore",
-                            "location": "Singapore",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "syd1": {
-                            "country": "Australia",
-                            "location": "Sydney",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "vin1": {
-                            "country": "USA",
-                            "location": "Washington DC",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "hil1": {
-                            "country": "USA",
-                            "location": "Seattle",
-                            "plus_code": "",
-                            "certifications": []
-                        }
-                    },
-                    "support_level": "full"
-                },
-                {
-                    "name": "blockStorage",
-                    "display_name": "Block Storage",
-                    "type": "storage",
-                    "sub_type": "blockstorage",
-                    "regions": {},
                     "support_level": "full"
                 },
                 {
@@ -2500,6 +2351,38 @@
                         }
                     },
                     "support_level": "full"
+                },
+                {
+                    "name": "k8s",
+                    "display_name": "Kubernetes",
+                    "type": "service",
+                    "sub_type": "container",
+                    "regions": {
+                        "it-mil": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fr-par": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
                 }
             ]
         },
