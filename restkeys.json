@@ -135,7 +135,7 @@
     "ATOMOSGUI_CLEANUP": "/instances/cleanup",
     "ATOMOSGUI_LOCAL_LOGIN": "/local_login",
 
-    "GENERATE_SERVICE_CREDENTIALS_API_KEY": "/get_credentials",
+    "GENERATE_SERVICE_CREDENTIALS_API_KEY": "/credentials",
 
     "BILLING_STATUS_API_KEY": "/billing/status"
 }
