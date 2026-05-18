@@ -41,9 +41,9 @@
                         "shared_storage_gb": {
                             "user_label": "Shared storage (GB)",
                             "type": "number",
-                            "min": 0,
+                            "min": 32,
                             "max": 2048,
-                            "default": 0
+                            "default": 32
                         },
                         "specs/cpu_cores": {
                             "user_label": "CPU (vCPU)",
@@ -60,9 +60,9 @@
                         "specs/storage_gb": {
                             "user_label": "Storage (GB)",
                             "type": "number",
-                            "min": 1,
-                            "max": 2048,
-                            "default": 0
+                            "min": 32,
+                            "max": 1024,
+                            "default": 32
                         },
                         "specs/gpu": {
                             "user_label": "GPU (count)",
