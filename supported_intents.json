@@ -41,9 +41,9 @@
                         "shared_storage_gb": {
                             "user_label": "Shared storage (GB)",
                             "type": "number",
-                            "min": 32,
+                            "min": 0,
                             "max": 2048,
-                            "default": 32
+                            "default": 0
                         },
                         "specs/cpu_cores": {
                             "user_label": "CPU (vCPU)",
@@ -141,7 +141,7 @@
                     "name": "Name",
                     "localization_key": "cluster_name",
                     "display_type": "text",
-                    "json_key": "name"
+                    "json_key": "cluster_name"
                 },
                 {
                     "name": "UUID",
@@ -162,10 +162,22 @@
                     "json_key": "endpoint"
                 },
                 {
+                    "name": "Version",
+                    "localization_key": "version",
+                    "display_type": "text",
+                    "json_key": "version"
+                },
+                {
+                    "name": "Network CIDR",
+                    "localization_key": "network_cidr",
+                    "display_type": "text",
+                    "json_key": "network_cidr"
+                },
+                {
                     "name": "Region",
                     "localization_key": "location",
                     "display_type": "region",
-                    "json_key": "region"
+                    "json_key": "location"
                 }
             ],
             "resources": {}
