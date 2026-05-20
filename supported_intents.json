@@ -156,12 +156,6 @@
                     "json_key": "status"
                 },
                 {
-                    "name": "Endpoint",
-                    "localization_key": "endpoint",
-                    "display_type": "monospace",
-                    "json_key": "endpoint"
-                },
-                {
                     "name": "Version",
                     "localization_key": "version",
                     "display_type": "text",
