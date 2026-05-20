@@ -1537,12 +1537,6 @@
                             "plus_code": "",
                             "certifications": []
                         },
-                        "eastus2euap": {
-                            "country": "United States",
-                            "location": "East US 2 (EUAP)",
-                            "plus_code": "",
-                            "certifications": []
-                        },
                         "israelcentral": {
                             "country": "Israel",
                             "location": "Central",
@@ -1558,12 +1552,6 @@
                         "eastus2": {
                             "country": "United States",
                             "location": "East 2",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "eastusstg": {
-                            "country": "United States",
-                            "location": "East STG",
                             "plus_code": "",
                             "certifications": []
                         },
@@ -1594,12 +1582,6 @@
                         "jioindiawest": {
                             "country": "India",
                             "location": "Jio West",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "centraluseuap": {
-                            "country": "United States",
-                            "location": "Central (EUAP)",
                             "plus_code": "",
                             "certifications": []
                         }
