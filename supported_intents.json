@@ -41,8 +41,12 @@
                         "shared_storage_gb": {
                             "type": "select",
                             "user_label": "Shared storage (GB)",
-                            "default": 32,
+                            "default": 0,
                             "options": [
+                                {
+                                    "user_label": "0 GB",
+                                    "value": 0
+                                },
                                 {
                                     "user_label": "32 GB",
                                     "value": 32
