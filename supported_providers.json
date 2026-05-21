@@ -735,25 +735,25 @@
                     "sub_type": "kaas",
                     "support_level": "full",
                     "regions": {
-                        "europe-central2": {
+                        "europe-central2-a": {
                             "country": "Poland",
                             "location": "Warsaw",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "us-central-1": {
+                        "us-central-1-a": {
                             "country": "United States",
                             "location": "Iowa",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe-west1": {
+                        "europe-west1-b": {
                             "country": "Belgium",
-                            "location": "St. Ghislain",
+                            "location": "Brussels",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "asia-east1": {
+                        "asia-east1-a": {
                             "country": "Taiwan",
                             "location": "Changhua County",
                             "plus_code": "",
