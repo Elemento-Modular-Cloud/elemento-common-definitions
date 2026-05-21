@@ -39,11 +39,43 @@
                             "max": 100
                         },
                         "shared_storage_gb": {
+                            "type": "select",
                             "user_label": "Shared storage (GB)",
-                            "type": "number",
-                            "min": 0,
-                            "max": 2048,
-                            "default": 0
+                            "default": 32,
+                            "options": [
+                                {
+                                    "user_label": "32 GB",
+                                    "value": 32
+                                },
+                                {
+                                    "user_label": "64 GB",
+                                    "value": 64
+                                },
+                                {
+                                    "user_label": "128 GB",
+                                    "value": 128
+                                },
+                                {
+                                    "user_label": "256 GB",
+                                    "value": 256
+                                },
+                                {
+                                    "user_label": "512 GB",
+                                    "value": 512
+                                },
+                                {
+                                    "user_label": "1024 GB",
+                                    "value": 1024
+                                },
+                                {                                    
+                                    "user_label": "2048 GB",
+                                    "value": 2048
+                                },
+                                {
+                                    "user_label": "4096 GB",
+                                    "value": 4096
+                                }
+                            ]
                         },
                         "specs/cpu_cores": {
                             "user_label": "CPU (vCPU)",
@@ -58,11 +90,43 @@
                             "max": 128
                         },
                         "specs/storage_gb": {
-                            "user_label": "Storage (GB)",
-                            "type": "number",
-                            "min": 32,
-                            "max": 1024,
-                            "default": 32
+                            "type": "select",
+                            "user_label": "Node storage (GB)",
+                            "default": 32,
+                            "options": [
+                                {
+                                    "user_label": "32 GB",
+                                    "value": 32
+                                },
+                                {
+                                    "user_label": "64 GB",
+                                    "value": 64
+                                },
+                                {
+                                    "user_label": "128 GB",
+                                    "value": 128
+                                },
+                                {
+                                    "user_label": "256 GB",
+                                    "value": 256
+                                },
+                                {
+                                    "user_label": "512 GB",
+                                    "value": 512
+                                },
+                                {
+                                    "user_label": "1024 GB",
+                                    "value": 1024
+                                },
+                                {                                    
+                                    "user_label": "2048 GB",
+                                    "value": 2048
+                                },
+                                {
+                                    "user_label": "4096 GB",
+                                    "value": 4096
+                                }
+                            ]
                         },
                         "specs/gpu": {
                             "user_label": "GPU (count)",
@@ -595,7 +659,7 @@
                 },
                 "purchasedTB": {
                     "type": "number",
-                    "user_label": "PurchasedTB",
+                    "user_label": "Bucket size (TB)",
                     "default": 1,
                     "min": 1,
                     "max": 20

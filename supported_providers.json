@@ -2636,10 +2636,10 @@
                     "regions": {}
                 },
                 {
-                    "name": "objectStorage",
-                    "display_name": "Object Storage",
+                    "name": "blockStorage",
+                    "display_name": "Block Storage",
                     "type": "storage",
-                    "sub_type": "objectstorage",
+                    "sub_type": "blockstorage",
                     "support_level": "dev",
                     "regions": {}
                 }
