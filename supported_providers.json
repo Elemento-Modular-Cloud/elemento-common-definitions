@@ -734,7 +734,32 @@
                     "type": "service",
                     "sub_type": "kaas",
                     "support_level": "full",
-                    "regions": {}
+                    "regions": {
+                        "europe-central2": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central-1": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1": {
+                            "country": "Belgium",
+                            "location": "St. Ghislain",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
                 },
                 {
                     "name": "dbaas",
