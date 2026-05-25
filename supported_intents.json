@@ -42,7 +42,8 @@
                             "user_label": "Shared storage (GB)",
                             "type": "number",
                             "min": 0,
-                            "max": 2048
+                            "max": 2048,
+                            "default": 0
                         },
                         "specs/cpu_cores": {
                             "user_label": "CPU (vCPU)",
@@ -59,8 +60,9 @@
                         "specs/storage_gb": {
                             "user_label": "Storage (GB)",
                             "type": "number",
-                            "min": 1,
-                            "max": 2048
+                            "min": 32,
+                            "max": 1024,
+                            "default": 32
                         },
                         "specs/gpu": {
                             "user_label": "GPU (count)",
@@ -76,8 +78,8 @@
                     "type": "boolean",
                     "default": true
                 },
-                "nodes_subnet/ip_range": {
-                    "user_label": "IP range",
+                "nodes_subnet/network": {
+                    "user_label": "Network IP range",
                     "type": "ip-cidr",
                     "default": "192.170.5.0/24"
                 },
@@ -139,7 +141,7 @@
                     "name": "Name",
                     "localization_key": "cluster_name",
                     "display_type": "text",
-                    "json_key": "name"
+                    "json_key": "cluster_name"
                 },
                 {
                     "name": "UUID",
@@ -154,16 +156,22 @@
                     "json_key": "status"
                 },
                 {
-                    "name": "Endpoint",
-                    "localization_key": "endpoint",
+                    "name": "Version",
+                    "localization_key": "version",
                     "display_type": "text",
-                    "json_key": "endpoint"
+                    "json_key": "version"
+                },
+                {
+                    "name": "Network CIDR",
+                    "localization_key": "network_cidr",
+                    "display_type": "text",
+                    "json_key": "network_cidr"
                 },
                 {
                     "name": "Region",
                     "localization_key": "location",
                     "display_type": "text",
-                    "json_key": "region"
+                    "json_key": "location"
                 }
             ],
             "resources": {}
@@ -289,13 +297,37 @@
                 },
                 "password": {
                     "type": "password",
-                    "user_label": "password"
+                    "user_label": "password",
+                    "default": "password123!"
                 },
                 "nodes_number": {
                     "type": "number",
                     "user_label": "nodes number",
                     "default": 1,
                     "min": 1
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
                 }
             },
             "table_layout": [
@@ -336,12 +368,6 @@
                     "json_key": "disk_size"
                 },
                 {
-                    "name": "Password",
-                    "localization_key": "password",
-                    "display_type": "text",
-                    "json_key": "password"
-                },
-                {
                     "name": "Nodes number",
                     "localization_key": "nodes_number",
                     "display_type": "text",
@@ -365,35 +391,57 @@
                 "slots": {
                     "user_label": "CPU cores",
                     "type": "number",
-                    "default": 1,
-                    "min": 1,
+                    "default": 2,
+                    "min": 2,
                     "max": 96
                 },
                 "capacity": {
                     "user_label": "RAM capacity (GB)",
                     "type": "number",
-                    "min": 2,
+                    "default": 4,
+                    "min": 4,
                     "max": 128
                 },
-                "authentication": {
-                    "type": "datalist",
-                    "user_label": "Authentication",
-                    "item_definition": {
-                        "username": {
-                            "user_label": "Username",
-                            "type": "string",
-                            "default": "admin"
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
                         },
-                        "password": {
-                            "user_label": "Password",
-                            "type": "password",
-                            "default": "password"
+                        {
+                            "user_label": "Week",
+                            "value": "week"
                         },
-                        "ssh-key": {
-                            "user_label": "SSH Key",
-                            "type": "string"
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
                         }
-                    }
+                    ]
                 }
             },
             "table_layout": [
@@ -439,35 +487,57 @@
                 "slots": {
                     "user_label": "CPU cores",
                     "type": "number",
-                    "default": 1,
-                    "min": 1,
+                    "default": 4,
+                    "min": 4,
                     "max": 96
                 },
                 "capacity": {
                     "user_label": "RAM capacity (GB)",
                     "type": "number",
-                    "min": 2,
+                    "default": 4,
+                    "min": 4,
                     "max": 128
                 },
-                "authentication": {
-                    "type": "datalist",
-                    "user_label": "Authentication",
-                    "item_definition": {
-                        "username": {
-                            "user_label": "Username",
-                            "type": "string",
-                            "default": "admin"
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
                         },
-                        "password": {
-                            "user_label": "Password",
-                            "type": "password",
-                            "default": "password"
+                        {
+                            "user_label": "Week",
+                            "value": "week"
                         },
-                        "ssh-key": {
-                            "user_label": "SSH Key",
-                            "type": "string"
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
                         }
-                    }
+                    ]
                 }
             },
             "table_layout": [
@@ -520,7 +590,7 @@
                 },
                 "purchasedTB": {
                     "type": "number",
-                    "user_label": "PurchasedTB",
+                    "user_label": "Bucket size (TB)",
                     "default": 1,
                     "min": 1,
                     "max": 20
@@ -553,7 +623,7 @@
                 {
                     "name": "Name",
                     "localization_key": "s3/bucket_name",
-                    "display_type": "text",
+                    "display_type": "monospace",
                     "json_key": "name"
                 },
                 {
@@ -565,7 +635,7 @@
                 {
                     "name": "Endpoint",
                     "localization_key": "s3/endpoint",
-                    "display_type": "text",
+                    "display_type": "monospace",
                     "json_key": "endpoint"
                 },
                 {
