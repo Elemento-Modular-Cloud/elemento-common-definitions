@@ -1,0 +1,632 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "supported_intents.schema.json",
+  "title": "Electros Supported Intents",
+  "description": "Schema for the supported_intents.json file in Elemento-Common-Definitions",
+  "type": "object",
+  "additionalProperties": {
+    "description": "A service type (e.g. 'storage', 'compute')",
+    "type": "object",
+    "additionalProperties": {
+      "$ref": "#/definitions/electros_meta"
+    }
+  },
+  "definitions": {
+
+    "electros_meta": {
+      "type": "object",
+      "description": "Top-level structure for a single service subtype (e.g. 'objectstorage')",
+      "required": ["metadata", "main_form_data", "table_layout"],
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "integer",
+          "description": "Schema version. Only version 1 is currently in use and it is ignored by Electros.",
+          "enum": [1]
+        },
+        "metadata":       { "$ref": "#/definitions/metadata" },
+        "main_form_data": { "$ref": "#/definitions/main_form_data" },
+        "table_layout":   { "$ref": "#/definitions/table_layout" },
+        "resources":      { "$ref": "#/definitions/resources" }
+      }
+    },
+
+    "metadata": {
+      "type": "object",
+      "description": "General metadata about the service page shown in Electros",
+      "required": ["category", "page_name_localization", "page_name", "page_icon"],
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Navigation bar category. Case-insensitive. 'iaas', 'paas', 'saas', or a custom string that creates a new section."
+        },
+        "page_name_localization": {
+          "type": "string",
+          "description": "Localization key for the page name. Prefix with 'literal:' to force a literal string."
+        },
+        "page_name": {
+          "type": "string",
+          "description": "Internal page name. Lowercase, no spaces, dash-separated.",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "page_icon": {
+          "type": "string",
+          "description": "FontAwesome icon className, e.g. 'fa-solid fa-circle-plus'."
+        }
+      }
+    },
+
+    "main_form_data": {
+      "type": "object",
+      "description": "Defines the creation form layout. Keys are slash-separated JSON paths; values are form field objects.",
+      "additionalProperties": {
+        "$ref": "#/definitions/form_field"
+      }
+    },
+
+    "form_field": {
+      "description": "A single form field definition. The shape varies by 'type'.",
+      "oneOf": [
+        { "$ref": "#/definitions/field_string" },
+        { "$ref": "#/definitions/field_textarea" },
+        { "$ref": "#/definitions/field_uuid" },
+        { "$ref": "#/definitions/field_number" },
+        { "$ref": "#/definitions/field_ip" },
+        { "$ref": "#/definitions/field_ip_cidr" },
+        { "$ref": "#/definitions/field_ipv6" },
+        { "$ref": "#/definitions/field_mac" },
+        { "$ref": "#/definitions/field_email" },
+        { "$ref": "#/definitions/field_password" },
+        { "$ref": "#/definitions/field_b64_string" },
+        { "$ref": "#/definitions/field_b64_textarea" },
+        { "$ref": "#/definitions/field_name" },
+        { "$ref": "#/definitions/field_slider" },
+        { "$ref": "#/definitions/field_boolean" },
+        { "$ref": "#/definitions/field_select" },
+        { "$ref": "#/definitions/field_region" },
+        { "$ref": "#/definitions/field_memsize" },
+        { "$ref": "#/definitions/field_datalist" },
+        { "$ref": "#/definitions/field_paragraph" },
+        { "$ref": "#/definitions/field_date" },
+        { "$ref": "#/definitions/field_time" },
+        { "$ref": "#/definitions/field_datetime" }
+      ]
+    },
+
+    "common_field_base": {
+      "type": "object",
+      "required": ["type", "user_label"],
+      "properties": {
+        "user_label": {
+          "type": "string",
+          "description": "Label displayed to the user before the input."
+        },
+        "user_loc": {
+          "type": ["string", "null"],
+          "description": "Localization key for the label. Falls back to user_label if invalid or absent."
+        },
+        "required": {
+          "type": "boolean",
+          "description": "Whether the field must be filled. See documentation for interaction with 'default'."
+        }
+      }
+    },
+
+    "common_text_field": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "properties": {
+            "regex": {
+              "type": ["string", "null"],
+              "description": "JavaScript regular expression string run with .matchAll and the global flag."
+            },
+            "default": {
+              "type": ["string", "null"],
+              "description": "Default string value. Will be matched against regex if present."
+            }
+          }
+        }
+      ]
+    },
+
+    "field_string": {
+      "allOf": [
+        { "$ref": "#/definitions/common_text_field" },
+        { "type": "object", "properties": { "type": { "type": "string", "const": "string" } }, "required": ["type"] }
+      ]
+    },
+
+    "field_textarea": {
+      "allOf": [
+        { "$ref": "#/definitions/common_text_field" },
+        { "type": "object", "properties": { "type": { "type": "string", "const": "textarea" } }, "required": ["type"] }
+      ]
+    },
+
+    "field_uuid": {
+      "allOf": [
+        { "$ref": "#/definitions/common_text_field" },
+        { "type": "object", "properties": { "type": { "type": "string", "const": "uuid" } }, "required": ["type"] }
+      ]
+    },
+
+    "field_mac": {
+      "allOf": [
+        { "$ref": "#/definitions/common_text_field" },
+        { "type": "object", "properties": { "type": { "type": "string", "const": "mac" } }, "required": ["type"] }
+      ]
+    },
+
+    "field_email": {
+      "allOf": [
+        { "$ref": "#/definitions/common_text_field" },
+        { "type": "object", "properties": { "type": { "type": "string", "const": "email" } }, "required": ["type"] }
+      ]
+    },
+
+    "field_password": {
+      "allOf": [
+        { "$ref": "#/definitions/common_text_field" },
+        { "type": "object", "properties": { "type": { "type": "string", "const": "password" } }, "required": ["type"] }
+      ]
+    },
+
+    "field_name": {
+      "allOf": [
+        { "$ref": "#/definitions/common_text_field" },
+        { "type": "object", "properties": { "type": { "type": "string", "const": "name" } }, "required": ["type"] }
+      ]
+    },
+
+    "field_ip": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":    { "type": "string", "const": "ip" },
+            "default": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+
+    "field_ip_cidr": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":    { "type": "string", "const": "ip-cidr" },
+            "default": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+
+    "field_ipv6": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": { "type": "string", "const": "ipv6" }
+          }
+        }
+      ]
+    },
+
+    "field_number": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":     { "type": "string", "const": "number" },
+            "regex":    { "type": ["string", "null"] },
+            "default":  { "type": ["number", "null"] },
+            "min":      { "type": ["number", "null"], "description": "Minimum accepted value." },
+            "max":      { "type": ["number", "null"], "description": "Maximum accepted value." },
+            "parse_as": {
+              "type": ["string", "null"],
+              "enum": ["integer", "float", null],
+              "description": "Forces the returned number to a specific JS numeric type."
+            }
+          }
+        }
+      ]
+    },
+
+    "field_b64_string": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":  { "type": "string", "const": "b64_string" },
+            "regex": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+
+    "field_b64_textarea": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":  { "type": "string", "const": "b64_textarea" },
+            "regex": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+
+    "field_slider": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type", "min", "max"],
+          "properties": {
+            "type":    { "type": "string", "const": "slider" },
+            "regex":   { "type": ["string", "null"] },
+            "default": { "type": ["number", "null"] },
+            "min":     { "type": "number", "description": "Required minimum value for the slider." },
+            "max":     { "type": "number", "description": "Required maximum value for the slider." },
+            "step":    { "type": ["number", "null"], "description": "Step increment." }
+          }
+        }
+      ]
+    },
+
+    "field_boolean": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":    { "type": "string", "const": "boolean" },
+            "regex":   { "type": ["string", "null"] },
+            "default": { "type": ["boolean", "null"] }
+          }
+        }
+      ]
+    },
+
+    "option_object": {
+      "type": "object",
+      "required": ["user_label", "value"],
+      "additionalProperties": false,
+      "properties": {
+        "user_label": { "type": "string" },
+        "user_loc":   { "type": ["string", "null"] },
+        "value":      { "description": "The value sent to the API when this option is selected." }
+      }
+    },
+
+    "field_select": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type", "options"],
+          "properties": {
+            "type":    { "type": "string", "const": "select" },
+            "default": { "type": ["string", "null"] },
+            "options": {
+              "type": "array",
+              "description": "List of selectable options.",
+              "minItems": 1,
+              "items": { "$ref": "#/definitions/option_object" }
+            }
+          }
+        }
+      ]
+    },
+
+    "field_region": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": { "type": "string", "const": "region" }
+          }
+        }
+      ]
+    },
+
+    "field_memsize": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":    { "type": "string", "const": "memsize" },
+            "default": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+
+    "field_datalist": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type", "item_definition"],
+          "properties": {
+            "type": { "type": "string", "const": "datalist" },
+            "item_definition": {
+              "type": "object",
+              "description": "Sub-form definition. Keys are JSON path keys; values are form field objects. Nested datalists are supported but should be used sparingly.",
+              "additionalProperties": { "$ref": "#/definitions/form_field" }
+            }
+          }
+        }
+      ]
+    },
+
+    "field_paragraph": {
+      "type": "object",
+      "description": "A display-only paragraph, not returned in the submitted data.",
+      "required": ["type", "paragraph_style", "paragraph_content"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": "string", "const": "paragraph" },
+        "paragraph_style": {
+          "type": "string",
+          "enum": ["paragraph", "info", "warning", "error"]
+        },
+        "paragraph_content": { "type": "string" }
+      }
+    },
+
+    "field_date": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":   { "type": "string", "const": "date" },
+            "format": { "type": "string", "description": "Format string for the returned date. Output is always MM-DD-YYYY." }
+          }
+        }
+      ]
+    },
+
+    "field_time": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type": { "type": "string", "const": "time" }
+          }
+        }
+      ]
+    },
+
+    "field_datetime": {
+      "allOf": [
+        { "$ref": "#/definitions/common_field_base" },
+        {
+          "type": "object",
+          "required": ["type"],
+          "properties": {
+            "type":   { "type": "string", "const": "datetime" },
+            "format": { "type": "string", "description": "Format string. Output is always MM-DD-YYYYTHH:mm:SS." }
+          }
+        }
+      ]
+    },
+
+    "table_column": {
+      "type": "object",
+      "required": ["name", "display_type", "json_key"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Display name of the column."
+        },
+        "localization_key": {
+          "type": "string",
+          "description": "Localization key for the column name. Falls back to 'name' if absent."
+        },
+        "display_type": {
+          "type": "string",
+          "enum": ["text", "monospace", "check", "timestamp", "byte_sized", "subtable", "uuid"],
+          "description": "How Electros formats the cell value."
+        },
+        "json_key": {
+          "type": "string",
+          "description": "Slash-separated path to the value in the API response object."
+        },
+        "advanced": {
+          "type": "boolean",
+          "description": "If true, the column is hidden by default behind an advanced toggle."
+        },
+        "subtable": {
+          "type": "array",
+          "description": "Required when display_type is 'subtable'. Defines the nested table columns. Subtables cannot be nested further.",
+          "items": { "$ref": "#/definitions/table_column_no_subtable" }
+        }
+      },
+      "if": {
+        "properties": { "display_type": { "const": "subtable" } },
+        "required": ["display_type"]
+      },
+      "then": {
+        "required": ["subtable"]
+      }
+    },
+
+    "table_column_no_subtable": {
+      "type": "object",
+      "description": "A table column definition that cannot itself contain a subtable (no nesting).",
+      "required": ["name", "display_type", "json_key"],
+      "additionalProperties": false,
+      "properties": {
+        "name":             { "type": "string" },
+        "localization_key": { "type": "string" },
+        "display_type": {
+          "type": "string",
+          "enum": ["text", "monospace", "check", "timestamp", "byte_sized"]
+        },
+        "json_key":  { "type": "string" },
+        "advanced":  { "type": "boolean" }
+      }
+    },
+
+    "table_layout": {
+      "type": "array",
+      "description": "Ordered list of column definitions for the service data table.",
+      "items": { "$ref": "#/definitions/table_column" }
+    },
+
+    "custom_daemon_url": {
+      "type": "object",
+      "description": "Overrides the default daemon URLs for create, list, and delete operations.",
+      "required": ["refers_to"],
+      "additionalProperties": false,
+      "properties": {
+        "create_url": {
+          "type": "string",
+          "description": "Override URL for POST (create) requests."
+        },
+        "delete_url": {
+          "type": "string",
+          "description": "Override URL for DELETE requests."
+        },
+        "list_url": {
+          "type": "string",
+          "description": "Override URL for GET (list) requests."
+        },
+        "refers_to": {
+          "type": "string",
+          "enum": ["custom", "host", "pathPrefix"],
+          "description": "Specifies how the provided URL(s) are interpreted."
+        },
+        "custom_host_port": {
+          "type": ["integer", "string"],
+          "description": "Only valid when refers_to is 'host'. Overrides the port used."
+        }
+      },
+      "if": {
+        "not": {
+          "properties": { "refers_to": { "const": "host" } },
+          "required": ["refers_to"]
+        }
+      },
+      "then": {
+        "not": { "required": ["custom_host_port"] }
+      }
+    },
+
+    "extra_flow": {
+      "type": "object",
+      "description": "An extra creation flow added to the service page. Up to five are allowed.",
+      "required": ["flow_name", "flow_name_localization", "flow_icon", "flow_form"],
+      "additionalProperties": false,
+      "properties": {
+        "flow_name": {
+          "type": "string",
+          "description": "Internal unique name. Lowercase, dash-separated, no spaces.",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "flow_name_localization": {
+          "type": "string",
+          "description": "Displayed name. Must be a localization key or prefixed with 'literal:'."
+        },
+        "flow_icon": {
+          "type": "string",
+          "description": "FontAwesome icon className for the create button."
+        },
+        "flow_form": {
+          "$ref": "#/definitions/main_form_data",
+          "description": "The form structure for this flow. Same format as main_form_data."
+        },
+        "bypass_host_picker": {
+          "type": "boolean",
+          "description": "If true, the host picker step is skipped. Defaults to false."
+        },
+        "custom_url": {
+          "type": "string",
+          "description": "Optional custom endpoint URL for this flow."
+        },
+        "refers_to": {
+          "type": "string",
+          "enum": ["custom", "host", "pathPrefix"],
+          "description": "Required when custom_url is set."
+        }
+      },
+      "if": {
+        "required": ["custom_url"]
+      },
+      "then": {
+        "required": ["refers_to"]
+      }
+    },
+
+    "resources": {
+      "type": "object",
+      "description": "Optional customization and extension options for the service. Not yet fully implemented in Electros.",
+      "additionalProperties": false,
+      "properties": {
+        "main_form_bypass_host_picker": {
+          "type": "boolean",
+          "description": "If true, the main form skips the host picker and sends directly."
+        },
+        "main_form_data_name_localization": {
+          "type": "string",
+          "description": "Overrides the Create button label. Use a localization key or 'literal:' prefix."
+        },
+        "main_form_icon": {
+          "type": "string",
+          "description": "FontAwesome icon to use on the Create button in place of the default."
+        },
+        "enforce_visibility": {
+          "type": "boolean",
+          "description": "If true, disables standard service visibility checks and always shows the service."
+        },
+        "has_get_credentials": {
+          "type": "boolean",
+          "description": "If false, the 'getCredentials' table action will not be shown."
+        },
+        "custom_daemon_url": {
+          "$ref": "#/definitions/custom_daemon_url"
+        },
+        "extra_flows": {
+          "type": "array",
+          "description": "Additional creation flows. Maximum of five.",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": { "$ref": "#/definitions/extra_flow" }
+        },
+        "extra_actions": {
+          "type": "array",
+          "description": "Extra table actions. Definition not yet documented.",
+          "items": { "type": "object" }
+        }
+      }
+    }
+
+  }
+}
