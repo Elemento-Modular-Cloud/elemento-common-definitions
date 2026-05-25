@@ -162,7 +162,7 @@
                 {
                     "name": "Region",
                     "localization_key": "location",
-                    "display_type": "region",
+                    "display_type": "text",
                     "json_key": "region"
                 }
             ],
@@ -176,11 +176,6 @@
                 "page_icon": "fa-brands fa-kubernetes"
             },
             "main_form_data": {
-                "ip_address": {
-                    "type": "target",
-                    "user_label": "Target",
-                    "target_type": "manual"
-                },
                 "name": {
                     "type": "name",
                     "user_label": "Cluster Name",
@@ -319,7 +314,7 @@
                 {
                     "name": "Region",
                     "localization_key": "region",
-                    "display_type": "region",
+                    "display_type": "text",
                     "json_key": "region"
                 },
                 {
@@ -423,7 +418,7 @@
                 {
                     "name": "Region",
                     "localization_key": "location",
-                    "display_type": "region",
+                    "display_type": "text",
                     "json_key": "region"
                 }
             ],
@@ -497,7 +492,7 @@
                 {
                     "name": "Region",
                     "localization_key": "location",
-                    "display_type": "region",
+                    "display_type": "text",
                     "json_key": "region"
                 }
             ],
@@ -570,13 +565,13 @@
                 {
                     "name": "Endpoint",
                     "localization_key": "s3/endpoint",
-                    "display_type": "string",
+                    "display_type": "text",
                     "json_key": "endpoint"
                 },
                 {
                     "name": "Region",
                     "localization_key": "s3/region",
-                    "display_type": "region",
+                    "display_type": "text",
                     "json_key": "region"
                 },
                 {
