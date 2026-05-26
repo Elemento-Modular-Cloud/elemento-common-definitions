@@ -11,7 +11,8 @@
                 "name": {
                     "type": "name",
                     "user_label": "Cluster name",
-                    "default": "my-cluster"
+                    "default": "my-cluster",
+                    "regex": "^[a-zA-Z0-9-]+$"
                 },
                 "nodepools": {
                     "type": "datalist",
@@ -19,7 +20,8 @@
                     "item_definition": {
                         "pool_name": {
                             "user_label": "Nodepool Name",
-                            "type": "name"
+                            "type": "name",
+                            "regex": "^[a-zA-Z0-9-]+$"
                         },
                         "autoscale": {
                             "user_label": "Autoscale",
@@ -255,7 +257,8 @@
                 "name": {
                     "type": "name",
                     "user_label": "Database name",
-                    "default": "my-database"
+                    "default": "my-database",
+                    "regex": "^[a-zA-Z0-9-]+$"
                 },
                 "region": {
                     "type": "region",
@@ -386,7 +389,8 @@
             "main_form_data": {
                 "vm_name": {
                     "user_label": "VM Name",
-                    "type": "name"
+                    "type": "name",
+                    "regex": "^[a-zA-Z0-9-]+$"
                 },
                 "slots": {
                     "user_label": "CPU cores",
@@ -482,7 +486,8 @@
             "main_form_data": {
                 "vm_name": {
                     "user_label": "VM Name",
-                    "type": "name"
+                    "type": "name",
+                    "regex": "^[a-zA-Z0-9-]+$"
                 },
                 "slots": {
                     "user_label": "CPU cores",
