@@ -1567,135 +1567,27 @@
                     "sub_type": "kaas",
                     "support_level": "full",
                     "regions": {
-                        "bhs1": {
+                        "eu-south-mil": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-west-par": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ca-east-bhs": {
                             "country": "Canada",
                             "location": "Beauharnois",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "bhs2": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs3": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "bhs5": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "de1": {
+                        "eu-west-fra": {
                             "country": "Germany",
                             "location": "Frankfurt",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg1": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg3": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg5": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sbg7": {
-                            "country": "France",
-                            "location": "Strasbourg",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra1": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra3": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra5": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra7": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra9": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "gra11": {
-                            "country": "France",
-                            "location": "Gravelines",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "rbx": {
-                            "country": "France",
-                            "location": "Roubaix",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "uk1": {
-                            "country": "England",
-                            "location": "Erith",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "waw1": {
-                            "country": "Poland",
-                            "location": "Warsaw",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "sgp1": {
-                            "country": "Singapore",
-                            "location": "Singapore",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "syd1": {
-                            "country": "Australia",
-                            "location": "Sydney",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "vin1": {
-                            "country": "USA",
-                            "location": "Washington DC",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "hil1": {
-                            "country": "USA",
-                            "location": "Seattle",
                             "plus_code": "",
                             "certifications": []
                         }

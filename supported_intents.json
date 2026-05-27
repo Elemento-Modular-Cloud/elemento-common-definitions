@@ -361,7 +361,7 @@
                 {
                     "name": "Backup time",
                     "localization_key": "backup_time",
-                    "display_type": "timestamp",
+                    "display_type": "text",
                     "json_key": "backup_time"
                 },
                 {
