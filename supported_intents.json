@@ -453,19 +453,19 @@
                     "name": "Name",
                     "localization_key": "vm_name",
                     "display_type": "text",
-                    "json_key": "vm_name"
+                    "json_key": "req_json/vm_name"
                 },
                 {
                     "name": "UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
-                    "json_key": "service_uuid"
+                    "json_key": "uniqueID"
                 },
                 {
                     "name": "Status",
                     "localization_key": "status",
                     "display_type": "text",
-                    "json_key": "status"
+                    "json_key": "states"
                 },
                 {
                     "name": "Region",
@@ -550,19 +550,19 @@
                     "name": "Name",
                     "localization_key": "vm_name",
                     "display_type": "text",
-                    "json_key": "vm_name"
+                    "json_key": "req_json/vm_name"
                 },
                 {
                     "name": "UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
-                    "json_key": "service_uuid"
+                    "json_key": "uniqueID"
                 },
                 {
                     "name": "Status",
                     "localization_key": "status",
                     "display_type": "text",
-                    "json_key": "status"
+                    "json_key": "states"
                 },
                 {
                     "name": "Region",
