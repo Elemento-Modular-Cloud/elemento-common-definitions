@@ -1567,25 +1567,25 @@
                     "sub_type": "kaas",
                     "support_level": "full",
                     "regions": {
-                        "eu-south-mil": {
+                        "EU-SOUTH-MIL": {
                             "country": "Italy",
                             "location": "Milan",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "eu-west-par": {
+                        "EU-WEST-PAR": {
                             "country": "France",
                             "location": "Paris",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "ca-east-bhs": {
-                            "country": "Canada",
-                            "location": "Beauharnois",
+                        "UK1": {
+                            "country": "United Kingdom",
+                            "location": "London",
                             "plus_code": "",
                             "certifications": []
                         },
-                        "eu-west-fra": {
+                        "DE1": {
                             "country": "Germany",
                             "location": "Frankfurt",
                             "plus_code": "",
