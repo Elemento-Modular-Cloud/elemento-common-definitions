@@ -106,6 +106,7 @@
     "INFO_NETWORK_API_KEY": "/info",
     "START_EXPORT_NETWORK_API_KEY": "/export",
     "STOP_EXPORT_NETWORK_API_KEY": "/unexport",
+    "REFRESH_NETWORK_API_KEY": "/refresh",
 
     "CREATE_SERVICE_API_KEY": "/create",
     "DELETE_SERVICE_API_KEY": "/delete",
@@ -138,5 +139,10 @@
 
     "GENERATE_SERVICE_CREDENTIALS_API_KEY": "/credentials",
 
-    "BILLING_STATUS_API_KEY": "/billing/status"
+    "BILLING_STATUS_API_KEY": "/billing/status",
+
+    "HEADSCALE_LIST_NETWORKS_API_KEY": "/headscale/networks",
+    "HEADSCALE_GENERATE_PREAUTHKEY_API_KEY": "/headscale/token",
+    "HEADSCALE_DELETE_PREAUTHKEY_API_KEY": "/headscale/token",
+    "HEADSCALE_REFRESH_PREAUTHKEY_API_KEY": "/headscale/token/refresh"
 }
