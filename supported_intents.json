@@ -398,8 +398,8 @@
                 "vm_name": {
                     "user_label": "VM Name",
                     "type": "name",
-                    "regex": "^[a-zA-Z0-9-]+$",
-                    "user_regex": "Name must be alphanumeric and can include only hyphens"
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
                 },
                 "slots": {
                     "user_label": "CPU cores",
@@ -496,8 +496,8 @@
                 "vm_name": {
                     "user_label": "VM Name",
                     "type": "name",
-                    "regex": "^[a-zA-Z0-9-]+$",
-                    "user_regex": "Name must be alphanumeric and can include only hyphens"
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
                 },
                 "slots": {
                     "user_label": "CPU cores",
