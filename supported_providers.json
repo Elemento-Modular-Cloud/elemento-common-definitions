@@ -14,7 +14,7 @@
                     "display_name": "n8n",
                     "type": "service",
                     "sub_type": "n8n",
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "africa_south1": {
                             "country": "South Africa",
@@ -251,7 +251,7 @@
                     "display_name": "OpenClaw",
                     "type": "service",
                     "sub_type": "openclaw",
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "africa_south1": {
                             "country": "South Africa",
@@ -810,7 +810,7 @@
                     "display_name": "n8n",
                     "type": "service",
                     "sub_type": "n8n",
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "centralus": {
                             "country": "United States",
@@ -843,7 +843,7 @@
                     "display_name": "OpenClaw",
                     "type": "service",
                     "sub_type": "openclaw",
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "centralus": {
                             "country": "United States",
@@ -1717,7 +1717,7 @@
                     "display_name": "n8n",
                     "type": "service",
                     "sub_type": "n8n",
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {}
                 },
                 {
@@ -1725,7 +1725,7 @@
                     "display_name": "OpenClaw",
                     "type": "service",
                     "sub_type": "openclaw",
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {}
                 },
                 {
@@ -2420,7 +2420,7 @@
             "source": "fontawesome",
             "hex_color": "#f80000",
             "svg_filename": "oracle_icon.svg",
-            "status": "production",
+            "status": "beta",
             "server_ips": ["oracle.dev.meson.elemento.cloud"],
             "services": [
                 {
