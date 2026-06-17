@@ -64,7 +64,7 @@
                         "specs/storage_gb": {
                             "user_label": "Storage (GB)",
                             "type": "number",
-                            "min": 32,
+                            "min": 0,
                             "max": 1024,
                             "default": 32
                         },
