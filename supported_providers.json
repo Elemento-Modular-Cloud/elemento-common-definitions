@@ -1907,7 +1907,7 @@
             "source": "fontawesome",
             "hex_color": "#f80000",
             "svg_filename": "oracle_icon.svg",
-            "status": "production",
+            "status": "development",
             "server_ips": ["oracle.dev.meson.elemento.cloud"],
             "services": [
                 {
