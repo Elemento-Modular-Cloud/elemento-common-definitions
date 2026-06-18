@@ -3,7 +3,7 @@
         "kaas": {
             "metadata": {
                 "category": "paas",
-                "page_name_localization": "literal:Managed Kubernetes",
+                "page_name_localization": "literal:Kubernetes",
                 "page_name": "managedkubernetes",
                 "page_icon": "fa-brands fa-kubernetes"
             },
@@ -184,8 +184,8 @@
         "kops": {
             "metadata": {
                 "category": "paas",
-                "page_name_localization": "literal:Kubernetes",
-                "page_name": "kubernetes",
+                "page_name_localization": "literal:Kops",
+                "page_name": "kops",
                 "page_icon": "fa-brands fa-kubernetes"
             },
             "main_form_data": {
@@ -390,7 +390,7 @@
         "n8n": {
             "metadata": {
                 "category": "paas",
-                "page_name_localization": "literal:n8n workflow Automation",
+                "page_name_localization": "literal:n8n",
                 "page_name": "n8n",
                 "page_icon": "fa-solid fa-robot"
             },
