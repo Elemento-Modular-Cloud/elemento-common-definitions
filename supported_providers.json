@@ -173,39 +173,6 @@
                             "certifications": []
                         }
                     }
-                },
-                {
-                    "name": "dbaas",
-                    "display_name": "Database",
-                    "type": "service",
-                    "sub_type": "dbaas",
-                    "support_level": "full",
-                    "regions": {
-                        "europe-central2": {
-                            "country": "Poland",
-                            "location": "Warsaw",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "us-central1": {
-                            "country": "United States",
-                            "location": "Iowa",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "europe-west1": {
-                            "country": "Belgium",
-                            "location": "Brussels",
-                            "plus_code": "",
-                            "certifications": []
-                        },
-                        "asia-east1": {
-                            "country": "Taiwan",
-                            "location": "Changhua County",
-                            "plus_code": "",
-                            "certifications": []
-                        }
-                    }
                 }
             ]
         },
