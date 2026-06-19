@@ -411,20 +411,6 @@
                     "min": 4,
                     "max": 128
                 },
-                "authentication/username": {
-                    "user_label": "Username",
-                    "type": "string",
-                    "default": "admin"
-                },
-                "authentication/password": {
-                    "user_label": "Password",
-                    "type": "password",
-                    "default": "password123!"
-                },
-                "authentication/ssh-key": {
-                    "user_label": "SSH Key",
-                    "type": "textarea"
-                },
                 "region": {
                     "type": "region",
                     "user_label": "Region"
@@ -508,20 +494,6 @@
                     "default": 4,
                     "min": 4,
                     "max": 128
-                },
-                "authentication/username": {
-                    "user_label": "Username",
-                    "type": "string",
-                    "default": "admin"
-                },
-                "authentication/password": {
-                    "user_label": "Password",
-                    "type": "password",
-                    "default": "password123!"
-                },
-                "authentication/ssh-key": {
-                    "user_label": "SSH Key",
-                    "type": "textarea"
                 },
                 "region": {
                     "type": "region",
