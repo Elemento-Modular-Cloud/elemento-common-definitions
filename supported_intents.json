@@ -305,7 +305,9 @@
                 "password": {
                     "type": "password",
                     "user_label": "password",
-                    "default": "password123!"
+                    "default": "password123",
+                    "regex": "^[a-zA-Z0-9-_]+$",
+                    "user_regex": "Password must consist of alphanumeric characters, hyphens, and underscores"
                 },
                 "nodes_number": {
                     "type": "number",
