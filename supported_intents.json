@@ -389,7 +389,7 @@
         },
         "n8n": {
             "metadata": {
-                "category": "paas",
+                "category": "saas",
                 "page_name_localization": "literal:n8n",
                 "page_name": "n8n",
                 "page_icon": "fa-solid fa-robot"
@@ -473,7 +473,7 @@
         },
         "openclaw": {
             "metadata": {
-                "category": "paas",
+                "category": "saas",
                 "page_name_localization": "literal:OpenCLAW",
                 "page_name": "openclaw",
                 "page_icon": "fa-solid fa-crab"
