@@ -1,0 +1,645 @@
+{
+    "service": {
+        "kaas": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Kubernetes",
+                "page_name": "managedkubernetes",
+                "page_icon": "fa-brands fa-kubernetes"
+            },
+            "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "Cluster name",
+                    "default": "my-cluster",
+                    "regex": "^[a-zA-Z0-9-]+$",
+                    "user_regex": "Name must be alphanumeric and can include only hyphens"
+                },
+                "nodepools": {
+                    "type": "datalist",
+                    "user_label": "Nodepools",
+                    "item_definition": {
+                        "pool_name": {
+                            "user_label": "Nodepool Name",
+                            "type": "name",
+                            "regex": "^[a-zA-Z0-9-]+$",
+                            "user_regex": "Name must be alphanumeric and can include only hyphens"
+                        },
+                        "autoscale": {
+                            "user_label": "Autoscale",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "max_nodes": {
+                            "user_label": "Max nodes",
+                            "type": "number",
+                            "min": 1,
+                            "max": 100
+                        },
+                        "min_nodes": {
+                            "user_label": "Min nodes",
+                            "type": "number",
+                            "min": 1,
+                            "max": 100
+                        },
+                        "shared_storage_gb": {
+                            "user_label": "Shared storage (GB)",
+                            "type": "number",
+                            "min": 0,
+                            "max": 2048,
+                            "default": 0
+                        },
+                        "specs/cpu_cores": {
+                            "user_label": "CPU (vCPU)",
+                            "type": "number",
+                            "min": 1,
+                            "max": 96
+                        },
+                        "specs/ram_gb": {
+                            "user_label": "Memory (GB)",
+                            "type": "number",
+                            "min": 1,
+                            "max": 128
+                        },
+                        "specs/storage_gb": {
+                            "user_label": "Storage (GB)",
+                            "type": "number",
+                            "min": 0,
+                            "max": 1024,
+                            "default": 32
+                        },
+                        "specs/gpu": {
+                            "user_label": "GPU (count)",
+                            "type": "slider",
+                            "min": 0,
+                            "max": 8,
+                            "step": 1
+                        }
+                    }
+                },
+                "nodes_subnet/dhcp": {
+                    "user_label": "DHCP",
+                    "type": "boolean",
+                    "default": true
+                },
+                "nodes_subnet/network": {
+                    "user_label": "Network IP range",
+                    "type": "ip-cidr",
+                    "default": "192.170.5.0/24"
+                },
+                "update_policy": {
+                    "type": "select",
+                    "user_label": "Update policy",
+                    "options": [
+                        {
+                            "user_label": "Always update",
+                            "value": "ALWAYS_UPDATE"
+                        },
+                        {
+                            "user_label": "Manual",
+                            "value": "MANUAL"
+                        }
+                    ]
+                },
+                "kubernetes_version": {
+                    "type": "string",
+                    "user_label": "Kubernetes Version",
+                    "default": "1.35",
+                    "regex": "^([12])\\.(0|[1-9][0-9]*)$",
+                    "user_regex": "Version must be in the format 'X.Y' where X is 1 or 2, and Y is a non-negative integer"
+                },
+                "controlplane_ha": {
+                    "type": "boolean",
+                    "user_label": "Control plane HA",
+                    "default": false
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "cluster_name",
+                    "display_type": "text",
+                    "json_key": "cluster_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_id",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                },
+                {
+                    "name": "Version",
+                    "localization_key": "version",
+                    "display_type": "text",
+                    "json_key": "version"
+                },
+                {
+                    "name": "Network CIDR",
+                    "localization_key": "network_cidr",
+                    "display_type": "text",
+                    "json_key": "network_cidr"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "location"
+                }
+            ],
+            "resources": {}
+        },
+        "kops": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Kops",
+                "page_name": "kops",
+                "page_icon": "fa-brands fa-kubernetes"
+            },
+            "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "Cluster Name",
+                    "default": "my-cluster",
+                    "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number"
+                },
+                "s3_endpoint": {
+                    "type": "string",
+                    "user_label": "S3 Endpoint",
+                    "default": "https://s3.example.com",
+                    "regex": "^https://s3",
+                    "user_regex": "Endpoint must be a valid HTTPS URL starting with 'https://s3'"
+                },
+                "s3_state_bucket": {
+                    "type": "string",
+                    "user_label": "S3 Bucket",
+                    "default": "s3://my-cluster-state-bucket",
+                    "regex": "^s3://",
+                    "user_regex": "Bucket must be a valid S3 URL starting with 's3://'"
+                },
+                "s3_access_key_id": {
+                    "type": "string",
+                    "user_label": "S3 Access Key Id",
+                    "regex": "^[A-Z0-9]{20}$",
+                    "user_regex": "Access Key Id must be a 20-character uppercase alphanumeric string"
+                },
+                "s3_secret_access_key": {
+                    "type": "password",
+                    "user_label": "S3 Secret Access Key",
+                    "regex": "^[A-Za-z0-9/+=]{40}$",
+                    "user_regex": "Secret Access Key must be a 40-character string containing only letters, numbers, slashes, and plus signs"
+                },
+                "node_count": {
+                    "type": "number",
+                    "user_label": "Node Count",
+                    "default": 3,
+                    "min": 3,
+                    "max": 10
+                },
+                "node_volume_size": {
+                    "type": "number",
+                    "user_label": "Node Volume Size (GB)",
+                    "default": 64
+                },
+                "control_plane_volume_size": {
+                    "type": "number",
+                    "user_label": "Control Plane Volume Size (GB)",
+                    "default": 64,
+                    "min": 32
+                },
+                "network_cidr": {
+                    "type": "ip-cidr",
+                    "user_label": "Network CIDR",
+                    "default": "192.168.100.0/24"
+                },
+                "ssh_public_key": {
+                    "type": "textarea",
+                    "user_label": "SSH Public Key",
+                    "default": "ssh-rsa AAAAB3NzaC1yc2EA..."
+                }
+            },
+            "table_layout": [],
+            "resources": {}
+        },
+        "dbaas": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Database",
+                "page_name": "dbaas",
+                "page_icon": "fa-solid fa-database"
+            },
+            "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "Database name",
+                    "default": "my-database",
+                    "regex": "^[a-zA-Z0-9-]+$"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "engine": {
+                    "type": "select",
+                    "user_label": "Database engine",
+                    "default": "postgres",
+                    "options": [
+                        {
+                            "user_label": "Redis",
+                            "value": "redis"
+                        },
+                        {
+                            "user_label": "Mysql",
+                            "value": "mysql"
+                        },
+                        {
+                            "user_label": "Postgres",
+                            "value": "postgres"
+                        }
+                    ]
+                },
+                "backup_time": {
+                    "type": "time",
+                    "user_label": "Backup time",
+                    "format": "HH:mm:ss"
+                },
+                "disk_size": {
+                    "type": "number",
+                    "user_label": "Database disk size (GB)",
+                    "default": 50,
+                    "min": 1,
+                    "max": 500
+                },
+                "password": {
+                    "type": "password",
+                    "user_label": "password",
+                    "default": "password123",
+                    "regex": "^[a-zA-Z0-9-_]+$",
+                    "user_regex": "Password must consist of alphanumeric characters, hyphens, and underscores"
+                },
+                "nodes_number": {
+                    "type": "number",
+                    "user_label": "nodes number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 3
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Engine",
+                    "localization_key": "engine",
+                    "display_type": "text",
+                    "json_key": "engine"
+                },
+                {
+                    "name": "Backup time",
+                    "localization_key": "backup_time",
+                    "display_type": "text",
+                    "json_key": "backup_time"
+                },
+                {
+                    "name": "Disk size",
+                    "localization_key": "disk_size",
+                    "display_type": "byte_sized",
+                    "json_key": "disk_size"
+                },
+                {
+                    "name": "Nodes number",
+                    "localization_key": "nodes_number",
+                    "display_type": "text",
+                    "json_key": "nodes_number"
+                }
+            ],
+            "resources": {}
+        },
+        "n8n": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:n8n",
+                "page_name": "n8n",
+                "page_icon": "fa-solid fa-robot"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 2,
+                    "min": 2,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 128
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "openclaw": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:OpenCLAW",
+                "page_name": "openclaw",
+                "page_icon": "fa-solid fa-crab"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 128
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        }
+    },
+    "storage": {
+        "objectstorage": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Object Storage",
+                "page_name": "objectstorage",
+                "page_icon": "fa-solid fa-bucket"
+            },
+            "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "Bucket name",
+                    "default": "my-bucket",
+                    "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$",
+                    "user_regex": "Name must be 3-24 characters long and can include only lowercase letters, numbers, and hyphens"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "purchasedTB": {
+                    "type": "number",
+                    "user_label": "Bucket size (TB)",
+                    "default": 1,
+                    "min": 1,
+                    "max": 20
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "s3/bucket_name",
+                    "display_type": "monospace",
+                    "json_key": "name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "s3/uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Endpoint",
+                    "localization_key": "s3/endpoint",
+                    "display_type": "monospace",
+                    "json_key": "endpoint"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "s3/region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Size",
+                    "localization_key": "s3/size",
+                    "display_type": "byte_sized",
+                    "json_key": "active_storage"
+                }
+            ],
+            "resources": {}
+        }
+    }
+}
