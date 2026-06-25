@@ -286,6 +286,10 @@
                             "value": "mysql"
                         },
                         {
+                            "user_label": "Sql Server",
+                            "value": "sqlserver"
+                        },
+                        {
                             "user_label": "Postgres",
                             "value": "postgres"
                         }
