@@ -1857,7 +1857,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "service",
+                    "type": "storage",
                     "sub_type": "objectstorage",
                     "support_level": "full",
                     "regions": {
@@ -1940,7 +1940,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "service",
+                    "type": "storage",
                     "sub_type": "objectstorage",
                     "support_level": "dev",
                     "regions": {
