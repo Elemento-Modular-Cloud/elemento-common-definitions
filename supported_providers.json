@@ -1857,7 +1857,7 @@
                 {
                     "name": "objectStorage",
                     "display_name": "Object Storage",
-                    "type": "service",
+                    "type": "storage",
                     "sub_type": "objectstorage",
                     "support_level": "full",
                     "regions": {
@@ -1925,6 +1925,128 @@
                     "sub_type": "blockstorage",
                     "support_level": "dev",
                     "regions": {}
+                }
+            ]
+        },
+        "aws": {
+            "display_name": "AWS",
+            "icon_classes": "fa-brands fa-aws",
+            "source": "fontawesome",
+            "hex_color": "#232f3e",
+            "svg_filename": "aws_icon.svg",
+            "status": "development",
+            "server_ips": ["aws.dev.meson.elemento.cloud"],
+            "services": [
+                {
+                    "name": "objectStorage",
+                    "display_name": "Object Storage",
+                    "type": "storage",
+                    "sub_type": "objectstorage",
+                    "support_level": "dev",
+                    "regions": {
+                        "us-east-1": {
+                            "country": "USA",
+                            "location": "Virginia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-east-2": {
+                            "country": "USA",
+                            "location": "Ohio",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west-1": {
+                            "country": "USA",
+                            "location": "California",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-west-2": {
+                            "country": "USA",
+                            "location": "Oregon",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ca-central-1": {
+                            "country": "Canada",
+                            "location": "Toronto",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-central-1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-central-2": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-west-1": {
+                            "country": "Ireland",
+                            "location": "Dublin",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-west-2": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-west-3": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-south-1": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eu-north-1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ap-northeast-1": {
+                            "country": "Japan",
+                            "location": "Tokyo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ap-northeast-2": {
+                            "country": "South Korea",
+                            "location": "Seoul",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ap-southeast-1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ap-southeast-2": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "ap-south-1": {
+                            "country": "India",
+                            "location": "Mumbai",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
                 }
             ]
         }

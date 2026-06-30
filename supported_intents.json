@@ -3,7 +3,7 @@
         "kaas": {
             "metadata": {
                 "category": "paas",
-                "page_name_localization": "literal:Managed Kubernetes",
+                "page_name_localization": "literal:Kubernetes",
                 "page_name": "managedkubernetes",
                 "page_icon": "fa-brands fa-kubernetes"
             },
@@ -64,7 +64,7 @@
                         "specs/storage_gb": {
                             "user_label": "Storage (GB)",
                             "type": "number",
-                            "min": 32,
+                            "min": 0,
                             "max": 1024,
                             "default": 32
                         },
@@ -104,7 +104,7 @@
                 "kubernetes_version": {
                     "type": "string",
                     "user_label": "Kubernetes Version",
-                    "default": "1.34",
+                    "default": "1.35",
                     "regex": "^([12])\\.(0|[1-9][0-9]*)$",
                     "user_regex": "Version must be in the format 'X.Y' where X is 1 or 2, and Y is a non-negative integer"
                 },
@@ -184,8 +184,8 @@
         "kops": {
             "metadata": {
                 "category": "paas",
-                "page_name_localization": "literal:Kubernetes",
-                "page_name": "kubernetes",
+                "page_name_localization": "literal:Kops",
+                "page_name": "kops",
                 "page_icon": "fa-brands fa-kubernetes"
             },
             "main_form_data": {
@@ -304,18 +304,22 @@
                     "type": "number",
                     "user_label": "Database disk size (GB)",
                     "default": 50,
-                    "min": 1
+                    "min": 1,
+                    "max": 500
                 },
                 "password": {
                     "type": "password",
                     "user_label": "password",
-                    "default": "password123!"
+                    "default": "password123",
+                    "regex": "^[a-zA-Z0-9-_]+$",
+                    "user_regex": "Password must consist of alphanumeric characters, hyphens, and underscores"
                 },
                 "nodes_number": {
                     "type": "number",
                     "user_label": "nodes number",
                     "default": 1,
-                    "min": 1
+                    "min": 1,
+                    "max": 3
                 },
                 "billing_frequency": {
                     "type": "select",
@@ -389,8 +393,8 @@
         },
         "n8n": {
             "metadata": {
-                "category": "paas",
-                "page_name_localization": "literal:n8n workflow Automation",
+                "category": "saas",
+                "page_name_localization": "literal:n8n",
                 "page_name": "n8n",
                 "page_icon": "fa-solid fa-robot"
             },
@@ -414,20 +418,6 @@
                     "default": 4,
                     "min": 4,
                     "max": 128
-                },
-                "authentication/username": {
-                    "user_label": "Username",
-                    "type": "string",
-                    "default": "admin"
-                },
-                "authentication/password": {
-                    "user_label": "Password",
-                    "type": "password",
-                    "default": "password123!"
-                },
-                "authentication/ssh-key": {
-                    "user_label": "SSH Key",
-                    "type": "textarea"
                 },
                 "region": {
                     "type": "region",
@@ -487,7 +477,7 @@
         },
         "openclaw": {
             "metadata": {
-                "category": "paas",
+                "category": "saas",
                 "page_name_localization": "literal:OpenCLAW",
                 "page_name": "openclaw",
                 "page_icon": "fa-solid fa-crab"
@@ -512,20 +502,6 @@
                     "default": 4,
                     "min": 4,
                     "max": 128
-                },
-                "authentication/username": {
-                    "user_label": "Username",
-                    "type": "string",
-                    "default": "admin"
-                },
-                "authentication/password": {
-                    "user_label": "Password",
-                    "type": "password",
-                    "default": "password123!"
-                },
-                "authentication/ssh-key": {
-                    "user_label": "SSH Key",
-                    "type": "textarea"
                 },
                 "region": {
                     "type": "region",
