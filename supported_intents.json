@@ -12,7 +12,8 @@
                     "type": "name",
                     "user_label": "Cluster name",
                     "default": "my-cluster",
-                    "regex": "^[a-zA-Z0-9-]+$"
+                    "regex": "^[a-zA-Z0-9-]+$",
+                    "user_regex": "Name must be alphanumeric and can include only hyphens"
                 },
                 "nodepools": {
                     "type": "datalist",
@@ -21,7 +22,8 @@
                         "pool_name": {
                             "user_label": "Nodepool Name",
                             "type": "name",
-                            "regex": "^[a-zA-Z0-9-]+$"
+                            "regex": "^[a-zA-Z0-9-]+$",
+                            "user_regex": "Name must be alphanumeric and can include only hyphens"
                         },
                         "autoscale": {
                             "user_label": "Autoscale",
@@ -103,7 +105,8 @@
                     "type": "string",
                     "user_label": "Kubernetes Version",
                     "default": "1.34",
-                    "regex": "^([1-9]|1[0-9])\\.(0|[1-9][0-9]*)$"
+                    "regex": "^([12])\\.(0|[1-9][0-9]*)$",
+                    "user_regex": "Version must be in the format 'X.Y' where X is 1 or 2, and Y is a non-negative integer"
                 },
                 "controlplane_ha": {
                     "type": "boolean",
@@ -190,29 +193,34 @@
                     "type": "name",
                     "user_label": "Cluster Name",
                     "default": "my-cluster",
-                    "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*"
+                    "regex": "[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number"
                 },
                 "s3_endpoint": {
                     "type": "string",
                     "user_label": "S3 Endpoint",
                     "default": "https://s3.example.com",
-                    "regex": "^https://s3"
+                    "regex": "^https://s3",
+                    "user_regex": "Endpoint must be a valid HTTPS URL starting with 'https://s3'"
                 },
                 "s3_state_bucket": {
                     "type": "string",
                     "user_label": "S3 Bucket",
                     "default": "s3://my-cluster-state-bucket",
-                    "regex": "^s3://"
+                    "regex": "^s3://",
+                    "user_regex": "Bucket must be a valid S3 URL starting with 's3://'"
                 },
                 "s3_access_key_id": {
                     "type": "string",
                     "user_label": "S3 Access Key Id",
-                    "regex": "^[A-Z0-9]{20}$"
+                    "regex": "^[A-Z0-9]{20}$",
+                    "user_regex": "Access Key Id must be a 20-character uppercase alphanumeric string"
                 },
                 "s3_secret_access_key": {
                     "type": "password",
                     "user_label": "S3 Secret Access Key",
-                    "regex": "^[A-Za-z0-9/+=]{40}$"
+                    "regex": "^[A-Za-z0-9/+=]{40}$",
+                    "user_regex": "Secret Access Key must be a 40-character string containing only letters, numbers, slashes, and plus signs"
                 },
                 "node_count": {
                     "type": "number",
@@ -381,7 +389,7 @@
         },
         "n8n": {
             "metadata": {
-                "category": "paas",
+                "category": "saas",
                 "page_name_localization": "literal:n8n workflow Automation",
                 "page_name": "n8n",
                 "page_icon": "fa-solid fa-robot"
@@ -390,7 +398,8 @@
                 "vm_name": {
                     "user_label": "VM Name",
                     "type": "name",
-                    "regex": "^[a-zA-Z0-9-]+$"
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
                 },
                 "slots": {
                     "user_label": "CPU cores",
@@ -478,7 +487,7 @@
         },
         "openclaw": {
             "metadata": {
-                "category": "paas",
+                "category": "saas",
                 "page_name_localization": "literal:OpenCLAW",
                 "page_name": "openclaw",
                 "page_icon": "fa-solid fa-crab"
@@ -487,7 +496,8 @@
                 "vm_name": {
                     "user_label": "VM Name",
                     "type": "name",
-                    "regex": "^[a-zA-Z0-9-]+$"
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
                 },
                 "slots": {
                     "user_label": "CPU cores",
@@ -587,7 +597,8 @@
                     "type": "name",
                     "user_label": "Bucket name",
                     "default": "my-bucket",
-                    "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$"
+                    "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$",
+                    "user_regex": "Name must be 3-24 characters long and can include only lowercase letters, numbers, and hyphens"
                 },
                 "region": {
                     "type": "region",
