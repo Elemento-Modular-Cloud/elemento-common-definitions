@@ -390,7 +390,7 @@
         "n8n": {
             "metadata": {
                 "category": "saas",
-                "page_name_localization": "literal:n8n workflow Automation",
+                "page_name_localization": "literal:n8n",
                 "page_name": "n8n",
                 "page_icon": "fa-solid fa-robot"
             },
@@ -488,7 +488,7 @@
         "openclaw": {
             "metadata": {
                 "category": "saas",
-                "page_name_localization": "literal:OpenCLAW",
+                "page_name_localization": "literal:OpenClaw",
                 "page_name": "openclaw",
                 "page_icon": "fa-solid fa-crab"
             },
