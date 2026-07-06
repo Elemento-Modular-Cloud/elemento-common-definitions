@@ -286,12 +286,20 @@
                             "value": "mysql"
                         },
                         {
+                            "user_label": "NoSQL",
+                            "value": "nosql"
+                        },
+                        {
                             "user_label": "Sql Server",
                             "value": "sqlserver"
                         },
                         {
                             "user_label": "Postgres",
                             "value": "postgres"
+                        },
+                        {
+                            "user_label": "MariaDB",
+                            "value": "mariadb"
                         }
                     ]
                 },
