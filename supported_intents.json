@@ -558,6 +558,88 @@
                 }
             ],
             "resources": {}
+        },
+        "registry": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Registry",
+                "page_name": "registry",
+                "page_icon": "fa-solid fa-box"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Registry Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "size_gb": {
+                    "user_label": "Registry Size (GB)",
+                    "type": "number",
+                    "default": 10,
+                    "min": 10,
+                    "max": 200
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": false
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
         }
     },
     "storage": {
@@ -641,6 +723,107 @@
                     "localization_key": "s3/size",
                     "display_type": "byte_sized",
                     "json_key": "active_storage"
+                }
+            ],
+            "resources": {}
+        },
+        "filestorage": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:File Storage",
+                "page_name": "filestorage",
+                "page_icon": "fa-solid fa-folder"
+            },
+            "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "File Storage name",
+                    "default": "my-file-storage",
+                    "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$",
+                    "user_regex": "Name must be 3-24 characters long and can include only lowercase letters, numbers, and hyphens"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "size_gb": {
+                    "type": "number",
+                    "user_label": "File Storage size (GB)",
+                    "default": 10,
+                    "min": 10,
+                    "max": 200
+                },
+                "is_public": {
+                    "type": "boolean",
+                    "user_label": "Public Access",
+                    "default": false
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "s3/bucket_name",
+                    "display_type": "monospace",
+                    "json_key": "name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "s3/uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Endpoint",
+                    "localization_key": "s3/endpoint",
+                    "display_type": "monospace",
+                    "json_key": "dns_name"
+                },
+                {
+                    "name": "Size",
+                    "localization_key": "s3/size",
+                    "display_type": "byte_sized",
+                    "json_key": "size_gb"
+                },
+                {
+                    "name": "Used Space",
+                    "localization_key": "s3/used_space",
+                    "display_type": "byte_sized",
+                    "json_key": "used_gb"
+                },
+                {
+                    "name": "Public Access",
+                    "localization_key": "s3/public_access",
+                    "display_type": "boolean",
+                    "json_key": "is_public"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "s3/region",
+                    "display_type": "text",
+                    "json_key": "region"
                 }
             ],
             "resources": {}
