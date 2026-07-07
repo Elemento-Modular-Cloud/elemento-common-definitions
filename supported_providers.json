@@ -47,7 +47,7 @@
                     "display_name": "OpenClaw",
                     "type": "service",
                     "sub_type": "openclaw",
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "europe-central2-a": {
                             "country": "Poland",
@@ -835,7 +835,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "support_level": "dev",
                     "regions": {
@@ -1218,7 +1218,7 @@
                 {
                     "name": "vmManagement",
                     "display_name": "VM Management",
-                    "type": "matcher",
+                    "type": "compute",
                     "sub_type": "vm",
                     "support_level": "dev",
                     "regions": {
