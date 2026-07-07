@@ -715,6 +715,63 @@
                 }
             ],
             "resources": {}
+        },
+        "loadbalancer": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Load Balancer",
+                "page_name": "loadbalancer",
+                "page_icon": "fa-solid fa-network-wired"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Load Balancer Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": true
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "",
+                    "localization_key": "",
+                    "display_type": "",
+                    "json_key": ""
+                }
+            ],
+            "resources": {}
         }
     },
     "storage": {
