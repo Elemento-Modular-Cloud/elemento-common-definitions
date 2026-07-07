@@ -648,6 +648,73 @@
                 }
             ],
             "resources": {}
+        },
+        "publicip": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Public IP",
+                "page_name": "publicip",
+                "page_icon": "fa-solid fa-network-wired"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Public IP Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "type": {
+                    "type": "select",
+                    "user_label": "IP Type",
+                    "default": "v4",
+                    "options": [
+                        {
+                            "user_label": "IPv4",
+                            "value": "v4"
+                        },
+                        {
+                            "user_label": "IPv6",
+                            "value": "v6"
+                        }
+                    ]
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "",
+                    "display_type": "",
+                    "json_key": ""
+                }
+            ],
+            "resources": {}
         }
     },
     "storage": {
