@@ -709,9 +709,15 @@
             "table_layout": [
                 {
                     "name": "Name",
-                    "localization_key": "",
-                    "display_type": "",
-                    "json_key": ""
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "TODO",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "todo"
                 }
             ],
             "resources": {}
@@ -765,13 +771,87 @@
             },
             "table_layout": [
                 {
-                    "name": "",
-                    "localization_key": "",
-                    "display_type": "",
-                    "json_key": ""
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "TODO",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "todo"
                 }
             ],
             "resources": {}
+        },
+        "privatenetwork": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Private Network",
+                "page_name": "privatenetwork",
+                "page_icon": "fa-solid fa-network-wired"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Private Network Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "auto_assign_cidr": {
+                    "user_label": "Auto Assign CIDR",
+                    "type": "boolean",
+                    "default": true
+                },
+                "cidr": {
+                    "user_label": "CIDR Block",
+                    "type": "ip-cidr",
+                    "default": "192.168.100.0/22"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "TODO",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "todo"
+                }
+            ],
+            "resources": {}    
         }
     },
     "storage": {
