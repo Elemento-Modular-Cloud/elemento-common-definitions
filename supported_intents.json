@@ -174,9 +174,9 @@
                 },
                 {
                     "name": "Region",
-                    "localization_key": "location",
+                    "localization_key": "region",
                     "display_type": "text",
-                    "json_key": "location"
+                    "json_key": "region"
                 }
             ],
             "resources": {}
@@ -300,6 +300,10 @@
                         {
                             "user_label": "MariaDB",
                             "value": "mariadb"
+                        },
+                        {
+                            "user_label": "Valkey",
+                            "value": "valkey"
                         }
                     ]
                 },
