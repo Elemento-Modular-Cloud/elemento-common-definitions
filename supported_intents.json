@@ -817,6 +817,11 @@
                     "type": "ip-cidr",
                     "default": "192.168.100.0/22"
                 },
+                "dhcp": {
+                    "user_label": "DHCP Enabled",
+                    "type": "boolean",
+                    "default": true
+                },
                 "billing_frequency": {
                     "type": "select",
                     "user_label": "Billing Frequency",
