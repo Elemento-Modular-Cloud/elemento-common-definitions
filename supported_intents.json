@@ -304,6 +304,10 @@
                         {
                             "user_label": "Valkey",
                             "value": "valkey"
+                        },
+                        {
+                            "user_label": "Mongodb",
+                            "value": "mongodb"
                         }
                     ]
                 },
