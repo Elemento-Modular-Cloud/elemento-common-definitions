@@ -1327,15 +1327,15 @@
                             "plus_code": "",
                             "certifications": []
                         },
-                        "europe-2": {
-                            "country": "Germany",
-                            "location": "Frankfurt",
-                            "plus_code": "",
-                            "certifications": []
-                        },
                         "europe-3": {
                             "country": "Sweden",
                             "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-4": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
                             "plus_code": "",
                             "certifications": []
                         },
