@@ -25,8 +25,9 @@
 # #------------------------------------------------------------------------------#
 #
 # Central filesystem path prefixes for AtomOS.
-# Names describe role/purpose; values live in paths.json (current on-disk layout).
-# POSIX remapping will change JSON values only (not these names).
+# Names describe role/purpose; values live in paths.json
+# (immutable-ready FHS layout: image under /usr/libexec/elemento,
+# state/logs/scratch under /var, config under /etc/elemento).
 #
 
 from os.path import join, dirname, basename
@@ -60,10 +61,10 @@ def scratch_pool_dir(pool_name: str) -> str:
 
 
 def log_file(name: str) -> str:
-    """CWD-relative application log file path."""
+    """Absolute application log file path under APP_LOG_DIR (/var/log/elemento)."""
     return join(APP_LOG_DIR, name)
 
 
 def monorepo_server_dir(server_name: str) -> str:
-    """Checked-out server directory under the monorepo install root."""
+    """Packaged server directory under the monorepo install root."""
     return join(MONOREPO_ROOT, server_name)
