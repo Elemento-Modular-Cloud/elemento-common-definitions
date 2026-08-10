@@ -5,7 +5,9 @@
 # fmt: off
 import networking
 import restkeys
+import paths
 
 if __name__ == "__main__":
     print(networking.RETRIEVE_VMS_SERVER_PORT)
     print(restkeys.UNREGISTER_API_KEY)
+    print(paths.CERTS_DIR)
