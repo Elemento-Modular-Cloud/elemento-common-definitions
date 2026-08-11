@@ -14,6 +14,7 @@
                     "display_name": "n8n",
                     "type": "service",
                     "sub_type": "n8n",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "europe-central2-a": {
@@ -47,7 +48,8 @@
                     "display_name": "OpenClaw",
                     "type": "service",
                     "sub_type": "openclaw",
-                    "support_level": "dev",
+                    "supported_meson_type": ["private", "public"],
+                    "support_level": "full",
                     "regions": {
                         "europe-central2-a": {
                             "country": "Poland",
@@ -80,6 +82,7 @@
                     "display_name": "VM Management",
                     "type": "compute",
                     "sub_type": "vm",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "europe-central2-a": {
@@ -113,6 +116,7 @@
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "europe-central2-a": {
@@ -146,6 +150,7 @@
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "europe-central2-a": {
@@ -179,6 +184,7 @@
                     "display_name": "Database",
                     "type": "service",
                     "sub_type": "dbaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "europe-central2": {
@@ -223,6 +229,7 @@
                     "display_name": "n8n",
                     "type": "service",
                     "sub_type": "n8n",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "centralus": {
@@ -256,6 +263,7 @@
                     "display_name": "OpenClaw",
                     "type": "service",
                     "sub_type": "openclaw",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "centralus": {
@@ -289,6 +297,7 @@
                     "display_name": "VM Management",
                     "type": "compute",
                     "sub_type": "vm",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "centralus": {
@@ -322,6 +331,7 @@
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "eastus": {
@@ -571,6 +581,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "eastus": {
@@ -837,6 +848,7 @@
                     "display_name": "VM Management",
                     "type": "compute",
                     "sub_type": "vm",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "bhs1": {
@@ -978,6 +990,7 @@
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "EU-SOUTH-MIL": {
@@ -1022,6 +1035,7 @@
                     "display_name": "n8n",
                     "type": "service",
                     "sub_type": "n8n",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "au-syd1": {
@@ -1121,6 +1135,7 @@
                     "display_name": "OpenClaw",
                     "type": "service",
                     "sub_type": "openclaw",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "au-syd1": {
@@ -1220,6 +1235,7 @@
                     "display_name": "VM Management",
                     "type": "compute",
                     "sub_type": "vm",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "au-syd1": {
@@ -1319,6 +1335,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "europe-1": {
@@ -1358,6 +1375,7 @@
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "au-syd1": {
@@ -1457,6 +1475,7 @@
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "au-syd1": {
@@ -1556,6 +1575,7 @@
                     "display_name": "Database as a Service",
                     "type": "service",
                     "sub_type": "dbaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "au-syd1": {
@@ -1666,6 +1686,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "us-east-1": {
@@ -1782,6 +1803,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "it-mil": {
@@ -1815,6 +1837,7 @@
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "it-mil": {
@@ -1848,6 +1871,7 @@
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "it-mil": {
@@ -1881,6 +1905,7 @@
                     "display_name": "Database",
                     "type": "service",
                     "sub_type": "dbaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "it-mil": {
@@ -1914,6 +1939,7 @@
                     "display_name": "Container Registry",
                     "type": "service",
                     "sub_type": "registry",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "fr-par": {
@@ -1941,6 +1967,7 @@
                     "display_name": "File Storage",
                     "type": "storage",
                     "sub_type": "filestorage",
+                    "supported_meson_type": ["private"],
                     "support_level": "dev",
                     "regions": {
                         "fr-par": {
@@ -1956,6 +1983,7 @@
                     "display_name": "VM Management",
                     "type": "compute",
                     "sub_type": "vm",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "it-mil": {
@@ -1989,6 +2017,7 @@
                     "display_name": "Load Balancer",
                     "type": "service",
                     "sub_type": "loadbalancer",
+                    "supported_meson_type": ["private"],
                     "support_level": "dev",
                     "regions": {
                         "it-mil": {
@@ -2022,6 +2051,7 @@
                     "display_name": "Private Network",
                     "type": "service",
                     "sub_type": "privatenetwork",
+                    "supported_meson_type": ["private"],
                     "support_level": "dev",
                     "regions": {
                         "it-mil": {
@@ -2066,6 +2096,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "full",
                     "regions": {
                         "us-east-1": {
@@ -2149,6 +2180,7 @@
                     "display_name": "Object Storage",
                     "type": "storage",
                     "sub_type": "objectstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -2260,6 +2292,7 @@
                     "display_name": "Block Storage",
                     "type": "storage",
                     "sub_type": "blockstorage",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -2371,6 +2404,7 @@
                     "display_name": "Database as a Service",
                     "type": "service",
                     "sub_type": "dbaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -2482,6 +2516,7 @@
                     "display_name": "File Storage",
                     "type": "storage",
                     "sub_type": "filestorage",
+                    "supported_meson_type": ["private"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -2593,6 +2628,7 @@
                     "display_name": "Container Registry",
                     "type": "service",
                     "sub_type": "registry",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -2704,6 +2740,7 @@
                     "display_name": "VM Management",
                     "type": "compute",
                     "sub_type": "vm",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -2815,6 +2852,7 @@
                     "display_name": "Public IP",
                     "type": "service",
                     "sub_type": "publicip",
+                    "supported_meson_type": ["private"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -2926,6 +2964,7 @@
                     "display_name": "Load Balancer",
                     "type": "service",
                     "sub_type": "loadbalancer",
+                    "supported_meson_type": ["private"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -3037,6 +3076,7 @@
                     "display_name": "Private Network",
                     "type": "service",
                     "sub_type": "privatenetwork",
+                    "supported_meson_type": ["private"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
@@ -3148,6 +3188,7 @@
                     "display_name": "Kubernetes",
                     "type": "service",
                     "sub_type": "kaas",
+                    "supported_meson_type": ["private", "public"],
                     "support_level": "dev",
                     "regions": {
                         "us-east-1": {
