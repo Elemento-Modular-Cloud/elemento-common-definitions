@@ -865,6 +865,87 @@
                 }
             ],
             "resources": {}    
+        },
+        "publicgateway": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Public Gateway",
+                "page_name": "publicgateway",
+                "page_icon": "fa-solid fa-network-wired"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Public Gateway Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "network_uuid": {
+                    "user_label": "Private Network UUID (previously created on the same region)",
+                    "type": "string",
+                    "regex": "^[a-zA-Z0-9-]+$"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name:": "Service UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Network UUID",
+                    "localization_key": "network_uuid",
+                    "display_type": "text",
+                    "json_key": "network_uuid"
+                },
+                {
+                    "name": "Public IP",
+                    "localization_key": "public_ip",
+                    "display_type": "text",
+                    "json_key": "public_ip"
+                }
+            ],
+            "resources": {}
         }
     },
     "storage": {
