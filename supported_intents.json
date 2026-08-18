@@ -946,6 +946,159 @@
                 }
             ],
             "resources": {}
+        },
+        "serverless": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Serverless",
+                "page_name": "serverless",
+                "page_icon": "fa-solid fa-code"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Serverless Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "runtime": {
+                    "type": "select",
+                    "user_label": "Runtime",
+                    "default": "python3.13",
+                    "options": [
+                        {
+                            "user_label": "Python 3.14",
+                            "value": "python3.14"
+                        },
+                        {
+                            "user_label": "Python 3.13",
+                            "value": "python3.13"
+                        },
+                        {
+                            "user_label": "Python 3.12",
+                            "value": "python3.12"
+                        },
+                        {
+                            "user_label": "Node.js 24",
+                            "value": "nodejs24.x"
+                        },
+                        {
+                            "user_label": "Node.js 22",
+                            "value": "nodejs22.x"
+                        },
+                        {
+                            "user_label": "Node.js 20",
+                            "value": "nodejs20.x"
+                        },
+                        {
+                            "user_label": "PHP 8.5",
+                            "value": "php8.5"
+                        },
+                        {
+                            "user_label": "PHP 8.4",
+                            "value": "php8.4"
+                        },
+                        {
+                            "user_label": "Go 1.26",
+                            "value": "go1.26"
+                        },
+                        {
+                            "user_label": "Go 1.25",
+                            "value": "go1.25"
+                        },
+                        {
+                            "user_label": "Rust 1.96",
+                            "value": "rust1.96"
+                        }
+                    ]
+                },
+                "handler": {
+                    "type": "string",
+                    "user_label": "Handler",
+                    "default": "index.handler"
+                },
+                "memory": {
+                    "type": "number",
+                    "user_label": "Memory (MB)",
+                    "default": 128,
+                    "min": 128,
+                    "max": 10240
+                },
+                "timeout": {
+                    "type": "number",
+                    "user_label": "Timeout (seconds)",
+                    "default": 3,
+                    "min": 1,
+                    "max": 900
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": false
+                },
+                "environment": {
+                    "type": "textarea",
+                    "user_label": "Environment Variables (JSON format)",
+                    "default": "{}",
+                    "regex": "^\\{.*\\}$",
+                    "user_regex": "Environment variables must be in valid JSON format"
+                },
+                "code_zip_b64": {
+                    "type": "textarea",
+                    "user_label": "Code (Base64-encoded ZIP)",
+                    "default": "",
+                    "regex": "^[A-Za-z0-9+/=]+$",
+                    "user_regex": "Code must be a valid Base64-encoded string"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name:": "Service UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
         }
     },
     "storage": {
