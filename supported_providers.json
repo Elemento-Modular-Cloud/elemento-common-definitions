@@ -2235,7 +2235,7 @@
             "hex_color": "#232f3e",
             "svg_filename": "aws_icon.svg",
             "status": "development",
-            "server_ips": ["aws.dev.meson.elemento.cloud"],
+            "server_ips": ["aws-dev.meson.elemento.cloud"],
             "services": [
                 {
                     "name": "objectStorage",
