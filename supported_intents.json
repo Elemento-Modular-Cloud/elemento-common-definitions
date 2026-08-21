@@ -12,8 +12,8 @@
                     "type": "name",
                     "user_label": "Cluster name",
                     "default": "my-cluster",
-                    "regex": "^[a-zA-Z0-9-]+$",
-                    "user_regex": "Name must be alphanumeric and can include only hyphens"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "nodepools": {
                     "type": "datalist",
@@ -22,8 +22,8 @@
                         "pool_name": {
                             "user_label": "Nodepool Name",
                             "type": "name",
-                            "regex": "^[a-zA-Z0-9-]+$",
-                            "user_regex": "Name must be alphanumeric and can include only hyphens"
+                            "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                            "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                         },
                         "autoscale": {
                             "user_label": "Autoscale",
@@ -266,7 +266,8 @@
                     "type": "name",
                     "user_label": "Database name",
                     "default": "my-database",
-                    "regex": "^[a-zA-Z0-9-]+$"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
@@ -418,8 +419,8 @@
                 "vm_name": {
                     "user_label": "VM Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "slots": {
                     "user_label": "CPU cores",
@@ -502,8 +503,8 @@
                 "vm_name": {
                     "user_label": "VM Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "slots": {
                     "user_label": "CPU cores",
@@ -586,8 +587,8 @@
                 "name": {
                     "user_label": "Registry Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "size_gb": {
                     "user_label": "Registry Size (GB)",
@@ -668,8 +669,8 @@
                 "name": {
                     "user_label": "Public IP Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
@@ -741,8 +742,8 @@
                 "name": {
                     "user_label": "Load Balancer Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
@@ -804,8 +805,8 @@
                 "name": {
                     "user_label": "Private Network Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
@@ -877,8 +878,8 @@
                 "name": {
                     "user_label": "Public Gateway Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
@@ -887,7 +888,7 @@
                 "network_uuid": {
                     "user_label": "Private Network UUID (previously created on the same region)",
                     "type": "string",
-                    "regex": "^[a-zA-Z0-9-]+$"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$"
                 },
                 "billing_frequency": {
                     "type": "select",
@@ -958,8 +959,8 @@
                 "name": {
                     "user_label": "Serverless Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
