@@ -1100,6 +1100,124 @@
                 }
             ],
             "resources": {}
+        },
+        "aiserverless": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:AI Functions",
+                "page_name": "aiserverless",
+                "page_icon": "fa-solid fa-robot"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "AI Function Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "model_name": {
+                    "type": "select",
+                    "user_label": "Model Name",
+                    "default": "claude-sonnet-5",
+                    "options": [
+                        {
+                            "user_label": "Claude Sonnet 5",
+                            "value": "claude-sonnet-5"
+                        },
+                        {
+                            "user_label": "Claude Haiku 4.5",
+                            "value": "claude-haiku-4.5"
+                        },
+                        {
+                            "user_label": "Nova Pro",
+                            "value": "nova-pro"
+                        },
+                        {
+                            "user_label": "Nova Lite",
+                            "value": "nova-lite"
+                        },
+                        {
+                            "user_label": "LLaMA 3.3 70B",
+                            "value": "llama-3.3-70b"
+                        },
+                        {
+                            "user_label": "mistral-large-3",
+                            "value": "mistral-large-3"
+                        }
+                    ]
+                },
+                "enable_streaming": {
+                    "user_label": "Enable Streaming",
+                    "type": "boolean",
+                    "default": false
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name:": "Service UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": ""
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Model Name",
+                    "localization_key": "model_name",
+                    "display_type": "text",
+                    "json_key": "model_name"
+                },
+                {
+                    "name": "Streaming Enabled",
+                    "localization_key": "enable_streaming",
+                    "display_type": "boolean",
+                    "json_key": "enable_streaming"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                }
+            ],
+            "resources": {}
         }
     },
     "storage": {
