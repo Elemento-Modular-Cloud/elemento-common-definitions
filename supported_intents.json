@@ -1218,6 +1218,199 @@
                 }
             ],
             "resources": {}
+        },
+        "queueaas": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Kafka Queues",
+                "page_name": "queueaas",
+                "page_icon": "fa-solid fa-robot"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Queue name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "model_name": {
+                    "type": "select",
+                    "user_label": "Kafka version",
+                    "default": "4.1.0",
+                    "options": [
+                        {
+                            "user_label": "4.1.0",
+                            "value": "4.1.0"
+                        },
+                        {
+                            "user_label": "4.0.0",
+                            "value": "4.0.0"
+                        },
+                        {
+                            "user_label": "3.9.0",
+                            "value": "3.9.0"
+                        },
+                        {
+                            "user_label": "3.8.0",
+                            "value": "3.8.0"
+                        }
+                    ]
+                },
+                "node_number": {
+                    "user_label": "Node number",
+                    "type": "number",
+                    "default": 2,
+                    "min": 1,
+                    "max": 10
+                },
+                "node_size": {
+                    "type": "select",
+                    "user_label": "Node size",
+                    "default": "4.1.0",
+                    "options": [
+                        {
+                            "user_label": "Small (8GB RAM)",
+                            "value": "S"
+                        },
+                        {
+                            "user_label": "Medium (16GB RAM)",
+                            "value": "M"
+                        },
+                        {
+                            "user_label": "Large (32GB RAM)",
+                            "value": "L"
+                        }
+                    ]
+                },
+                "size_gb": {
+                    "type": "number",
+                    "user_label": "Size (GB)",
+                    "default": 10,
+                    "min": 10,
+                    "max": 100
+                },
+                "username": {
+                    "type": "string",
+                    "user_label": "Username",
+                    "default": "admin"
+                },
+                "password": {
+                    "type": "string",
+                    "user_label": "Password",
+                    "default": "admin"
+                },
+                "is_ha": {
+                    "user_label": "High Availability",
+                    "type": "boolean",
+                    "default": true
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": false
+                },
+                "private_network_id": {
+                    "type": "string",
+                    "user_label": "Private Network UUID (previously created on the same region and provider)",
+                    "default": ""
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name:": "Service UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": ""
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Kafka Version",
+                    "localization_key": "model_name",
+                    "display_type": "text",
+                    "json_key": "model_name"
+                },
+                {
+                    "name": "High Availability",
+                    "localization_key": "is_ha",
+                    "display_type": "boolean",
+                    "json_key": "is_ha"
+                },
+                {
+                    "name": "Public Access",
+                    "localization_key": "is_public",
+                    "display_type": "boolean",
+                    "json_key": "is_public"
+                },
+                {
+                    "name": "Node number",
+                    "localization_key": "node_number",
+                    "display_type": "text",
+                    "json_key": "node_number"
+                },
+                {
+                    "name": "Node size",
+                    "localization_key": "node_size",
+                    "display_type": "text",
+                    "json_key": "node_size"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                },
+                {
+                    "name": "Private Network ID",
+                    "localization_key": "private_network_id",
+                    "display_type": "text",
+                    "json_key": "private_network_id"
+                },
+                {
+                    "name": "Creation Date",
+                    "localization_key": "creation_date",
+                    "display_type": "text",
+                    "json_key": "creation_date"
+                }
+            ],
+            "resources": {}
         }
     },
     "storage": {
