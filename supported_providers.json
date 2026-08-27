@@ -6881,7 +6881,7 @@
                     "name": "aiserverless",
                     "display_name": "AI Functions",
                     "type": "service",
-                    "sub_type": "serverless",
+                    "sub_type": "aiserverless",
                     "supported_meson_type": [
                         "private"
                     ],
