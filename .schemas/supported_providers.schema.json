@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/supported-providers.schema.json",
+  "title": "SupportedProvidersJson",
+  "type": "object",
+  "properties": {
+    "ELEMENTO_SUPPORTED_PROVIDERS": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/ProviderJson"
+      }
+    }
+  },
+  "required": [
+    "ELEMENTO_SUPPORTED_PROVIDERS"
+  ],
+  "definitions": {
+    "ProviderJson": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "icon_classes": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "hex_color": {
+          "type": "string"
+        },
+        "svg_filename": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "services": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ServiceJson"
+          }
+        }
+      },
+      "required": [
+        "display_name",
+        "icon_classes",
+        "source",
+        "svg_filename",
+        "status",
+        "services"
+      ]
+    },
+    "ServiceJson": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sub_type": {
+          "type": "string"
+        },
+        "support_level": {
+          "type": "string"
+        },
+        "supported_meson_type": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MesonType"
+          }
+        },
+        "regions": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/RegionJson"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "display_name",
+        "type",
+        "sub_type",
+        "support_level",
+        "regions"
+      ]
+    },
+    "MesonType": {
+      "type": "string",
+      "enum": [
+        "public",
+        "private"
+      ]
+    },
+    "RegionJson": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "certifications": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "country",
+        "location",
+        "certifications"
+      ]
+    }
+  }
+}
