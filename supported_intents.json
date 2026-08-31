@@ -916,7 +916,7 @@
             },
             "table_layout": [
                 {   
-                    "name:": "Service UUID",
+                    "name": "Service UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
                     "json_key": "service_uuid"
@@ -1081,7 +1081,7 @@
             },
             "table_layout": [
                 {   
-                    "name:": "Service UUID",
+                    "name": "Service UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
                     "json_key": "service_uuid"
@@ -1221,7 +1221,7 @@
             },
             "table_layout": [
                 {   
-                    "name:": "Service UUID",
+                    "name": "Service UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
                     "json_key": "service_uuid"
@@ -1247,7 +1247,7 @@
                 {
                     "name": "Streaming Enabled",
                     "localization_key": "enable_streaming",
-                    "display_type": "boolean",
+                    "display_type": "check",
                     "json_key": "enable_streaming"
                 },
                 {
@@ -1384,7 +1384,7 @@
             },
             "table_layout": [
                 {   
-                    "name:": "Service UUID",
+                    "name": "Service UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
                     "json_key": "service_uuid"
@@ -1410,13 +1410,13 @@
                 {
                     "name": "High Availability",
                     "localization_key": "is_ha",
-                    "display_type": "boolean",
+                    "display_type": "check",
                     "json_key": "is_ha"
                 },
                 {
                     "name": "Public Access",
                     "localization_key": "is_public",
-                    "display_type": "boolean",
+                    "display_type": "check",
                     "json_key": "is_public"
                 },
                 {
@@ -1627,7 +1627,7 @@
                 {
                     "name": "Public Access",
                     "localization_key": "s3/public_access",
-                    "display_type": "boolean",
+                    "display_type": "check",
                     "json_key": "is_public"
                 },
                 {
