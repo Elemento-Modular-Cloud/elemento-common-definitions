@@ -29,6 +29,7 @@
     "REGISTER_API_KEY": "/register",
     "REGISTER_MULTIPLE_API_KEY": "/register/multiple",
     "UNREGISTER_API_KEY": "/unregister",
+    "VM_CREDENTIALS_API_KEY": "/credentials",
     "RUNNING_SPECS_API_KEY": "/running",
     "TEMPLATES_API_KEY": "/templates",
     "MARKET_PRICES_API_KEY": "/marketprices",
