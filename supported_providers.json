@@ -5674,7 +5674,6 @@
                     "type": "storage",
                     "sub_type": "objectstorage",
                     "supported_meson_type": [
-                        "private",
                         "public"
                     ],
                     "support_level": "full",
@@ -6968,7 +6967,6 @@
                     "type": "storage",
                     "sub_type": "objectstorage",
                     "supported_meson_type": [
-                        "private",
                         "public"
                     ],
                     "support_level": "full",
