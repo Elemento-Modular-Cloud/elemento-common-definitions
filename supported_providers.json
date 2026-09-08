@@ -3867,8 +3867,7 @@
                     "type": "service",
                     "sub_type": "n8n",
                     "supported_meson_type": [
-                        "private",
-                        "public"
+                        "private"
                     ],
                     "support_level": "full",
                     "regions": {
@@ -4150,8 +4149,7 @@
                     "type": "service",
                     "sub_type": "openclaw",
                     "supported_meson_type": [
-                        "private",
-                        "public"
+                        "private"
                     ],
                     "support_level": "full",
                     "regions": {
@@ -4433,8 +4431,7 @@
                     "type": "compute",
                     "sub_type": "vm",
                     "supported_meson_type": [
-                        "private",
-                        "public"
+                        "private"
                     ],
                     "support_level": "dev",
                     "regions": {
@@ -4716,8 +4713,7 @@
                     "type": "storage",
                     "sub_type": "objectstorage",
                     "supported_meson_type": [
-                        "private",
-                        "public"
+                        "private"
                     ],
                     "support_level": "full",
                     "regions": {
@@ -4819,8 +4815,7 @@
                     "type": "storage",
                     "sub_type": "blockstorage",
                     "supported_meson_type": [
-                        "private",
-                        "public"
+                        "private"
                     ],
                     "support_level": "full",
                     "regions": {
@@ -5102,8 +5097,7 @@
                     "type": "service",
                     "sub_type": "kaas",
                     "supported_meson_type": [
-                        "private",
-                        "public"
+                        "private"
                     ],
                     "support_level": "full",
                     "regions": {
@@ -5385,8 +5379,7 @@
                     "type": "service",
                     "sub_type": "dbaas",
                     "supported_meson_type": [
-                        "private",
-                        "public"
+                        "private"
                     ],
                     "support_level": "full",
                     "regions": {
