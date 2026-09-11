@@ -1639,5 +1639,211 @@
             ],
             "resources": {}
         }
+    },
+    "compute": {
+        "spotvm": {
+            "metadata": {
+                "category": "iaas",
+                "page_name_localization": "literal:Spot VM",
+                "page_name": "spotvm",
+                "page_icon": "fa-solid fa-server"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "cpu": {
+                    "user_label": "CPU",
+                    "type": "object",
+                    "properties": {
+                        "slots": {
+                            "user_label": "Slots",
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "shared_cores": {
+                            "user_label": "Shared Cores",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "arch": {
+                            "user_label": "Architecture",
+                            "type": "select",
+                            "default": "X86_64",
+                            "options": [
+                                {
+                                    "user_label": "X86_64",
+                                    "value": "X86_64"
+                                },
+                                {
+                                    "user_label": "ARM",
+                                    "value": "ARM"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "mem": {
+                    "user_label": "Memory",
+                    "type": "object",
+                    "properties": {
+                        "capacity_mb": {
+                            "user_label": "Capacity (MB)",
+                            "type": "integer",
+                            "minimum": 512
+                        }
+                    }
+                },
+                "os": {
+                    "user_label": "Operating System",
+                    "type": "object",
+                    "properties": {
+                        "family": {
+                            "user_label": "Family",
+                            "type": "select",
+                            "options": [
+                                {
+                                    "user_label": "Linux",
+                                    "value": "linux"
+                                },
+                                {
+                                    "user_label": "Windows",
+                                    "value": "windows"
+                                }
+                            ]
+                        },
+                        "flavour": {
+                            "user_label": "Flavour",
+                            "type": "string"
+                        },
+                        "version": {
+                            "user_label": "Version",
+                            "type": "string"
+                        }
+                    }
+                },
+                "storage": {
+                    "user_label": "Storage",
+                    "type": "object",
+                    "properties": {
+                        "boot": {
+                            "user_label": "Boot Disk",
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "user_label": "Name",
+                                    "type": "string"
+                                },
+                                "size_gb": {
+                                    "user_label": "Size (GB)",
+                                    "type": "integer",
+                                    "minimum": 10
+                                }
+                            }
+                        },
+                        "data": {
+                            "type": "datalist",
+                            "user_label": "Data Disks",
+                            "item_definition": {
+                                "name": {
+                                    "user_label": "Name",
+                                    "type": "string"
+                                },
+                                "size_gb": {
+                                    "user_label": "Size (GB)",
+                                    "type": "integer",
+                                    "minimum": 10
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "pci": {
+                "user_label": "PCI Devices",
+                "type": "datalist",
+                "item_definition": {
+                    "device_id": {
+                        "user_label": "Device ID",
+                        "type": "string"
+                    }
+                }
+            },
+            "networks": {
+                "user_label": "Networks",
+                "type": "datalist",
+                "item_definition": {
+                    "network_uuid": {
+                        "user_label": "Network UUID",
+                        "type": "string"
+                    }
+                }
+            },
+            "auth": {
+                "user_label": "Authentication",
+                "type": "object",
+                "properties": {
+                    "username": {
+                        "user_label": "Username",
+                        "type": "string"
+                    },
+                    "password": {
+                        "user_label": "Password",
+                        "type": "password"
+                    },
+                    "ssh_key": {
+                        "user_label": "SSH Key",
+                        "type": "string",
+                        "regex": "^ssh-(rsa|ed25519) [A-Za-z0-9+/]+[=]{0,3}( [^@]+@[^@]+)?$"
+                    }
+                }
+            },
+            "tags": {
+                "user_label": "Tags",
+                "type": "datalist",
+                "item_definition": {
+                    "tag": {
+                        "user_label": "Tag",
+                        "type": "string"
+                    }
+                }
+            },
+            "cloud_init_b64": {
+                "user_label": "Cloud Init (Base64-encoded)",
+                "type": "string",
+                "regex": "^[A-Za-z0-9+/=]+$",
+                "user_regex": "Cloud Init must be a valid Base64-encoded string"
+            },
+            "table_layout": [
+                {
+                    "name": "VM Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                }
+            ],
+            "resources": {}
+        }
     }
 }
