@@ -66,28 +66,68 @@ This document lists all supported cloud providers and their services.
 
 
 
+
+
+
+
+
+
 <!-- PROVIDERS_TABLE_START -->
 
 | Provider | Service | Type | Sub-Type | Support Level | Status |
 |----------|---------|------|----------|----------------|--------|
 | Azure | Block Storage | storage | blockstorage | full | production |
-| Azure | Kubernetes | service | container | full | production |
+| Azure | Caddy CA Issuer | service | caddy_ca | full | production |
+| Azure | Hermes Agent | service | hermes | full | production |
+| Azure | Hosting | service | hosting | full | production |
+| Azure | LiteLLM Proxy | service | litellm | full | production |
+| Azure | LM Studio | service | llmstudio | full | production |
+| Azure | MinIO | service | minio | full | production |
+| Azure | n8n | service | n8n | full | production |
+| Azure | n8n AI Sandbox Runner | service | n8n_runner | full | production |
+| Azure | Nginx Proxy Manager | service | npm | full | production |
 | Azure | Object Storage | storage | objectstorage | full | production |
-| Azure | VM Management | matcher | vm | full | production |
+| Azure | OpenClaw | service | openclaw | full | production |
+| Azure | Open WebUI | service | openwebui | full | production |
+| Azure | SearXNG | service | searxng | full | production |
+| Azure | VM Management | compute | vm | dev | production |
 | Google | Block Storage | storage | blockstorage | full | production |
-| Google | Database as a Service | service | dbaas | full | production |
-| Google | Kubernetes | service | container | full | production |
-| Google | VM Management | matcher | vm | full | production |
-| Impossible Cloud | Object Storage | storage | objectstorage | full | production |
-| OVH | Block Storage | storage | blockstorage | full | production |
-| OVH | Kubernetes | service | container | full | production |
-| OVH | Object Storage | storage | objectstorage | full | production |
-| OVH | VM Management | matcher | vm | full | production |
-| Scaleway | Object Storage | storage | objectstorage | planned | production |
+| Google | Caddy CA Issuer | service | caddy_ca | full | production |
+| Google | Database | service | dbaas | full | production |
+| Google | Hermes Agent | service | hermes | full | production |
+| Google | Hosting | service | hosting | full | production |
+| Google | Kubernetes | service | kaas | full | production |
+| Google | LiteLLM Proxy | service | litellm | full | production |
+| Google | LM Studio | service | llmstudio | full | production |
+| Google | MinIO | service | minio | full | production |
+| Google | n8n | service | n8n | full | production |
+| Google | n8n AI Sandbox Runner | service | n8n_runner | full | production |
+| Google | Nginx Proxy Manager | service | npm | full | production |
+| Google | OpenClaw | service | openclaw | dev | production |
+| Google | Open WebUI | service | openwebui | full | production |
+| Google | SearXNG | service | searxng | full | production |
+| Google | VM Management | compute | vm | full | production |
+| Impossible Cloud | Object Storage | service | objectstorage | full | production |
+| OVH | Kubernetes | service | kaas | full | production |
+| OVH | VM Management | matcher | vm | dev | production |
+| Scaleway | Kubernetes | service | kaas | full | production |
+| Scaleway | Object Storage | storage | objectstorage | full | production |
 | UpCloud | Block Storage | storage | blockstorage | full | production |
+| UpCloud | Caddy CA Issuer | service | caddy_ca | full | production |
 | UpCloud | Database as a Service | service | dbaas | full | production |
-| UpCloud | Kubernetes | service | container | full | production |
+| UpCloud | Hermes Agent | service | hermes | full | production |
+| UpCloud | Hosting | service | hosting | full | production |
+| UpCloud | Kubernetes | service | kaas | full | production |
+| UpCloud | LiteLLM Proxy | service | litellm | full | production |
+| UpCloud | LM Studio | service | llmstudio | full | production |
+| UpCloud | MinIO | service | minio | full | production |
+| UpCloud | n8n | service | n8n | full | production |
+| UpCloud | n8n AI Sandbox Runner | service | n8n_runner | full | production |
+| UpCloud | Nginx Proxy Manager | service | npm | full | production |
 | UpCloud | Object Storage | storage | objectstorage | full | production |
-| UpCloud | VM Management | matcher | vm | full | production |
+| UpCloud | OpenClaw | service | openclaw | full | production |
+| UpCloud | Open WebUI | service | openwebui | full | production |
+| UpCloud | SearXNG | service | searxng | full | production |
+| UpCloud | VM Management | matcher | vm | dev | production |
 | Wasabi | Object Storage | storage | objectstorage | full | production |
 

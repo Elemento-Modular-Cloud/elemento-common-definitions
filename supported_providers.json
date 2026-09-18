@@ -214,6 +214,336 @@
                     }
                 },
                 {
+                    "name": "caddy_ca",
+                    "display_name": "Caddy CA Issuer",
+                    "type": "service",
+                    "sub_type": "caddy_ca",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "hermes",
+                    "display_name": "Hermes Agent",
+                    "type": "service",
+                    "sub_type": "hermes",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "litellm",
+                    "display_name": "LiteLLM Proxy",
+                    "type": "service",
+                    "sub_type": "litellm",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "llmstudio",
+                    "display_name": "LM Studio",
+                    "type": "service",
+                    "sub_type": "llmstudio",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "minio",
+                    "display_name": "MinIO",
+                    "type": "service",
+                    "sub_type": "minio",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "n8n_runner",
+                    "display_name": "n8n AI Sandbox Runner",
+                    "type": "service",
+                    "sub_type": "n8n_runner",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "npm",
+                    "display_name": "Nginx Proxy Manager",
+                    "type": "service",
+                    "sub_type": "npm",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "openwebui",
+                    "display_name": "Open WebUI",
+                    "type": "service",
+                    "sub_type": "openwebui",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "searxng",
+                    "display_name": "SearXNG",
+                    "type": "service",
+                    "sub_type": "searxng",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "hosting",
+                    "display_name": "Hosting",
+                    "type": "service",
+                    "sub_type": "hosting",
+                    "support_level": "full",
+                    "regions": {
+                        "europe-central2-a": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-central1-a": {
+                            "country": "United States",
+                            "location": "Iowa",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "europe-west1-b": {
+                            "country": "Belgium",
+                            "location": "Brussels",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "asia-east1-a": {
+                            "country": "Taiwan",
+                            "location": "Changhua County",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
                     "name": "vmManagement",
                     "display_name": "VM Management",
                     "type": "compute",
@@ -861,6 +1191,336 @@
                                 "grid_carbon_intensity_gco2_per_kwh": 270.9,
                                 "pue": null
                             }
+                        }
+                    }
+                },
+                {
+                    "name": "caddy_ca",
+                    "display_name": "Caddy CA Issuer",
+                    "type": "service",
+                    "sub_type": "caddy_ca",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "hermes",
+                    "display_name": "Hermes Agent",
+                    "type": "service",
+                    "sub_type": "hermes",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "litellm",
+                    "display_name": "LiteLLM Proxy",
+                    "type": "service",
+                    "sub_type": "litellm",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "llmstudio",
+                    "display_name": "LM Studio",
+                    "type": "service",
+                    "sub_type": "llmstudio",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "minio",
+                    "display_name": "MinIO",
+                    "type": "service",
+                    "sub_type": "minio",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "n8n_runner",
+                    "display_name": "n8n AI Sandbox Runner",
+                    "type": "service",
+                    "sub_type": "n8n_runner",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "npm",
+                    "display_name": "Nginx Proxy Manager",
+                    "type": "service",
+                    "sub_type": "npm",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "openwebui",
+                    "display_name": "Open WebUI",
+                    "type": "service",
+                    "sub_type": "openwebui",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "searxng",
+                    "display_name": "SearXNG",
+                    "type": "service",
+                    "sub_type": "searxng",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "hosting",
+                    "display_name": "Hosting",
+                    "type": "service",
+                    "sub_type": "hosting",
+                    "support_level": "full",
+                    "regions": {
+                        "centralus": {
+                            "country": "United States",
+                            "location": "Central",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "eastasia": {
+                            "country": "Hong Kong",
+                            "location": "East Asia",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "italynorth": {
+                            "country": "Italy",
+                            "location": "North",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "northeurope": {
+                            "country": "Ireland",
+                            "location": "North Europe",
+                            "plus_code": "",
+                            "certifications": []
                         }
                     }
                 },
@@ -4422,6 +5082,996 @@
                                 "grid_carbon_intensity_gco2_per_kwh": null,
                                 "pue": null
                             }
+                        }
+                    }
+                },
+                {
+                    "name": "caddy_ca",
+                    "display_name": "Caddy CA Issuer",
+                    "type": "service",
+                    "sub_type": "caddy_ca",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "hermes",
+                    "display_name": "Hermes Agent",
+                    "type": "service",
+                    "sub_type": "hermes",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "litellm",
+                    "display_name": "LiteLLM Proxy",
+                    "type": "service",
+                    "sub_type": "litellm",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "llmstudio",
+                    "display_name": "LM Studio",
+                    "type": "service",
+                    "sub_type": "llmstudio",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "minio",
+                    "display_name": "MinIO",
+                    "type": "service",
+                    "sub_type": "minio",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "n8n_runner",
+                    "display_name": "n8n AI Sandbox Runner",
+                    "type": "service",
+                    "sub_type": "n8n_runner",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "npm",
+                    "display_name": "Nginx Proxy Manager",
+                    "type": "service",
+                    "sub_type": "npm",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "openwebui",
+                    "display_name": "Open WebUI",
+                    "type": "service",
+                    "sub_type": "openwebui",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "searxng",
+                    "display_name": "SearXNG",
+                    "type": "service",
+                    "sub_type": "searxng",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
+                        }
+                    }
+                },
+                {
+                    "name": "hosting",
+                    "display_name": "Hosting",
+                    "type": "service",
+                    "sub_type": "hosting",
+                    "support_level": "full",
+                    "regions": {
+                        "au-syd1": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "de-fra1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "dk-cph1": {
+                            "country": "Denmark",
+                            "location": "Copenhagen",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel1": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "fi-hel2": {
+                            "country": "Finland",
+                            "location": "Helsinki",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "es-mad1": {
+                            "country": "Spain",
+                            "location": "Madrid",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "nl-ams1": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "no-svg1": {
+                            "country": "Norway",
+                            "location": "Oslo",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "pl-waw1": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "se-sto1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "sg-sin1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "uk-lon1": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-chi1": {
+                            "country": "USA",
+                            "location": "Chicago",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-nyc1": {
+                            "country": "USA",
+                            "location": "New York",
+                            "plus_code": "",
+                            "certifications": []
+                        },
+                        "us-sjo1": {
+                            "country": "USA",
+                            "location": "San Jose",
+                            "plus_code": "",
+                            "certifications": []
                         }
                     }
                 },

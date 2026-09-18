@@ -413,7 +413,8 @@
                 "category": "saas",
                 "page_name_localization": "literal:n8n",
                 "page_name": "n8n",
-                "page_icon": "fa-solid fa-robot"
+                "page_icon": "fa-solid fa-diagram-project",
+                "page_color": "#EA4B71"
             },
             "main_form_data": {
                 "vm_name": {
@@ -497,7 +498,8 @@
                 "category": "saas",
                 "page_name_localization": "literal:OpenCLAW",
                 "page_name": "openclaw",
-                "page_icon": "fa-solid fa-crab"
+                "page_icon": "fa-solid fa-shrimp",
+                "page_color": "#FF4D4D"
             },
             "main_form_data": {
                 "vm_name": {
@@ -1448,6 +1450,1021 @@
                     "localization_key": "creation_date",
                     "display_type": "text",
                     "json_key": "creation_date"
+                }
+            ],
+            "resources": {}
+        },
+        "caddy_ca": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:Caddy CA Issuer",
+                "page_name": "caddy_ca",
+                "page_icon": "fa-solid fa-certificate",
+                "page_color": "#00B3B6"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "hermes": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:Hermes Agent",
+                "page_name": "hermes",
+                "page_icon": "fa-solid fa-staff-snake",
+                "page_color": "#E8A317"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 2,
+                    "min": 2,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "litellm": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:LiteLLM Proxy",
+                "page_name": "litellm",
+                "page_icon": "fa-solid fa-train",
+                "page_color": "#38BDF8"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 2,
+                    "min": 2,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "llmstudio": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:LM Studio",
+                "page_name": "llmstudio",
+                "page_icon": "fa-solid fa-layer-group",
+                "page_color": "#8B5CF6"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 8,
+                    "min": 8,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "minio": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:MinIO",
+                "page_name": "minio",
+                "page_icon": "fa-solid fa-hard-drive",
+                "page_color": "#C72E49"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 2,
+                    "min": 2,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 2,
+                    "min": 2,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "n8n_runner": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:n8n AI Sandbox Runner",
+                "page_name": "n8n_runner",
+                "page_icon": "fa-solid fa-diagram-project",
+                "page_color": "#EA4B71"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 8,
+                    "min": 8,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "npm": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:Nginx Proxy Manager",
+                "page_name": "npm",
+                "page_icon": "fa-solid fa-network-wired",
+                "page_color": "#009639"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "openwebui": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:Open WebUI",
+                "page_name": "openwebui",
+                "page_icon": "fa-solid fa-droplet",
+                "page_color": "#3ECC5F"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 2,
+                    "min": 2,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "searxng": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:SearXNG",
+                "page_name": "searxng",
+                "page_icon": "fa-solid fa-magnifying-glass",
+                "page_color": "#3050FF"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 1,
+                    "min": 1,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "hosting": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:Hosting",
+                "page_name": "hosting",
+                "page_icon": "fa-solid fa-globe",
+                "page_color": "#0EA5E9"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                },
+                "platform": {
+                    "type": "select",
+                    "user_label": "Platform",
+                    "default": "wordpress",
+                    "options": [
+                        {
+                            "user_label": "WordPress",
+                            "value": "wordpress"
+                        },
+                        {
+                            "user_label": "PrestaShop",
+                            "value": "prestashop"
+                        },
+                        {
+                            "user_label": "Magento",
+                            "value": "magento"
+                        }
+                    ]
+                },
+                "slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 2,
+                    "min": 2,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 128
+                },
+                "authentication/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "authentication/password": {
+                    "user_label": "Password",
+                    "type": "password",
+                    "default": "password123!"
+                },
+                "authentication/ssh-key": {
+                    "user_label": "SSH Key",
+                    "type": "textarea"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "req_json/vm_name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "uniqueID"
+                },
+                {
+                    "name": "Platform",
+                    "localization_key": "platform",
+                    "display_type": "engine",
+                    "json_key": "platform"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "status",
+                    "json_key": "states"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
                 }
             ],
             "resources": {}
