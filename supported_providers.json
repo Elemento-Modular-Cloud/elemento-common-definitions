@@ -8764,7 +8764,7 @@
             "display_name": "AWS",
             "icon_classes": "fa-brands fa-aws",
             "source": "fontawesome",
-            "hex_color": "#232f3e",
+            "hex_color": "#FF9900",
             "svg_filename": "aws_icon.svg",
             "status": "development",
             "server_ips": [
