@@ -422,7 +422,7 @@
                     "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
                     "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
-                "slots": {
+                "cpu/slots": {
                     "user_label": "CPU cores",
                     "type": "number",
                     "default": 2,
@@ -567,7 +567,7 @@
                     "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
                     "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
-                "slots": {
+                "cpu/slots": {
                     "user_label": "CPU cores",
                     "type": "number",
                     "default": 4,
