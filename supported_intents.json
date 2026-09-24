@@ -429,7 +429,7 @@
                     "min": 2,
                     "max": 96
                 },
-                "mem/capacity": {
+                "capacity": {
                     "user_label": "RAM capacity (GB)",
                     "type": "number",
                     "default": 4,
