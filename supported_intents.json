@@ -462,6 +462,67 @@
                             "value": "year"
                         }
                     ]
+                },
+                "storage/boot/size_gb": {
+                    "user_label": "Disk size (GB)",
+                    "type": "number",
+                    "default": 20,
+                    "min": 20,
+                    "max": 2000
+                },
+                "auth/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "auth/password": {
+                    "user_label": "Password",
+                    "type": "password"
+                },
+                "auth/ssh_key": {
+                    "user_label": "SSH Public Key",
+                    "type": "textarea"
+                },
+                "cpu/shared_cores": {
+                    "user_label": "Shared cores",
+                    "type": "hidden",
+                    "default": true
+                },
+                "cpu/arch": {
+                    "user_label": "Architecture",
+                    "type": "hidden",
+                    "default": [
+                        "X86_64"
+                    ]
+                },
+                "os/family": {
+                    "user_label": "OS family",
+                    "type": "hidden",
+                    "default": "linux"
+                },
+                "os/flavour": {
+                    "user_label": "OS flavour",
+                    "type": "hidden",
+                    "default": "ubuntu"
+                },
+                "os/version": {
+                    "user_label": "OS version",
+                    "type": "hidden",
+                    "default": "24.04"
+                },
+                "storage/boot/name": {
+                    "user_label": "Boot disk name",
+                    "type": "hidden",
+                    "default": "root"
+                },
+                "networks": {
+                    "user_label": "Networks",
+                    "type": "hidden",
+                    "default": [
+                        {
+                            "kind": "public"
+                        }
+                    ]
                 }
             },
             "table_layout": [
@@ -544,6 +605,67 @@
                         {
                             "user_label": "Year",
                             "value": "year"
+                        }
+                    ]
+                },
+                "storage/boot/size_gb": {
+                    "user_label": "Disk size (GB)",
+                    "type": "number",
+                    "default": 30,
+                    "min": 20,
+                    "max": 2000
+                },
+                "auth/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "auth/password": {
+                    "user_label": "Password",
+                    "type": "password"
+                },
+                "auth/ssh_key": {
+                    "user_label": "SSH Public Key",
+                    "type": "textarea"
+                },
+                "cpu/shared_cores": {
+                    "user_label": "Shared cores",
+                    "type": "hidden",
+                    "default": true
+                },
+                "cpu/arch": {
+                    "user_label": "Architecture",
+                    "type": "hidden",
+                    "default": [
+                        "X86_64"
+                    ]
+                },
+                "os/family": {
+                    "user_label": "OS family",
+                    "type": "hidden",
+                    "default": "linux"
+                },
+                "os/flavour": {
+                    "user_label": "OS flavour",
+                    "type": "hidden",
+                    "default": "ubuntu"
+                },
+                "os/version": {
+                    "user_label": "OS version",
+                    "type": "hidden",
+                    "default": "24.04"
+                },
+                "storage/boot/name": {
+                    "user_label": "Boot disk name",
+                    "type": "hidden",
+                    "default": "root"
+                },
+                "networks": {
+                    "user_label": "Networks",
+                    "type": "hidden",
+                    "default": [
+                        {
+                            "kind": "public"
                         }
                     ]
                 }
