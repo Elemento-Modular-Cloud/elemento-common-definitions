@@ -530,19 +530,53 @@
                     "name": "Name",
                     "localization_key": "vm_name",
                     "display_type": "text",
-                    "json_key": "req_json/vm_name"
+                    "json_key": "vm_name"
                 },
                 {
                     "name": "UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
-                    "json_key": "uniqueID"
+                    "json_key": "vm_uuid"
                 },
                 {
                     "name": "Status",
                     "localization_key": "status",
                     "display_type": "text",
-                    "json_key": "states"
+                    "json_key": "status"
+                },
+                {
+                    "name": "CPU",
+                    "localization_key": "cpu",
+                    "display_type": "text",
+                    "json_key": "cpu/slots",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "RAM (MB)",
+                    "localization_key": "memory",
+                    "display_type": "text",
+                    "json_key": "mem/capacity_mb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "Disk (GB)",
+                    "localization_key": "disk",
+                    "display_type": "text",
+                    "json_key": "storage/boot/size_gb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "OS",
+                    "localization_key": "os",
+                    "display_type": "text",
+                    "json_key": "os/flavour"
+                },
+                {
+                    "name": "IP Address",
+                    "localization_key": "ip_address",
+                    "display_type": "monospace",
+                    "json_key": "networks/0/ipv4",
+                    "sort": "ipv4"
                 },
                 {
                     "name": "Region",
@@ -675,19 +709,53 @@
                     "name": "Name",
                     "localization_key": "vm_name",
                     "display_type": "text",
-                    "json_key": "req_json/vm_name"
+                    "json_key": "vm_name"
                 },
                 {
                     "name": "UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
-                    "json_key": "uniqueID"
+                    "json_key": "vm_uuid"
                 },
                 {
                     "name": "Status",
                     "localization_key": "status",
                     "display_type": "text",
-                    "json_key": "states"
+                    "json_key": "status"
+                },
+                {
+                    "name": "CPU",
+                    "localization_key": "cpu",
+                    "display_type": "text",
+                    "json_key": "cpu/slots",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "RAM (MB)",
+                    "localization_key": "memory",
+                    "display_type": "text",
+                    "json_key": "mem/capacity_mb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "Disk (GB)",
+                    "localization_key": "disk",
+                    "display_type": "text",
+                    "json_key": "storage/boot/size_gb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "OS",
+                    "localization_key": "os",
+                    "display_type": "text",
+                    "json_key": "os/flavour"
+                },
+                {
+                    "name": "IP Address",
+                    "localization_key": "ip_address",
+                    "display_type": "monospace",
+                    "json_key": "networks/0/ipv4",
+                    "sort": "ipv4"
                 },
                 {
                     "name": "Region",
