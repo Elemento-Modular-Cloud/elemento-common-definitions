@@ -6397,6 +6397,172 @@
                             }
                         }
                     }
+                },
+                {
+                    "name": "n8n",
+                    "display_name": "n8n",
+                    "type": "service",
+                    "sub_type": "n8n",
+                    "supported_meson_type": [
+                        "private",
+                        "public"
+                    ],
+                    "support_level": "full",
+                    "regions": {
+                        "it-mil": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "8FQFF57Q+PR",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Region launched after Scaleway's 2024/2025 Impact Reports were published (full text checked - no Milan data); no PUE/WUE/carbon/renewable figures available yet for this region specifically. Approximate location derived from the region's published city/country (not a confirmed exact facility address).",
+                                "source": "Scaleway Impact Report 2025 (full-text checked)",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": null
+                            }
+                        },
+                        "fr-par": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "8FX4343R+92",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1",
+                                "HDS (France health data hosting)",
+                                "SecNumCloud (ANSSI qualification in progress, not yet obtained as of 2026)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": 100,
+                                "note": "Company-wide renewable electricity via Guarantees of Origin (wind/hydro/solar). PUE shown is for DC5 (fr-par-2), the flagship AI-server facility with direct free/adiabatic cooling; other Paris zones: DC2 PUE 1.45, DC3 PUE 1.39, DC4 (former WWII bunker) PUE 1.44. Company-wide average PUE 1.375, average WUE 0.22; Scope 1+2+3 footprint 18,284 t CO2e in 2024 (+46% YoY, driven by AI server growth).",
+                                "source": "Scaleway Impact Report 2025 (2024 data), www-uploads.scaleway.com",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": 1.25
+                            }
+                        },
+                        "pl-waw": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "9G4362H3+2P",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": 100,
+                                "note": "Company-wide renewable electricity via Guarantees of Origin. PUE shown is for WAW1 (Equinix-operated); other Warsaw zones: WAW2 (3S Data Center) PUE 1.24 (30.35% renewable energy factor), WAW3 (Atman) PUE 1.50 (100% renewable energy factor).",
+                                "source": "Scaleway Impact Report 2025 (2024 data), www-uploads.scaleway.com",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": 1.5
+                            }
+                        },
+                        "nl-ams": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "9F469MR8+P2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": 100,
+                                "note": "Company-wide renewable electricity via Guarantees of Origin. PUE shown is for AMS1 (Iron Mountain-operated); other Amsterdam zones: AMS2 (Interxion) PUE 1.40, AMS3 (Equinix) PUE 1.40.",
+                                "source": "Scaleway Impact Report 2025 (2024 data), www-uploads.scaleway.com",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": 1.38
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "openclaw",
+                    "display_name": "openclaw",
+                    "type": "service",
+                    "sub_type": "openclaw",
+                    "supported_meson_type": [
+                        "private",
+                        "public"
+                    ],
+                    "support_level": "full",
+                    "regions": {
+                        "it-mil": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "8FQFF57Q+PR",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Region launched after Scaleway's 2024/2025 Impact Reports were published (full text checked - no Milan data); no PUE/WUE/carbon/renewable figures available yet for this region specifically. Approximate location derived from the region's published city/country (not a confirmed exact facility address).",
+                                "source": "Scaleway Impact Report 2025 (full-text checked)",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": null
+                            }
+                        },
+                        "fr-par": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "8FX4343R+92",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1",
+                                "HDS (France health data hosting)",
+                                "SecNumCloud (ANSSI qualification in progress, not yet obtained as of 2026)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": 100,
+                                "note": "Company-wide renewable electricity via Guarantees of Origin (wind/hydro/solar). PUE shown is for DC5 (fr-par-2), the flagship AI-server facility with direct free/adiabatic cooling; other Paris zones: DC2 PUE 1.45, DC3 PUE 1.39, DC4 (former WWII bunker) PUE 1.44. Company-wide average PUE 1.375, average WUE 0.22; Scope 1+2+3 footprint 18,284 t CO2e in 2024 (+46% YoY, driven by AI server growth).",
+                                "source": "Scaleway Impact Report 2025 (2024 data), www-uploads.scaleway.com",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": 1.25
+                            }
+                        },
+                        "pl-waw": {
+                            "country": "Poland",
+                            "location": "Warsaw",
+                            "plus_code": "9G4362H3+2P",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": 100,
+                                "note": "Company-wide renewable electricity via Guarantees of Origin. PUE shown is for WAW1 (Equinix-operated); other Warsaw zones: WAW2 (3S Data Center) PUE 1.24 (30.35% renewable energy factor), WAW3 (Atman) PUE 1.50 (100% renewable energy factor).",
+                                "source": "Scaleway Impact Report 2025 (2024 data), www-uploads.scaleway.com",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": 1.5
+                            }
+                        },
+                        "nl-ams": {
+                            "country": "Netherlands",
+                            "location": "Amsterdam",
+                            "plus_code": "9F469MR8+P2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "GDPR compliant",
+                                "CSA STAR Level 1"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": 100,
+                                "note": "Company-wide renewable electricity via Guarantees of Origin. PUE shown is for AMS1 (Iron Mountain-operated); other Amsterdam zones: AMS2 (Interxion) PUE 1.40, AMS3 (Equinix) PUE 1.40.",
+                                "source": "Scaleway Impact Report 2025 (2024 data), www-uploads.scaleway.com",
+                                "grid_carbon_intensity_gco2_per_kwh": null,
+                                "pue": 1.38
+                            }
+                        }
+                    }
                 }
             ]
         },
@@ -11644,6 +11810,786 @@
                         "private"
                     ],
                     "support_level": "dev",
+                    "regions": {
+                        "us-east-1": {
+                            "country": "USA",
+                            "location": "Virginia",
+                            "plus_code": "87F42GV7+F2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon: 80MW Community Energy solar farm (Accomack Co., VA, 2015); Dominion Energy solar alliance expanded to 260MW+ across 5 Virginia counties. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember (US national average, 2023-2024)",
+                                "grid_carbon_intensity_gco2_per_kwh": 388.5,
+                                "pue": null
+                            }
+                        },
+                        "us-east-2": {
+                            "country": "USA",
+                            "location": "Ohio",
+                            "plus_code": "86FVX262+FF",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember (US national average; Ohio-specific eGRID figure not found)",
+                                "grid_carbon_intensity_gco2_per_kwh": 388.5,
+                                "pue": null
+                            }
+                        },
+                        "us-west-1": {
+                            "country": "USA",
+                            "location": "California",
+                            "plus_code": "849VQHFJ+X6",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "CAISO OASIS / CARB (California, 5-year average through April 2023)",
+                                "grid_carbon_intensity_gco2_per_kwh": 301.0,
+                                "pue": null
+                            }
+                        },
+                        "us-west-2": {
+                            "country": "USA",
+                            "location": "Oregon",
+                            "plus_code": "85Q2R7QX+WQ",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon Wind Farm Oregon-Leaning Juniper II (90MW); Oregon Trail Solar (57MWdc, operational 2027); Umatilla Electric Cooperative agreement. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Oregon DEQ Clean Fuels Program 2025-26",
+                                "grid_carbon_intensity_gco2_per_kwh": 175.0,
+                                "pue": null
+                            }
+                        },
+                        "ca-central-1": {
+                            "country": "Canada",
+                            "location": "Toronto",
+                            "plus_code": "87Q8GC56+GV",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "CCCS (Canada) - Protected B"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Physical AWS facilities are in the Montreal/Varennes area of Quebec, not Toronto. Direct GHG intensity ~1.2 gCO2/kWh (2022); 34.5 gCO2eq/kWh is Hydro-Quebec's life-cycle figure. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Hydro-Quebec sustainable development report",
+                                "grid_carbon_intensity_gco2_per_kwh": 34.5,
+                                "pue": null
+                            }
+                        },
+                        "eu-central-1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "9F2C4M6J+7R",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Part of Amazon's >EUR2.4bn European wind/solar portfolio; Germany-specific: Orsted Borkum Riffgrund 3 (350MW), Iberdrola Baltic Eagle/Windanker (320MW each). AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024; aboutamazon.eu",
+                                "grid_carbon_intensity_gco2_per_kwh": 336.4,
+                                "pue": null
+                            }
+                        },
+                        "eu-central-2": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
+                            "plus_code": "8FVC9H82+M2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)",
+                                "FINMA (Switzerland)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Switzerland grid intensity estimates range ~33-41 gCO2/kWh depending on source/methodology. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Climate Action Tracker; Energyscope",
+                                "grid_carbon_intensity_gco2_per_kwh": 37.0,
+                                "pue": null
+                            }
+                        },
+                        "eu-west-1": {
+                            "country": "Ireland",
+                            "location": "Dublin",
+                            "plus_code": "9C5M8QM2+6C",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon Donegal wind farm (91.2MW); Ardderroo/Galway wind farm (115MW); Bord na Mona Eco Energy Park collaboration (up to 800MW planned). AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024; aboutamazon.eu; Bord na Mona",
+                                "grid_carbon_intensity_gco2_per_kwh": 270.9,
+                                "pue": null
+                            }
+                        },
+                        "eu-west-2": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "9C3XGV4C+XV",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Carbon Brief (2024)",
+                                "grid_carbon_intensity_gco2_per_kwh": 191.0,
+                                "pue": null
+                            }
+                        },
+                        "eu-west-3": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "8FW4V85C+H2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Standard eu-west-3 does not hold French SecNumCloud qualification (requires EU-only ownership immune to the US CLOUD Act). AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 40.5,
+                                "pue": null
+                            }
+                        },
+                        "eu-south-1": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "8FQFF57Q+PR",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 281.4,
+                                "pue": null
+                            }
+                        },
+                        "eu-north-1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "9FFW83GC+2C",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon's first operational European wind farm: Backhammar (91MW) + Vasternorrland (122MW) = 213MW total. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID; Statista (2024, sources vary 18-41 gCO2eq/kWh)",
+                                "grid_carbon_intensity_gco2_per_kwh": 29.5,
+                                "pue": null
+                            }
+                        },
+                        "ap-northeast-1": {
+                            "country": "Japan",
+                            "location": "Tokyo",
+                            "plus_code": "8Q7XMMQR+RM",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "ISMAP (Japan)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 483.4,
+                                "pue": null
+                            }
+                        },
+                        "ap-northeast-2": {
+                            "country": "South Korea",
+                            "location": "Seoul",
+                            "plus_code": "8Q98HX8H+C9",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "K-ISMS (Korea)",
+                                "CSAP (Korea)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID (South Korea, ~430-436)",
+                                "grid_carbon_intensity_gco2_per_kwh": 433.0,
+                                "pue": null
+                            }
+                        },
+                        "ap-southeast-1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "6PH59R49+RQ",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "MTCS Level 3 (Singapore)",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "An alternate estimate places this at ~471 gCO2/kWh depending on methodology. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "EMA Singapore Energy Statistics 2023",
+                                "grid_carbon_intensity_gco2_per_kwh": 412.0,
+                                "pue": null
+                            }
+                        },
+                        "ap-southeast-2": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "4RRH46J5+38",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "IRAP PROTECTED (Australia)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 553.8,
+                                "pue": null
+                            }
+                        },
+                        "ap-south-1": {
+                            "country": "India",
+                            "location": "Mumbai",
+                            "plus_code": "7JFJ3VFM+42",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "MeitY empanelment (India)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 705.4,
+                                "pue": null
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "n8n",
+                    "display_name": "n8n",
+                    "type": "service",
+                    "sub_type": "n8n",
+                    "supported_meson_type": [
+                        "private",
+                        "public"
+                    ],
+                    "support_level": "full",
+                    "regions": {
+                        "us-east-1": {
+                            "country": "USA",
+                            "location": "Virginia",
+                            "plus_code": "87F42GV7+F2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon: 80MW Community Energy solar farm (Accomack Co., VA, 2015); Dominion Energy solar alliance expanded to 260MW+ across 5 Virginia counties. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember (US national average, 2023-2024)",
+                                "grid_carbon_intensity_gco2_per_kwh": 388.5,
+                                "pue": null
+                            }
+                        },
+                        "us-east-2": {
+                            "country": "USA",
+                            "location": "Ohio",
+                            "plus_code": "86FVX262+FF",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember (US national average; Ohio-specific eGRID figure not found)",
+                                "grid_carbon_intensity_gco2_per_kwh": 388.5,
+                                "pue": null
+                            }
+                        },
+                        "us-west-1": {
+                            "country": "USA",
+                            "location": "California",
+                            "plus_code": "849VQHFJ+X6",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "CAISO OASIS / CARB (California, 5-year average through April 2023)",
+                                "grid_carbon_intensity_gco2_per_kwh": 301.0,
+                                "pue": null
+                            }
+                        },
+                        "us-west-2": {
+                            "country": "USA",
+                            "location": "Oregon",
+                            "plus_code": "85Q2R7QX+WQ",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "FedRAMP Moderate"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon Wind Farm Oregon-Leaning Juniper II (90MW); Oregon Trail Solar (57MWdc, operational 2027); Umatilla Electric Cooperative agreement. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Oregon DEQ Clean Fuels Program 2025-26",
+                                "grid_carbon_intensity_gco2_per_kwh": 175.0,
+                                "pue": null
+                            }
+                        },
+                        "ca-central-1": {
+                            "country": "Canada",
+                            "location": "Toronto",
+                            "plus_code": "87Q8GC56+GV",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "CCCS (Canada) - Protected B"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Physical AWS facilities are in the Montreal/Varennes area of Quebec, not Toronto. Direct GHG intensity ~1.2 gCO2/kWh (2022); 34.5 gCO2eq/kWh is Hydro-Quebec's life-cycle figure. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Hydro-Quebec sustainable development report",
+                                "grid_carbon_intensity_gco2_per_kwh": 34.5,
+                                "pue": null
+                            }
+                        },
+                        "eu-central-1": {
+                            "country": "Germany",
+                            "location": "Frankfurt",
+                            "plus_code": "9F2C4M6J+7R",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Part of Amazon's >EUR2.4bn European wind/solar portfolio; Germany-specific: Orsted Borkum Riffgrund 3 (350MW), Iberdrola Baltic Eagle/Windanker (320MW each). AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024; aboutamazon.eu",
+                                "grid_carbon_intensity_gco2_per_kwh": 336.4,
+                                "pue": null
+                            }
+                        },
+                        "eu-central-2": {
+                            "country": "Switzerland",
+                            "location": "Zurich",
+                            "plus_code": "8FVC9H82+M2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)",
+                                "FINMA (Switzerland)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Switzerland grid intensity estimates range ~33-41 gCO2/kWh depending on source/methodology. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Climate Action Tracker; Energyscope",
+                                "grid_carbon_intensity_gco2_per_kwh": 37.0,
+                                "pue": null
+                            }
+                        },
+                        "eu-west-1": {
+                            "country": "Ireland",
+                            "location": "Dublin",
+                            "plus_code": "9C5M8QM2+6C",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon Donegal wind farm (91.2MW); Ardderroo/Galway wind farm (115MW); Bord na Mona Eco Energy Park collaboration (up to 800MW planned). AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024; aboutamazon.eu; Bord na Mona",
+                                "grid_carbon_intensity_gco2_per_kwh": 270.9,
+                                "pue": null
+                            }
+                        },
+                        "eu-west-2": {
+                            "country": "United Kingdom",
+                            "location": "London",
+                            "plus_code": "9C3XGV4C+XV",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Carbon Brief (2024)",
+                                "grid_carbon_intensity_gco2_per_kwh": 191.0,
+                                "pue": null
+                            }
+                        },
+                        "eu-west-3": {
+                            "country": "France",
+                            "location": "Paris",
+                            "plus_code": "8FW4V85C+H2",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Standard eu-west-3 does not hold French SecNumCloud qualification (requires EU-only ownership immune to the US CLOUD Act). AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 40.5,
+                                "pue": null
+                            }
+                        },
+                        "eu-south-1": {
+                            "country": "Italy",
+                            "location": "Milan",
+                            "plus_code": "8FQFF57Q+PR",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 281.4,
+                                "pue": null
+                            }
+                        },
+                        "eu-north-1": {
+                            "country": "Sweden",
+                            "location": "Stockholm",
+                            "plus_code": "9FFW83GC+2C",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "Amazon's first operational European wind farm: Backhammar (91MW) + Vasternorrland (122MW) = 213MW total. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID; Statista (2024, sources vary 18-41 gCO2eq/kWh)",
+                                "grid_carbon_intensity_gco2_per_kwh": 29.5,
+                                "pue": null
+                            }
+                        },
+                        "ap-northeast-1": {
+                            "country": "Japan",
+                            "location": "Tokyo",
+                            "plus_code": "8Q7XMMQR+RM",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "ISMAP (Japan)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 483.4,
+                                "pue": null
+                            }
+                        },
+                        "ap-northeast-2": {
+                            "country": "South Korea",
+                            "location": "Seoul",
+                            "plus_code": "8Q98HX8H+C9",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "K-ISMS (Korea)",
+                                "CSAP (Korea)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID (South Korea, ~430-436)",
+                                "grid_carbon_intensity_gco2_per_kwh": 433.0,
+                                "pue": null
+                            }
+                        },
+                        "ap-southeast-1": {
+                            "country": "Singapore",
+                            "location": "Singapore",
+                            "plus_code": "6PH59R49+RQ",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "MTCS Level 3 (Singapore)",
+                                "C5 (Germany, BSI)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "An alternate estimate places this at ~471 gCO2/kWh depending on methodology. AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "EMA Singapore Energy Statistics 2023",
+                                "grid_carbon_intensity_gco2_per_kwh": 412.0,
+                                "pue": null
+                            }
+                        },
+                        "ap-southeast-2": {
+                            "country": "Australia",
+                            "location": "Sydney",
+                            "plus_code": "4RRH46J5+38",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "IRAP PROTECTED (Australia)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 553.8,
+                                "pue": null
+                            }
+                        },
+                        "ap-south-1": {
+                            "country": "India",
+                            "location": "Mumbai",
+                            "plus_code": "7JFJ3VFM+42",
+                            "certifications": [
+                                "ISO/IEC 27001",
+                                "ISO/IEC 27017",
+                                "ISO/IEC 27018",
+                                "SOC 1",
+                                "SOC 2",
+                                "SOC 3",
+                                "PCI DSS Level 1",
+                                "MeitY empanelment (India)"
+                            ],
+                            "carbon_emissions": {
+                                "renewable_energy_percent": null,
+                                "note": "AWS does not publish per-region datacenter carbon-free energy percentages; grid intensity shown is a national/regional proxy.",
+                                "source": "Ember/OWID 2024",
+                                "grid_carbon_intensity_gco2_per_kwh": 705.4,
+                                "pue": null
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "openclaw",
+                    "display_name": "openclaw",
+                    "type": "service",
+                    "sub_type": "n8n",
+                    "supported_meson_type": [
+                        "private",
+                        "public"
+                    ],
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
