@@ -6230,18 +6230,7 @@
                             }
                         }
                     }
-                }
-            ]
-        },
-        "impossiblecloud": {
-            "display_name": "Impossible Cloud",
-            "icon_classes": "fa-solid fa-cloud",
-            "source": "fontawesome",
-            "hex_color": "#00c65e",
-            "svg_filename": "impossiblecloud_icon.svg",
-            "status": "production",
-            "server_ips": ["impossiblecloud.meson.elemento.cloud"],
-            "services": [
+                },
                 {
                     "name": "blockStorage",
                     "display_name": "Block Storage",
