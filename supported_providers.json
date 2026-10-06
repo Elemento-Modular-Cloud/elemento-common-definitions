@@ -7,7 +7,7 @@
             "hex_color": "#4285f4",
             "svg_filename": "google_icon.svg",
             "status": "production",
-            "server_ips": ["google.meson.elemento.cloud"],
+            "server_ips": ["google-dev.meson.elemento.cloud"],
             "services": [
                 {
                     "name": "spotvm",
@@ -725,7 +725,7 @@
             "hex_color": "#0078d4",
             "svg_filename": "azure_icon.svg",
             "status": "production",
-            "server_ips": ["azure.meson.elemento.cloud"],
+            "server_ips": ["azure-dev.meson.elemento.cloud"],
             "services": [
                 {
                     "name": "spotvm",
@@ -3400,7 +3400,7 @@
             "hex_color": "#123f6d",
             "svg_filename": "ovh_icon.svg",
             "status": "production",
-            "server_ips": ["ovh.meson.elemento.cloud"],
+            "server_ips": ["ovh-dev.meson.elemento.cloud"],
             "services": [
                 {
                     "name": "k8s",
@@ -3519,7 +3519,7 @@
             "hex_color": "#7b68ee",
             "svg_filename": "upcloud_icon.svg",
             "status": "production",
-            "server_ips": ["upcloud.meson.elemento.cloud"],
+            "server_ips": ["upcloud-dev.meson.elemento.cloud"],
             "services": [
                 {
                     "name": "spotvm",
@@ -5606,7 +5606,7 @@
             "hex_color": "#00c65e",
             "svg_filename": "wasabi_icon.svg",
             "status": "production",
-            "server_ips": ["wasabi.meson.elemento.cloud"],
+            "server_ips": ["wasabi-dev.meson.elemento.cloud"],
             "services": [
                 {
                     "name": "objectStorage",
@@ -5981,7 +5981,7 @@
             "hex_color": "#4f0599",
             "svg_filename": "scaleway_icon.svg",
             "status": "production",
-            "server_ips": ["scaleway.meson.elemento.cloud"],
+            "server_ips": ["scaleway-dev.meson.elemento.cloud"],
             "services": [
                 {
                     "name": "spotvm",
@@ -7144,7 +7144,7 @@
             "svg_filename": "impossiblecloud_icon.svg",
             "status": "production",
             "server_ips": [
-                "impossiblecloud.meson.elemento.cloud"
+                "impossiblecloud-dev.meson.elemento.cloud"
             ],
             "services": [
                 {
@@ -7275,7 +7275,7 @@
             "svg_filename": "oracle_icon.svg",
             "status": "development",
             "server_ips": [
-                "oracle.meson.elemento.cloud"
+                "oracle-dev.meson.elemento.cloud"
             ],
             "services": [
                 {
@@ -7304,7 +7304,7 @@
             "svg_filename": "aws_icon.svg",
             "status": "development",
             "server_ips": [
-                "aws.meson.elemento.cloud"
+                "aws-dev.meson.elemento.cloud"
             ],
             "services": [
                 {
