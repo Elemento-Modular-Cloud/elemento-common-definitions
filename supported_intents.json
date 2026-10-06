@@ -3,7 +3,7 @@
         "kaas": {
             "metadata": {
                 "category": "paas",
-                "page_name_localization": "literal:Managed Kubernetes",
+                "page_name_localization": "literal:Kubernetes",
                 "page_name": "managedkubernetes",
                 "page_icon": "fa-brands fa-kubernetes"
             },
@@ -12,8 +12,8 @@
                     "type": "name",
                     "user_label": "Cluster name",
                     "default": "my-cluster",
-                    "regex": "^[a-zA-Z0-9-]+$",
-                    "user_regex": "Name must be alphanumeric and can include only hyphens"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "nodepools": {
                     "type": "datalist",
@@ -22,8 +22,8 @@
                         "pool_name": {
                             "user_label": "Nodepool Name",
                             "type": "name",
-                            "regex": "^[a-zA-Z0-9-]+$",
-                            "user_regex": "Name must be alphanumeric and can include only hyphens"
+                            "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                            "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                         },
                         "autoscale": {
                             "user_label": "Autoscale",
@@ -64,7 +64,7 @@
                         "specs/storage_gb": {
                             "user_label": "Storage (GB)",
                             "type": "number",
-                            "min": 32,
+                            "min": 0,
                             "max": 1024,
                             "default": 32
                         },
@@ -104,7 +104,7 @@
                 "kubernetes_version": {
                     "type": "string",
                     "user_label": "Kubernetes Version",
-                    "default": "1.34",
+                    "default": "1.35",
                     "regex": "^([12])\\.(0|[1-9][0-9]*)$",
                     "user_regex": "Version must be in the format 'X.Y' where X is 1 or 2, and Y is a non-negative integer"
                 },
@@ -174,9 +174,9 @@
                 },
                 {
                     "name": "Region",
-                    "localization_key": "location",
+                    "localization_key": "region",
                     "display_type": "text",
-                    "json_key": "location"
+                    "json_key": "region"
                 }
             ],
             "resources": {}
@@ -184,8 +184,8 @@
         "kops": {
             "metadata": {
                 "category": "paas",
-                "page_name_localization": "literal:Kubernetes",
-                "page_name": "kubernetes",
+                "page_name_localization": "literal:Kops",
+                "page_name": "kops",
                 "page_icon": "fa-brands fa-kubernetes"
             },
             "main_form_data": {
@@ -266,7 +266,8 @@
                     "type": "name",
                     "user_label": "Database name",
                     "default": "my-database",
-                    "regex": "^[a-zA-Z0-9-]+$"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
@@ -286,12 +287,28 @@
                             "value": "mysql"
                         },
                         {
+                            "user_label": "NoSQL",
+                            "value": "nosql"
+                        },
+                        {
                             "user_label": "Sql Server",
                             "value": "sqlserver"
                         },
                         {
                             "user_label": "Postgres",
                             "value": "postgres"
+                        },
+                        {
+                            "user_label": "MariaDB",
+                            "value": "mariadb"
+                        },
+                        {
+                            "user_label": "Valkey",
+                            "value": "valkey"
+                        },
+                        {
+                            "user_label": "Mongodb",
+                            "value": "mongodb"
                         }
                     ]
                 },
@@ -304,18 +321,22 @@
                     "type": "number",
                     "user_label": "Database disk size (GB)",
                     "default": 50,
-                    "min": 1
+                    "min": 1,
+                    "max": 500
                 },
                 "password": {
                     "type": "password",
                     "user_label": "password",
-                    "default": "password123!"
+                    "default": "password123",
+                    "regex": "^[a-zA-Z0-9-_]+$",
+                    "user_regex": "Password must consist of alphanumeric characters, hyphens, and underscores"
                 },
                 "nodes_number": {
                     "type": "number",
                     "user_label": "nodes number",
                     "default": 1,
-                    "min": 1
+                    "min": 1,
+                    "max": 3
                 },
                 "billing_frequency": {
                     "type": "select",
@@ -398,10 +419,10 @@
                 "vm_name": {
                     "user_label": "VM Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
-                "slots": {
+                "cpu/slots": {
                     "user_label": "CPU cores",
                     "type": "number",
                     "default": 2,
@@ -415,19 +436,349 @@
                     "min": 4,
                     "max": 128
                 },
-                "authentication/username": {
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                },
+                "storage/boot/size_gb": {
+                    "user_label": "Disk size (GB)",
+                    "type": "number",
+                    "default": 20,
+                    "min": 20,
+                    "max": 2000
+                },
+                "auth/username": {
                     "user_label": "Username",
                     "type": "string",
                     "default": "admin"
                 },
-                "authentication/password": {
+                "auth/password": {
                     "user_label": "Password",
-                    "type": "password",
-                    "default": "password123!"
+                    "type": "password"
                 },
-                "authentication/ssh-key": {
-                    "user_label": "SSH Key",
+                "auth/ssh_key": {
+                    "user_label": "SSH Public Key",
                     "type": "textarea"
+                },
+                "cpu/shared_cores": {
+                    "user_label": "Shared cores",
+                    "type": "hidden",
+                    "default": true
+                },
+                "cpu/arch": {
+                    "user_label": "Architecture",
+                    "type": "hidden",
+                    "default": [
+                        "X86_64"
+                    ]
+                },
+                "os/family": {
+                    "user_label": "OS family",
+                    "type": "hidden",
+                    "default": "linux"
+                },
+                "os/flavour": {
+                    "user_label": "OS flavour",
+                    "type": "hidden",
+                    "default": "ubuntu"
+                },
+                "os/version": {
+                    "user_label": "OS version",
+                    "type": "hidden",
+                    "default": "24.04"
+                },
+                "storage/boot/name": {
+                    "user_label": "Boot disk name",
+                    "type": "hidden",
+                    "default": "root"
+                },
+                "networks": {
+                    "user_label": "Networks",
+                    "type": "hidden",
+                    "default": [
+                        {
+                            "kind": "public"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "vm_name"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                },
+                {
+                    "name": "CPU",
+                    "localization_key": "cpu",
+                    "display_type": "text",
+                    "json_key": "cpu/slots",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "RAM (MB)",
+                    "localization_key": "memory",
+                    "display_type": "text",
+                    "json_key": "mem/capacity_mb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "Disk (GB)",
+                    "localization_key": "disk",
+                    "display_type": "text",
+                    "json_key": "storage/boot/size_gb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "OS",
+                    "localization_key": "os",
+                    "display_type": "text",
+                    "json_key": "os/flavour"
+                },
+                {
+                    "name": "IP Address",
+                    "localization_key": "ip_address",
+                    "display_type": "monospace",
+                    "json_key": "networks/0/ipv4",
+                    "sort": "ipv4"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "openclaw": {
+            "metadata": {
+                "category": "saas",
+                "page_name_localization": "literal:OpenClaw",
+                "page_name": "openclaw",
+                "page_icon": "fa-solid fa-crab"
+            },
+            "main_form_data": {
+                "vm_name": {
+                    "user_label": "VM Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "cpu/slots": {
+                    "user_label": "CPU cores",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 96
+                },
+                "capacity": {
+                    "user_label": "RAM capacity (GB)",
+                    "type": "number",
+                    "default": 4,
+                    "min": 4,
+                    "max": 128
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                },
+                "storage/boot/size_gb": {
+                    "user_label": "Disk size (GB)",
+                    "type": "number",
+                    "default": 30,
+                    "min": 20,
+                    "max": 2000
+                },
+                "auth/username": {
+                    "user_label": "Username",
+                    "type": "string",
+                    "default": "admin"
+                },
+                "auth/password": {
+                    "user_label": "Password",
+                    "type": "password"
+                },
+                "auth/ssh_key": {
+                    "user_label": "SSH Public Key",
+                    "type": "textarea"
+                },
+                "cpu/shared_cores": {
+                    "user_label": "Shared cores",
+                    "type": "hidden",
+                    "default": true
+                },
+                "cpu/arch": {
+                    "user_label": "Architecture",
+                    "type": "hidden",
+                    "default": [
+                        "X86_64"
+                    ]
+                },
+                "os/family": {
+                    "user_label": "OS family",
+                    "type": "hidden",
+                    "default": "linux"
+                },
+                "os/flavour": {
+                    "user_label": "OS flavour",
+                    "type": "hidden",
+                    "default": "ubuntu"
+                },
+                "os/version": {
+                    "user_label": "OS version",
+                    "type": "hidden",
+                    "default": "24.04"
+                },
+                "storage/boot/name": {
+                    "user_label": "Boot disk name",
+                    "type": "hidden",
+                    "default": "root"
+                },
+                "networks": {
+                    "user_label": "Networks",
+                    "type": "hidden",
+                    "default": [
+                        {
+                            "kind": "public"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "vm_name",
+                    "display_type": "text",
+                    "json_key": "vm_name"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                },
+                {
+                    "name": "CPU",
+                    "localization_key": "cpu",
+                    "display_type": "text",
+                    "json_key": "cpu/slots",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "RAM (MB)",
+                    "localization_key": "memory",
+                    "display_type": "text",
+                    "json_key": "mem/capacity_mb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "Disk (GB)",
+                    "localization_key": "disk",
+                    "display_type": "text",
+                    "json_key": "storage/boot/size_gb",
+                    "sort": "numerical"
+                },
+                {
+                    "name": "OS",
+                    "localization_key": "os",
+                    "display_type": "text",
+                    "json_key": "os/flavour"
+                },
+                {
+                    "name": "IP Address",
+                    "localization_key": "ip_address",
+                    "display_type": "monospace",
+                    "json_key": "networks/0/ipv4",
+                    "sort": "ipv4"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "registry": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Registry",
+                "page_name": "registry",
+                "page_icon": "fa-solid fa-box"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Registry Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "size_gb": {
+                    "user_label": "Registry Size (GB)",
+                    "type": "number",
+                    "default": 10,
+                    "min": 10,
+                    "max": 200
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": false
                 },
                 "region": {
                     "type": "region",
@@ -485,51 +836,38 @@
             ],
             "resources": {}
         },
-        "openclaw": {
+        "publicip": {
             "metadata": {
-                "category": "saas",
-                "page_name_localization": "literal:OpenClaw",
-                "page_name": "openclaw",
-                "page_icon": "fa-solid fa-crab"
+                "category": "paas",
+                "page_name_localization": "literal:Public IP",
+                "page_name": "publicip",
+                "page_icon": "fa-solid fa-network-wired"
             },
             "main_form_data": {
-                "vm_name": {
-                    "user_label": "VM Name",
+                "name": {
+                    "user_label": "Public IP Name",
                     "type": "name",
-                    "regex": "(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?)",
-                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter or number, length between 1 and 63 characters"
-                },
-                "slots": {
-                    "user_label": "CPU cores",
-                    "type": "number",
-                    "default": 4,
-                    "min": 4,
-                    "max": 96
-                },
-                "capacity": {
-                    "user_label": "RAM capacity (GB)",
-                    "type": "number",
-                    "default": 4,
-                    "min": 4,
-                    "max": 128
-                },
-                "authentication/username": {
-                    "user_label": "Username",
-                    "type": "string",
-                    "default": "admin"
-                },
-                "authentication/password": {
-                    "user_label": "Password",
-                    "type": "password",
-                    "default": "password123!"
-                },
-                "authentication/ssh-key": {
-                    "user_label": "SSH Key",
-                    "type": "textarea"
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
                 },
                 "region": {
                     "type": "region",
                     "user_label": "Region"
+                },
+                "type": {
+                    "type": "select",
+                    "user_label": "IP Type",
+                    "default": "v4",
+                    "options": [
+                        {
+                            "user_label": "IPv4",
+                            "value": "v4"
+                        },
+                        {
+                            "user_label": "IPv6",
+                            "value": "v6"
+                        }
+                    ]
                 },
                 "billing_frequency": {
                     "type": "select",
@@ -558,27 +896,736 @@
             "table_layout": [
                 {
                     "name": "Name",
-                    "localization_key": "vm_name",
+                    "localization_key": "name",
                     "display_type": "text",
-                    "json_key": "req_json/vm_name"
+                    "json_key": "name"
                 },
                 {
-                    "name": "UUID",
+                    "name": "TODO",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "todo"
+                }
+            ],
+            "resources": {}
+        },
+        "loadbalancer": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Load Balancer",
+                "page_name": "loadbalancer",
+                "page_icon": "fa-solid fa-network-wired"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Load Balancer Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": true
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "TODO",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "todo"
+                }
+            ],
+            "resources": {}
+        },
+        "privatenetwork": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Private Network",
+                "page_name": "privatenetwork",
+                "page_icon": "fa-solid fa-network-wired"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Private Network Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "auto_assign_cidr": {
+                    "user_label": "Auto Assign CIDR",
+                    "type": "boolean",
+                    "default": true
+                },
+                "cidr": {
+                    "user_label": "CIDR Block",
+                    "type": "ip-cidr",
+                    "default": "192.168.100.0/22"
+                },
+                "dhcp": {
+                    "user_label": "DHCP Enabled",
+                    "type": "boolean",
+                    "default": true
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "TODO",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "todo"
+                }
+            ],
+            "resources": {}    
+        },
+        "publicgateway": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Public Gateway",
+                "page_name": "publicgateway",
+                "page_icon": "fa-solid fa-network-wired"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Public Gateway Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "network_uuid": {
+                    "user_label": "Private Network UUID (previously created on the same region)",
+                    "type": "string",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name": "Service UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
-                    "json_key": "uniqueID"
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Network UUID",
+                    "localization_key": "network_uuid",
+                    "display_type": "text",
+                    "json_key": "network_uuid"
+                },
+                {
+                    "name": "Public IP",
+                    "localization_key": "public_ip",
+                    "display_type": "text",
+                    "json_key": "public_ip"
+                }
+            ],
+            "resources": {}
+        },
+        "serverless": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Serverless",
+                "page_name": "serverless",
+                "page_icon": "fa-solid fa-code"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Serverless Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "runtime": {
+                    "type": "select",
+                    "user_label": "Runtime",
+                    "default": "python3.13",
+                    "options": [
+                        {
+                            "user_label": "Python 3.14",
+                            "value": "python3.14"
+                        },
+                        {
+                            "user_label": "Python 3.13",
+                            "value": "python3.13"
+                        },
+                        {
+                            "user_label": "Python 3.12",
+                            "value": "python3.12"
+                        },
+                        {
+                            "user_label": "Node.js 24",
+                            "value": "nodejs24.x"
+                        },
+                        {
+                            "user_label": "Node.js 22",
+                            "value": "nodejs22.x"
+                        },
+                        {
+                            "user_label": "Node.js 20",
+                            "value": "nodejs20.x"
+                        },
+                        {
+                            "user_label": "PHP 8.5",
+                            "value": "php8.5"
+                        },
+                        {
+                            "user_label": "PHP 8.4",
+                            "value": "php8.4"
+                        },
+                        {
+                            "user_label": "Go 1.26",
+                            "value": "go1.26"
+                        },
+                        {
+                            "user_label": "Go 1.25",
+                            "value": "go1.25"
+                        },
+                        {
+                            "user_label": "Rust 1.96",
+                            "value": "rust1.96"
+                        }
+                    ]
+                },
+                "handler": {
+                    "type": "string",
+                    "user_label": "Handler",
+                    "default": "index.handler"
+                },
+                "memory": {
+                    "type": "number",
+                    "user_label": "Memory (MB)",
+                    "default": 128,
+                    "min": 128,
+                    "max": 10240
+                },
+                "timeout": {
+                    "type": "number",
+                    "user_label": "Timeout (seconds)",
+                    "default": 3,
+                    "min": 1,
+                    "max": 900
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": false
+                },
+                "environment": {
+                    "type": "textarea",
+                    "user_label": "Environment Variables (JSON format)",
+                    "default": "{}",
+                    "regex": "^\\{.*\\}$",
+                    "user_regex": "Environment variables must be in valid JSON format"
+                },
+                "code_zip_b64": {
+                    "type": "textarea",
+                    "user_label": "Code (Base64-encoded ZIP)",
+                    "default": "",
+                    "regex": "^[A-Za-z0-9+/=]+$",
+                    "user_regex": "Code must be a valid Base64-encoded string"
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name": "Service UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": "name"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                }
+            ],
+            "resources": {}
+        },
+        "aiserverless": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:AI Functions",
+                "page_name": "aiserverless",
+                "page_icon": "fa-solid fa-robot"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "AI Function Name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "model_name": {
+                    "type": "select",
+                    "user_label": "Model Name",
+                    "default": "claude-sonnet-5",
+                    "options": [
+                        {
+                            "user_label": "Claude Sonnet 5",
+                            "value": "claude-sonnet-5"
+                        },
+                        {
+                            "user_label": "Claude Haiku 4.5",
+                            "value": "claude-haiku-4.5"
+                        },
+                        {
+                            "user_label": "Nova Pro",
+                            "value": "nova-pro"
+                        },
+                        {
+                            "user_label": "Nova Lite",
+                            "value": "nova-lite"
+                        },
+                        {
+                            "user_label": "LLaMA 3.3 70B",
+                            "value": "llama-3.3-70b"
+                        },
+                        {
+                            "user_label": "Mistral Large 3",
+                            "value": "mistral-large-3"
+                        },
+                        {
+                            "user_label": "glm-5.2",
+                            "value": "glm-5.2"
+                        },
+                        {
+                            "user_label": "DeepSeek V4 Flash",
+                            "value": "deepseek-v4-flash-0731"
+                        },
+                        {
+                            "user_label": "Qwen 3.5 397B",
+                            "value": "qwen3.5-397b-a17b"
+                        },
+                        {
+                            "user_label": "Qwen 3.2 235B Instruct",
+                            "value": "qwen3-235b-a22b-instruct-2507"
+                        },
+                        {
+                            "user_label": "Qwen3 Embedding-8b",
+                            "value": "qwen3-embedding-8b"
+                        },
+                        {
+                            "user_label": "Gemma 4 26B A4B IT",
+                            "value": "gemma-4-26b-a4b-it"
+                        },
+                        {
+                            "user_label": "Mistral Medium 3.5 128B",
+                            "value": "mistral-medium-3.5-128b"
+                        },
+                        {
+                            "user_label": "Mistral Small 3.2 24B Instruct",
+                            "value": "mistral-small-3.2-24b-instruct-2506"
+                        },
+                        {
+                            "user_label": "LLaMA 3.3 70B Instruct",
+                            "value": "llama-3.3-70b-instruct"
+                        },
+                        {
+                            "user_label": "Gpt oss 120b",
+                            "value": "gpt-oss-120b"
+                        }
+                    ]
+                },
+                "enable_streaming": {
+                    "user_label": "Enable Streaming",
+                    "type": "boolean",
+                    "default": false
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name": "Service UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": ""
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
+                },
+                {
+                    "name": "Model Name",
+                    "localization_key": "model_name",
+                    "display_type": "text",
+                    "json_key": "model_name"
+                },
+                {
+                    "name": "Streaming Enabled",
+                    "localization_key": "enable_streaming",
+                    "display_type": "check",
+                    "json_key": "enable_streaming"
                 },
                 {
                     "name": "Status",
                     "localization_key": "status",
                     "display_type": "text",
-                    "json_key": "states"
+                    "json_key": "status"
+                }
+            ],
+            "resources": {}
+        },
+        "queueaas": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:Kafka Queues",
+                "page_name": "queueaas",
+                "page_icon": "fa-solid fa-robot"
+            },
+            "main_form_data": {
+                "name": {
+                    "user_label": "Queue name",
+                    "type": "name",
+                    "regex": "^(?=.{1,40}$)[a-z]+(?:-[a-z0-9]+)*$",
+                    "user_regex": "Name must consist of lowercase letters, numbers, and hyphens, and must start and end with a letter, length between 1 and 40 characters"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "model_name": {
+                    "type": "select",
+                    "user_label": "Kafka version",
+                    "default": "4.1.0",
+                    "options": [
+                        {
+                            "user_label": "4.1.0",
+                            "value": "4.1.0"
+                        },
+                        {
+                            "user_label": "4.0.0",
+                            "value": "4.0.0"
+                        },
+                        {
+                            "user_label": "3.9.0",
+                            "value": "3.9.0"
+                        },
+                        {
+                            "user_label": "3.8.0",
+                            "value": "3.8.0"
+                        }
+                    ]
+                },
+                "node_number": {
+                    "user_label": "Node number",
+                    "type": "number",
+                    "default": 2,
+                    "min": 1,
+                    "max": 10
+                },
+                "node_size": {
+                    "type": "select",
+                    "user_label": "Node size",
+                    "default": "4.1.0",
+                    "options": [
+                        {
+                            "user_label": "Small (8GB RAM)",
+                            "value": "S"
+                        },
+                        {
+                            "user_label": "Medium (16GB RAM)",
+                            "value": "M"
+                        },
+                        {
+                            "user_label": "Large (32GB RAM)",
+                            "value": "L"
+                        }
+                    ]
+                },
+                "size_gb": {
+                    "type": "number",
+                    "user_label": "Size (GB)",
+                    "default": 10,
+                    "min": 10,
+                    "max": 100
+                },
+                "username": {
+                    "type": "string",
+                    "user_label": "Username",
+                    "default": "admin"
+                },
+                "password": {
+                    "type": "string",
+                    "user_label": "Password",
+                    "default": "admin"
+                },
+                "is_ha": {
+                    "user_label": "High Availability",
+                    "type": "boolean",
+                    "default": true
+                },
+                "is_public": {
+                    "user_label": "Public Access",
+                    "type": "boolean",
+                    "default": false
+                },
+                "private_network_id": {
+                    "type": "string",
+                    "user_label": "Private Network UUID (previously created on the same region and provider)",
+                    "default": ""
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {   
+                    "name": "Service UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Name",
+                    "localization_key": "name",
+                    "display_type": "text",
+                    "json_key": ""
                 },
                 {
                     "name": "Region",
-                    "localization_key": "location",
+                    "localization_key": "region",
                     "display_type": "text",
                     "json_key": "region"
+                },
+                {
+                    "name": "Kafka Version",
+                    "localization_key": "model_name",
+                    "display_type": "text",
+                    "json_key": "model_name"
+                },
+                {
+                    "name": "High Availability",
+                    "localization_key": "is_ha",
+                    "display_type": "check",
+                    "json_key": "is_ha"
+                },
+                {
+                    "name": "Public Access",
+                    "localization_key": "is_public",
+                    "display_type": "check",
+                    "json_key": "is_public"
+                },
+                {
+                    "name": "Node number",
+                    "localization_key": "node_number",
+                    "display_type": "text",
+                    "json_key": "node_number"
+                },
+                {
+                    "name": "Node size",
+                    "localization_key": "node_size",
+                    "display_type": "text",
+                    "json_key": "node_size"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
+                    "display_type": "text",
+                    "json_key": "status"
+                },
+                {
+                    "name": "Private Network ID",
+                    "localization_key": "private_network_id",
+                    "display_type": "text",
+                    "json_key": "private_network_id"
+                },
+                {
+                    "name": "Creation Date",
+                    "localization_key": "creation_date",
+                    "display_type": "text",
+                    "json_key": "creation_date"
                 }
             ],
             "resources": {}
@@ -665,6 +1712,107 @@
                     "localization_key": "s3/size",
                     "display_type": "byte_sized",
                     "json_key": "active_storage"
+                }
+            ],
+            "resources": {}
+        },
+        "filestorage": {
+            "metadata": {
+                "category": "paas",
+                "page_name_localization": "literal:File Storage",
+                "page_name": "filestorage",
+                "page_icon": "fa-solid fa-folder"
+            },
+            "main_form_data": {
+                "name": {
+                    "type": "name",
+                    "user_label": "File Storage name",
+                    "default": "my-file-storage",
+                    "regex": "^(?=.{3,24}$)(?!xn--|sthree-|amzn-s3-demo-|aws)(?!.*-s3alias$|.*--ol-s3$|.*--x-s3$|.*--table-s3$)[a-z0-9]([a-z0-9-]*[a-z0-9])?$$",
+                    "user_regex": "Name must be 3-24 characters long and can include only lowercase letters, numbers, and hyphens"
+                },
+                "region": {
+                    "type": "region",
+                    "user_label": "Region"
+                },
+                "size_gb": {
+                    "type": "number",
+                    "user_label": "File Storage size (GB)",
+                    "default": 10,
+                    "min": 10,
+                    "max": 200
+                },
+                "is_public": {
+                    "type": "boolean",
+                    "user_label": "Public Access",
+                    "default": false
+                },
+                "billing_frequency": {
+                    "type": "select",
+                    "user_label": "Billing Frequency",
+                    "default": "month",
+                    "options": [
+                        {
+                            "user_label": "Day",
+                            "value": "day"
+                        },
+                        {
+                            "user_label": "Week",
+                            "value": "week"
+                        },
+                        {
+                            "user_label": "Month",
+                            "value": "month"
+                        },
+                        {
+                            "user_label": "Year",
+                            "value": "year"
+                        }
+                    ]
+                }
+            },
+            "table_layout": [
+                {
+                    "name": "Name",
+                    "localization_key": "s3/bucket_name",
+                    "display_type": "monospace",
+                    "json_key": "name"
+                },
+                {
+                    "name": "UUID",
+                    "localization_key": "s3/uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Endpoint",
+                    "localization_key": "s3/endpoint",
+                    "display_type": "monospace",
+                    "json_key": "dns_name"
+                },
+                {
+                    "name": "Size",
+                    "localization_key": "s3/size",
+                    "display_type": "byte_sized",
+                    "json_key": "size_gb"
+                },
+                {
+                    "name": "Used Space",
+                    "localization_key": "s3/used_space",
+                    "display_type": "byte_sized",
+                    "json_key": "used_gb"
+                },
+                {
+                    "name": "Public Access",
+                    "localization_key": "s3/public_access",
+                    "display_type": "check",
+                    "json_key": "is_public"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "s3/region",
+                    "display_type": "text",
+                    "json_key": "region"
                 }
             ],
             "resources": {}
