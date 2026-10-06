@@ -7144,7 +7144,7 @@
             "svg_filename": "impossiblecloud_icon.svg",
             "status": "production",
             "server_ips": [
-                "impossiblecloud-dev.meson.elemento.cloud"
+                "impossiblecloud.meson.elemento.cloud"
             ],
             "services": [
                 {
@@ -7275,7 +7275,7 @@
             "svg_filename": "oracle_icon.svg",
             "status": "development",
             "server_ips": [
-                "oracle-dev.meson.elemento.cloud"
+                "oracle.meson.elemento.cloud"
             ],
             "services": [
                 {
@@ -7304,7 +7304,7 @@
             "svg_filename": "aws_icon.svg",
             "status": "development",
             "server_ips": [
-                "aws-dev.meson.elemento.cloud"
+                "aws.meson.elemento.cloud"
             ],
             "services": [
                 {
