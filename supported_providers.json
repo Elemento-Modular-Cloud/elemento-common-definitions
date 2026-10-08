@@ -7267,35 +7267,6 @@
                 }
             ]
         },
-        "oracle": {
-            "display_name": "Oracle Cloud",
-            "icon_classes": "fa-solid fa-cloud",
-            "source": "fontawesome",
-            "hex_color": "#f80000",
-            "svg_filename": "oracle_icon.svg",
-            "status": "development",
-            "server_ips": [
-                "oracle.meson.elemento.cloud"
-            ],
-            "services": [
-                {
-                    "name": "vmManagement",
-                    "display_name": "VM Management",
-                    "type": "compute",
-                    "sub_type": "vm",
-                    "support_level": "dev",
-                    "regions": {}
-                },
-                {
-                    "name": "blockStorage",
-                    "display_name": "Block Storage",
-                    "type": "storage",
-                    "sub_type": "blockstorage",
-                    "support_level": "dev",
-                    "regions": {}
-                }
-            ]
-        },
         "aws": {
             "display_name": "AWS",
             "icon_classes": "fa-brands fa-aws",
