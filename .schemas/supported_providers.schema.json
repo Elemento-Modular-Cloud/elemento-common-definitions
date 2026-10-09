@@ -39,6 +39,10 @@
         "status": {
           "type": "string"
         },
+        "hypermonitor_identifier": {
+          "type": "string",
+          "description": "Optional Key to identify the provider with Hypermonitor"
+        },
         "services": {
           "type": "array",
           "items": {

@@ -7,6 +7,7 @@
             "hex_color": "#4285f4",
             "svg_filename": "google_icon.svg",
             "status": "production",
+            "hypermonitor_identifier": "gcp",
             "server_ips": ["google-dev.meson.elemento.cloud"],
             "services": [
                 {
