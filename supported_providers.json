@@ -6240,7 +6240,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
@@ -6323,7 +6323,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
@@ -6406,7 +6406,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "fr-par": {
                             "country": "France",
@@ -6471,7 +6471,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "fr-par": {
                             "country": "France",
@@ -6585,7 +6585,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
@@ -6667,7 +6667,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
@@ -6750,7 +6750,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "it-mil": {
                             "country": "Italy",
@@ -6832,7 +6832,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "fr-par": {
                             "country": "France",
@@ -6897,7 +6897,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "fr-par": {
                             "country": "France",
@@ -6928,7 +6928,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "fr-par": {
                             "country": "France",
@@ -7676,7 +7676,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -8066,7 +8066,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -8456,7 +8456,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -8845,7 +8845,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -9235,7 +9235,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -10014,7 +10014,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -10403,7 +10403,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -10792,7 +10792,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -11182,7 +11182,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -11572,7 +11572,7 @@
                         "private",
                         "public"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -11961,7 +11961,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -12350,7 +12350,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
@@ -12739,7 +12739,7 @@
                     "supported_meson_type": [
                         "private"
                     ],
-                    "support_level": "dev",
+                    "support_level": "full",
                     "regions": {
                         "us-east-1": {
                             "country": "USA",
