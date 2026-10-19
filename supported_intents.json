@@ -397,7 +397,8 @@
                     "name": "Disk size",
                     "localization_key": "disk_size",
                     "display_type": "byte_sized",
-                    "json_key": "disk_size"
+                    "json_key": "disk_size",
+                    "unit": "GB"
                 },
                 {
                     "name": "Nodes number",
@@ -557,7 +558,8 @@
                     "localization_key": "disk",
                     "display_type": "text",
                     "json_key": "storage/boot/size_gb",
-                    "sort": "numerical"
+                    "sort": "numerical",
+                    "unit": "GB"
                 },
                 {
                     "name": "OS",
@@ -1815,7 +1817,8 @@
                     "name": "Size",
                     "localization_key": "s3/size",
                     "display_type": "byte_sized",
-                    "json_key": "active_storage"
+                    "json_key": "active_storage",
+                    "unit": "TB"
                 }
             ],
             "resources": {}
