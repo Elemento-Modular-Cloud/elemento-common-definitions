@@ -321,10 +321,11 @@
                     "json_key": "backup_time"
                 },
                 {
-                    "name": "Disk size",
+                    "name": "Disk size (GB)",
                     "localization_key": "disk_size",
-                    "display_type": "byte_sized",
-                    "json_key": "disk_size"
+                    "display_type": "text",
+                    "json_key": "disk_size",
+                    "sort": "numerical"
                 },
                 {
                     "name": "Nodes number",
@@ -738,21 +739,40 @@
             "table_layout": [
                 {
                     "name": "Name",
-                    "localization_key": "vm_name",
+                    "localization_key": "name",
                     "display_type": "text",
-                    "json_key": "req_json/vm_name"
+                    "json_key": "name"
                 },
                 {
                     "name": "UUID",
                     "localization_key": "service_uuid",
                     "display_type": "uuid",
-                    "json_key": "uniqueID"
+                    "json_key": "service_uuid"
                 },
                 {
                     "name": "Status",
                     "localization_key": "status",
                     "display_type": "text",
-                    "json_key": "states"
+                    "json_key": "state"
+                },
+                {
+                    "name": "Is public",
+                    "localization_key": "is_public",
+                    "display_type": "boolean",
+                    "json_key": "is_public"
+                },
+                {
+                    "name": "Size (GB)",
+                    "localization_key": "size_gb",
+                    "display_type": "text",
+                    "json_key": "size_gb",
+                    "sort":"numerical"
+                },
+                {
+                    "name": "Repository uri",
+                    "localization_key": "repository_uri",
+                    "display_type": "text",
+                    "json_key": "repository_uri"
                 },
                 {
                     "name": "Region",
@@ -828,10 +848,28 @@
                     "json_key": "name"
                 },
                 {
-                    "name": "TODO",
-                    "localization_key": "name",
+                    "name": "UUID",
+                    "localization_key": "uuid",
                     "display_type": "text",
-                    "json_key": "todo"
+                    "json_key": "uuid"
+                },
+                {
+                    "name": "IP",
+                    "localization_key": "public_ip",
+                    "display_type": "text",
+                    "json_key": "uuid"
+                },
+                {
+                    "name": "State",
+                    "localization_key": "state",
+                    "display_type": "text",
+                    "json_key": "state"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
                 }
             ],
             "resources": {}
@@ -858,6 +896,28 @@
                     "user_label": "Public Access",
                     "type": "boolean",
                     "default": true
+                },
+                "type": {
+                    "user_label": "Type",
+                    "type": "select",
+                    "default": "application",
+                    "options": [
+                        {
+                            "user_label": "Application",
+                            "value": "application"
+                        },
+                        {
+                            "user_label": "Network",
+                            "value": "network"
+                        }
+                    ]
+                },
+                "port": {
+                    "user_label": "Port",
+                    "type": "number",
+                    "default": 80,
+                    "min": 1,
+                    "max": 65535
                 },
                 "billing_frequency": {
                     "type": "select",
@@ -891,10 +951,34 @@
                     "json_key": "name"
                 },
                 {
-                    "name": "TODO",
-                    "localization_key": "name",
+                    "name": "UUID",
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
+                },
+                {
+                    "name": "Status",
+                    "localization_key": "status",
                     "display_type": "text",
-                    "json_key": "todo"
+                    "json_key": "state"
+                },
+                {
+                    "name": "Is public",
+                    "localization_key": "is_public",
+                    "display_type": "boolean",
+                    "json_key": "is_public"
+                },
+                {
+                    "name": "VPC ID",
+                    "localization_key": "vpc_id",
+                    "display_type": "text",
+                    "json_key": "vpc_id"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "location",
+                    "display_type": "text",
+                    "json_key": "region"
                 }
             ],
             "resources": {}
@@ -964,10 +1048,28 @@
                     "json_key": "name"
                 },
                 {
-                    "name": "TODO",
-                    "localization_key": "name",
+                    "name": "UUID",
+                    "localization_key": "uuid",
                     "display_type": "text",
-                    "json_key": "todo"
+                    "json_key": "uuid"
+                },
+                {
+                    "name": "Cidr",
+                    "localization_key": "cidr",
+                    "display_type": "text",
+                    "json_key": "cidr"
+                },
+                {
+                    "name": "VPC ID",
+                    "localization_key": "vpc_id",
+                    "display_type": "text",
+                    "json_key": "vpc_id"
+                },
+                {
+                    "name": "Region",
+                    "localization_key": "region",
+                    "display_type": "text",
+                    "json_key": "region"
                 }
             ],
             "resources": {}    
@@ -1444,9 +1546,11 @@
                     "default": "admin"
                 },
                 "password": {
-                    "type": "string",
+                    "type": "password",
                     "user_label": "Password",
-                    "default": "admin"
+                    "regex": "^[a-zA-Z0-9-_]+$",
+                    "default": "Password123",
+                    "user_regex": "Password must consist of alphanumeric characters, hyphens, and underscores"
                 },
                 "is_ha": {
                     "user_label": "High Availability",
@@ -1638,7 +1742,8 @@
                     "name": "Size",
                     "localization_key": "s3/size",
                     "display_type": "byte_sized",
-                    "json_key": "active_storage"
+                    "json_key": "active_storage",
+                    "sort": "numerical"
                 }
             ],
             "resources": {}
@@ -1718,16 +1823,18 @@
                     "json_key": "dns_name"
                 },
                 {
-                    "name": "Size",
+                    "name": "Size (GB)",
                     "localization_key": "s3/size",
-                    "display_type": "byte_sized",
-                    "json_key": "size_gb"
+                    "display_type": "text",
+                    "json_key": "size_gb",
+                    "sort": "numerical"
                 },
                 {
-                    "name": "Used Space",
+                    "name": "Used Space (GB)",
                     "localization_key": "s3/used_space",
-                    "display_type": "byte_sized",
-                    "json_key": "used_gb"
+                    "display_type": "text",
+                    "json_key": "used_gb",
+                    "sort": "numerical"
                 },
                 {
                     "name": "Public Access",
