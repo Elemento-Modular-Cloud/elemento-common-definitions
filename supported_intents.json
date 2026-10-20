@@ -321,11 +321,11 @@
                     "json_key": "backup_time"
                 },
                 {
-                    "name": "Disk size",
+                    "name": "Disk size (GB)",
                     "localization_key": "disk_size",
-                    "display_type": "byte_sized",
+                    "display_type": "text",
                     "json_key": "disk_size",
-                    "unit": "GB"
+                    "sort": "numerical"
                 },
                 {
                     "name": "Nodes number",
@@ -485,8 +485,7 @@
                     "localization_key": "disk",
                     "display_type": "text",
                     "json_key": "storage/boot/size_gb",
-                    "sort": "numerical",
-                    "unit": "GB"
+                    "sort": "numerical"
                 },
                 {
                     "name": "OS",
@@ -659,7 +658,6 @@
                     "localization_key": "disk",
                     "display_type": "text",
                     "json_key": "storage/boot/size_gb",
-                    "unit": "GB",
                     "sort": "numerical"
                 },
                 {
@@ -764,11 +762,11 @@
                     "json_key": "is_public"
                 },
                 {
-                    "name": "Size",
+                    "name": "Size (GB)",
                     "localization_key": "size_gb",
-                    "display_type": "byte_sized",
+                    "display_type": "text",
                     "json_key": "size_gb",
-                    "unit": "GB"
+                    "sort":"numerical"
                 },
                 {
                     "name": "Repository uri",
@@ -1741,11 +1739,11 @@
                     "json_key": "region"
                 },
                 {
-                    "name": "Size",
+                    "name": "Size (TB)",
                     "localization_key": "s3/size",
-                    "display_type": "byte_sized",
+                    "display_type": "text",
                     "json_key": "active_storage",
-                    "unit": "TB"
+                    "sort": "numerical"
                 }
             ],
             "resources": {}
@@ -1825,18 +1823,18 @@
                     "json_key": "dns_name"
                 },
                 {
-                    "name": "Size",
+                    "name": "Size (GB)",
                     "localization_key": "s3/size",
-                    "display_type": "byte_sized",
+                    "display_type": "text",
                     "json_key": "size_gb",
-                    "unit": "GB"
+                    "sort": "numerical"
                 },
                 {
-                    "name": "Used Space",
+                    "name": "Used Space (GB)",
                     "localization_key": "s3/used_space",
-                    "display_type": "byte_sized",
+                    "display_type": "text",
                     "json_key": "used_gb",
-                    "unit": "GB"
+                    "sort": "numerical"
                 },
                 {
                     "name": "Public Access",
