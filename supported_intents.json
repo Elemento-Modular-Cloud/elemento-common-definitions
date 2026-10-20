@@ -1739,7 +1739,7 @@
                     "json_key": "region"
                 },
                 {
-                    "name": "Size (TB)",
+                    "name": "Size",
                     "localization_key": "s3/size",
                     "display_type": "byte_sized",
                     "json_key": "active_storage",
