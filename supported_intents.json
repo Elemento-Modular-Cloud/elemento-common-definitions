@@ -1741,7 +1741,7 @@
                 {
                     "name": "Size (TB)",
                     "localization_key": "s3/size",
-                    "display_type": "text",
+                    "display_type": "byte_sized",
                     "json_key": "active_storage",
                     "sort": "numerical"
                 }
