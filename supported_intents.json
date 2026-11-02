@@ -1437,7 +1437,7 @@
                     "name": "Name",
                     "localization_key": "name",
                     "display_type": "text",
-                    "json_key": ""
+                    "json_key": "name"
                 },
                 {
                     "name": "Region",
