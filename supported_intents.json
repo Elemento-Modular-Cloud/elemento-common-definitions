@@ -1557,7 +1557,7 @@
                     "type": "region",
                     "user_label": "Region"
                 },
-                "model_name": {
+                "kafka_version": {
                     "type": "select",
                     "user_label": "Kafka version",
                     "default": "4.1.0",
