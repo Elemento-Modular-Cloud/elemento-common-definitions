@@ -1122,9 +1122,9 @@
                 },
                 {
                     "name": "UUID",
-                    "localization_key": "uuid",
-                    "display_type": "text",
-                    "json_key": "uuid"
+                    "localization_key": "service_uuid",
+                    "display_type": "uuid",
+                    "json_key": "service_uuid"
                 },
                 {
                     "name": "Cidr",
@@ -1135,7 +1135,7 @@
                 {
                     "name": "VPC ID",
                     "localization_key": "vpc_id",
-                    "display_type": "text",
+                    "display_type": "uuid",
                     "json_key": "vpc_id"
                 },
                 {
