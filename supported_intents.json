@@ -1722,7 +1722,7 @@
                 {
                     "name": "Private Network ID",
                     "localization_key": "private_network_id",
-                    "display_type": "text",
+                    "display_type": "uuid",
                     "json_key": "private_network_id"
                 },
                 {
