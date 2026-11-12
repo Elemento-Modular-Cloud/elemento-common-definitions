@@ -1675,7 +1675,7 @@
                     "name": "Name",
                     "localization_key": "name",
                     "display_type": "text",
-                    "json_key": ""
+                    "json_key": "name"
                 },
                 {
                     "name": "Region",
@@ -1685,9 +1685,9 @@
                 },
                 {
                     "name": "Kafka Version",
-                    "localization_key": "model_name",
+                    "localization_key": "kafka_version",
                     "display_type": "text",
-                    "json_key": "model_name"
+                    "json_key": "kafka_version"
                 },
                 {
                     "name": "High Availability",
